@@ -1,0 +1,4 @@
+# ignore the following files and folders
+
+# ignore main nml file since changes are tracked in the pnml files already
+cet.nml
