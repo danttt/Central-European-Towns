@@ -1,0 +1,72 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x---------------------------------------------- HEADER ---------------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+grf {
+    grfid: 					"DTT\01";						
+    name: 					string(STR_GRF_NAME);		
+    desc: 					string(STR_GRF_DESC);		
+    version: 				1;						
+    min_compatible_version: 1;
+}
+
+
+disable_item(FEAT_HOUSES, 00, 90);
+
+
+cargotable {
+	PASS, // PASSENGERS
+	MAIL, // Mail
+	GOOD, // Goods
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------- SPRITE TEMPLATES ------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+/* template for small buildings with sprite box dimensions of 84 x 100 pixels  */
+
+template tmpl_small_houses_ground (x, y) {
+    //[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+    [x,          y,          84,        99,          -41,         -68]
+    [x+  85,     y,          84,        99,          -41,         -68]
+    [x+ 170,     y,          84,        99,          -41,         -68]
+    [x+ 255,     y,          84,        99,          -41,         -68]
+}
+
+template tmpl_small_houses_building (x, y) {
+    //[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+    [x+ 349,     y,          84,        99,          -41,         -68]
+    [x+ 434,     y,          84,        99,          -41,         -68]
+    [x+ 519,     y,          84,        99,          -41,         -68]
+    [x+ 604,     y,          84,        99,          -41,         -68]
+}
+
+
+/* template for large buildings with sprite box dimensions of 84 x 200 pixels  */
+
+template tmpl_large_houses_ground (x, y) {
+    //[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+    [x,          y,          84,        199,          -41,         -168]
+    [x+  85,     y,          84,        199,          -41,         -168]
+    [x+ 170,     y,          84,        199,          -41,         -168]
+    [x+ 255,     y,          84,        199,          -41,         -168]
+}
+
+template tmpl_large_houses_building (x, y) {
+    //[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+    [x+ 349,     y,          84,        199,          -41,         -168]
+    [x+ 434,     y,          84,        199,          -41,         -168]
+    [x+ 519,     y,          84,        199,          -41,         -168]
+    [x+ 604,     y,          84,        199,          -41,         -168]
+}
+
+
+
