@@ -1,0 +1,9 @@
+##grflangid 0x00
+# This is the English Language File
+
+# GRF name and description definitions
+STR_GRF_NAME							:Central European Towns
+STR_GRF_DESC							:Full town replacement set with houses from Central Europe. Graphics by Chataigne, Fraenklie and Super_Dan (dant). Code by Super_Dan (dant) 2021.
+
+
+
