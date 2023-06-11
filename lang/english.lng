@@ -5,5 +5,7 @@
 STR_GRF_NAME							:Central European Towns
 STR_GRF_DESC							:Full town replacement set with houses from Central Europe. Graphics by Chataigne, Fraenklie and Super_Dan (dant). Code by Super_Dan (dant) 2021.
 
-
-
+# Names of house types of the set
+STR_FARMHOUSE                           :Farm House
+STR_SHOPSOFFICES                        :Shops and Offices
+STR_TOWNHOUSES                          :Town Houses
