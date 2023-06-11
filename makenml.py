@@ -22,6 +22,42 @@ sections.append(header.read())
 header.close()
 
 
+# Open the file for the functions and append it to the list just created above
+# This file contains the various switches designated as functions for town type, historical era sprite designation, road-awareness of houses etc.
+print ("Appending functions...")
+functions = codecs.open("pnml/functions.pnml",'r','utf8')
+sections.append(functions.read())
+functions.close()
+
+
+# Open the file containing the nml-code for the custom ground sprites this set provides and append it to the "sections" list
+print ("Appending ground sprites...")
+ground_sprites = codecs.open("pnml/ground_sprites.pnml", 'r', 'utf8')
+sections.append(ground_sprites.read())
+ground_sprites.close()
+
+
+# Open the file containing the nml-code for this house type and append it to the "sections" list
+print ("Appending house type 'farm house'...")
+farm_house = codecs.open("pnml/farm_house.pnml", 'r', 'utf8')
+sections.append(farm_house.read())
+farm_house.close()
+
+
+# Open the file containing the nml-code for this house type and append it to the "sections" list
+print ("Appending house type 'town houses'...")
+town_houses = codecs.open("pnml/town_houses.pnml", 'r', 'utf8')
+sections.append(town_houses.read())
+town_houses.close()
+
+
+# Open the file containing the nml-code for this house type and append it to the "sections" list
+print ("Appending house type 'shops and offices 1'...")
+shops_offices_1 = codecs.open("pnml/shops_offices_1.pnml", 'r', 'utf8')
+sections.append(shops_offices_1.read())
+shops_offices_1.close()
+
+
 # Create the final .nml-file and make it writable
 # Then write the "sections" list into 'cet.nml' using new lines for each part
 print ("Creating NML file...")
