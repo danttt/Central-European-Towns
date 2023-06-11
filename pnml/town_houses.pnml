@@ -66,6 +66,7 @@ random_switch (FEAT_HOUSES, SELF, random_town_houses_era00) {
 
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
 switch (FEAT_HOUSES, SELF, era_switch_town_houses, animation_frame) {
+		0: random_town_houses_era00;
 		1: random_town_houses_era00;
 }
 

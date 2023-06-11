@@ -57,7 +57,7 @@ switch (FEAT_HOUSES, SELF, farm_house_town_type, func_town_type()) {
 /* --------------------------------------------------------------------------------------------------- */
 
 random_switch (FEAT_HOUSES, SELF, random_farm_house_era00) {
-		1: spritelayout_farm_house_era01_001;
+		1: spritelayout_farm_house_era00_001;
 }
 
 
@@ -66,7 +66,11 @@ random_switch (FEAT_HOUSES, SELF, random_farm_house_era00) {
 
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
 switch (FEAT_HOUSES, SELF, era_switch_farm_house, animation_frame) {
+		0: random_farm_house_era00;
 		1: random_farm_house_era00;
+		2: random_farm_house_era00;
+		3: random_farm_house_era00;
+		4: random_farm_house_era00;
 }
 
 // This switch is called by the 'anim_control' callback and used for deciding which frame to use

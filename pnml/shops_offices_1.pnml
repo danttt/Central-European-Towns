@@ -66,7 +66,11 @@ random_switch (FEAT_HOUSES, SELF, random_shops_offices_1_era01_N) {
 
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
 switch (FEAT_HOUSES, SELF, era_switch_shops_offices_1, animation_frame) {
-		1: random_farm_house_era00;
+		1: random_shops_offices_1_era01_N;
+		2: random_shops_offices_1_era01_N;
+		3: random_shops_offices_1_era01_N;
+		4: random_shops_offices_1_era01_N;
+		5: random_shops_offices_1_era01_N;
 }
 
 // This switch is called by the 'anim_control' callback and used for deciding which frame to use
