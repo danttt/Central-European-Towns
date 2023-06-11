@@ -1,0 +1,26 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x------------------------------------------ GROUND SPRITES -----------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+/* Custom ground sprites for this set */
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Concrete ground sprite*/
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_ground_sprite_concrete) {
+	[0, 0, 90, 80, -44, -29, "gfx/ground_sprite_concrete.png"]
+	[0, 0, 90, 80, -44, -29, "gfx/ground_sprite_concrete.png"]
+	[0, 0, 90, 80, -44, -29, "gfx/ground_sprite_concrete.png"]
+	[0, 0, 90, 80, -44, -29, "gfx/ground_sprite_concrete.png"]
+}
+
+
+
