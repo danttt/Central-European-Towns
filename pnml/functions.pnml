@@ -1,0 +1,41 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x------------------------------------------- FUNCTIONS ---------------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*---------------------------------------- TOWN TYPE FUNCTION -----------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+// Check for the town type
+switch (FEAT_HOUSES, PARENT, func_town_type, population) {
+		0 .. 999: return 1;
+		1000 .. 9999: return 2;
+		return 3;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------ HISTORICAL ERA FUNCTIONS ---------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+// Return a number for each historical era
+switch (FEAT_HOUSES, SELF, availability_years, current_year) {
+		0    .. 1849: return 0;
+        1850 .. 1919: return 1;
+		1920 .. 1949: return 2;
+		1950 .. 1979: return 3;
+		1980 .. 2009: return 4;
+		return 5;
+}
+
+// Determine which animation frame is to be used for each availability era
+switch (FEAT_HOUSES, SELF, func_anim_frame, availability_years()) {
+		0: 0; 1: 1; 2: 2; 3: 3; 4: 4; 5: 5; }
+		
+
+

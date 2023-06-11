@@ -45,21 +45,19 @@ spritelayout spritelayout_farm_house_era00_001 {
 /*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, farm_house_town_type, func_town_type()) {
+		1: 1; 2: 1; 3: 0;
+}
+
+
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
 
 random_switch (FEAT_HOUSES, SELF, random_farm_house_era00) {
 		1: spritelayout_farm_house_era01_001;
-
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -69,8 +67,6 @@ random_switch (FEAT_HOUSES, SELF, random_farm_house_era00) {
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
 switch (FEAT_HOUSES, SELF, era_switch_farm_house, animation_frame) {
 		1: random_farm_house_era00;
-
-
 }
 
 // This switch is called by the 'anim_control' callback and used for deciding which frame to use
@@ -104,6 +100,9 @@ item (FEAT_HOUSES, item_farm_house, 1, HOUSE_SIZE_1X1) {
 	graphics {
 		default:					era_switch_farm_house;
 		anim_control:				era_anim_farm_house;
-		construction_check:			func_town_type;
+		construction_check:			farm_house_town_type;
 	}
 }
+
+
+
