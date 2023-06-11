@@ -55,13 +55,25 @@ switch (FEAT_HOUSES, SELF, func_road_detect,
 		(nearby_tile_class( 1, -1) == TILE_CLASS_ROAD)*64 +	// W
 		(nearby_tile_class( 0, -1) == TILE_CLASS_ROAD)*128 	// NW
 		) {
-		131: return 1;	// N corner
+		131: return 1;	// N corner (no road present in W or E tile)
+		199: return 1;  // N corner (road present in W and E tile)
+		195: return 1;	// N corner (road present in W tile)
+		135: return 1;	// N corner (road present in E tile)
 		7:   return 2;	// NE block
-		14:  return 3;	// E corner
+		14:  return 3;	// E corner	(no road present in N or S tile)
+		31:	 return 3;	// E corner (road present in N and S tile)
+		15:  return 3;	// E corner (road present in N tile)
+		30:	 return 3;  // E corner (road present in S tile)
 		28:  return 4;	// SE block
-		56:  return 5;	// S corner
+		56:  return 5;	// S corner	(no road present in E or W tile)
+		124: return 5;	// S corner (road present in E and W tile)
+		60:  return 5;  // S corner (road present in E tile)
+		120: return 5;  // S corner (road present in W tile)
 		112: return 6;  // SW block
-		224: return 7;	// W corner
+		224: return 7;	// W corner (no road present in S or N tile)
+		241: return 7;  // W corner (road present in S and N tile)
+		240: return 7;  // W corner (road present in S tile)
+		225: return 7;  // W corner (road present in N tile)
 		193: return 8;	// NW block
 		return 0;
 }
