@@ -39,3 +39,43 @@ switch (FEAT_HOUSES, SELF, func_anim_frame, availability_years()) {
 		
 
 
+/*-----------------------------------------------------------------------------------------------------*/
+/*----------------------------- FUNCTIONS FOR ROAD-AWARE HOUSE TYPES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+// Detect the existence of road class tiles in the immediate vicinity of the house
+// Define eight cases for the possible sprites of road-aware house types and return them as numbers
+switch (FEAT_HOUSES, SELF, func_road_detect,
+		(nearby_tile_class(-1, -1) == TILE_CLASS_ROAD)*1 +	// N
+		(nearby_tile_class(-1,  0) == TILE_CLASS_ROAD)*2 +	// NE
+		(nearby_tile_class(-1,  1) == TILE_CLASS_ROAD)*4 +	// E
+		(nearby_tile_class( 0,  1) == TILE_CLASS_ROAD)*8 +	// SE
+		(nearby_tile_class( 1,  1) == TILE_CLASS_ROAD)*16 +	// S
+		(nearby_tile_class( 1,  0) == TILE_CLASS_ROAD)*32 +	// SW
+		(nearby_tile_class( 1, -1) == TILE_CLASS_ROAD)*64 +	// W
+		(nearby_tile_class( 0, -1) == TILE_CLASS_ROAD)*128 	// NW
+		) {
+		131: return 1;	// N corner
+		7:   return 2;	// NE block
+		14:  return 3;	// E corner
+		28:  return 4;	// SE block
+		56:  return 5;	// S corner
+		112: return 6;  // SW block
+		224: return 7;	// W corner
+		193: return 8;	// NW block
+		return 0;
+}
+
+// combine the output of the historical era and road detection functions
+// output every possible combination as an individual number
+switch (FEAT_HOUSES, SELF, func_anim_road, (func_anim_frame()*10) + func_road_detect()) {
+		0:   0; 1:   1; 2:   2; 3:   3; 4:   4; 5:   5; 6:   6; 7:   7; 8:   8;
+		10: 10; 11: 11; 12: 12; 13: 13; 14: 14; 15: 15; 16: 16; 17: 17; 18: 18;
+		20: 20; 21: 21; 22: 22; 23: 23; 24: 24; 25: 25; 26: 26; 27: 27; 28: 28;
+		30: 30; 31: 31; 32: 32; 33: 33; 34: 34; 35: 35; 36: 36; 37: 37; 38: 38;
+		40: 40; 41: 41; 42: 42; 43: 43; 44: 44; 45: 45; 46: 46; 47: 47; 48: 48;
+		50: 50; 51: 51; 52: 52; 53: 53; 54: 54; 55: 55; 56: 56; 57: 57; 58: 58;	
+}
+
+
+
