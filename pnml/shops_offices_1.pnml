@@ -1,0 +1,105 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x--------------------------------------- COMMERCIAL BUILDING ---------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era01 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_shops_offices_1_era01_N_001_g, "gfx/shops_offices_1_era01_N_001.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_shops_offices_1_era01_N_001_b, "gfx/shops_offices_1_era01_N_001.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era01 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_shops_offices_1_era01_N_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shops_offices_1_era01_N_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shops_offices_1_era01_N_001_b;  }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, shops_offices_1_town_type, func_town_type()) {
+		1: 0; 2: 0; 3: 1;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_shops_offices_1_era01_N) {
+		1: spritelayout_shops_offices_1_era01_N_001;
+}
+
+
+/* Switch for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_shops_offices_1, animation_frame) {
+		1: random_farm_house_era00;
+}
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_shops_offices_1, animation_frame) {
+	0:  func_anim_frame;
+	CB_RESULT_DO_NOTHING;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_shops_offices_1, 3, HOUSE_SIZE_1X1) {
+	property {
+		substitute:					29;
+		name:						string(STR_SHOPSOFFICES);
+		population:					95;
+		mail_multiplier:			50;
+		accepted_cargos:			[[PASS, 6], [MAIL, 3], [GOOD, 3]];
+		local_authority_impact:		110;
+		probability:				1;
+		years_available:			[1850, 9999];
+		minimum_lifetime:			10;
+		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
+		removal_cost_multiplier:	120;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		default:					era_switch_shops_offices_1;
+		anim_control:				era_anim_shops_offices_1;
+		construction_check:			shops_offices_1_town_type;
+	}
+}
