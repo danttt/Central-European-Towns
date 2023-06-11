@@ -1,4 +1,9 @@
-Central European Towns 0.0.1 (2023-XX-XX) (Build 1)
+Central European Towns 0.1.0 (2023-06-11) (Build 1)
 ----------------------------------------------------
-- 
-
+- First build within the new project management frame containing the elements listed below
+- English language file
+- Functions for town type and historical Era
+- Custom concrete ground sprite
+- House type farm house (including sprites, nml code and lang file entry; this info will be skipped 
+- House type town houses
+- House type shops and offices 1
