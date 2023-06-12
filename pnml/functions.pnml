@@ -46,14 +46,14 @@ switch (FEAT_HOUSES, SELF, func_anim_frame, availability_years()) {
 // Detect the existence of road class tiles in the immediate vicinity of the house
 // Define eight cases for the possible sprites of road-aware house types and return them as numbers
 switch (FEAT_HOUSES, SELF, func_road_detect,
-		(nearby_tile_class(-1, -1) == TILE_CLASS_ROAD)*1 +	// N
-		(nearby_tile_class(-1,  0) == TILE_CLASS_ROAD)*2 +	// NE
-		(nearby_tile_class(-1,  1) == TILE_CLASS_ROAD)*4 +	// E
-		(nearby_tile_class( 0,  1) == TILE_CLASS_ROAD)*8 +	// SE
-		(nearby_tile_class( 1,  1) == TILE_CLASS_ROAD)*16 +	// S
-		(nearby_tile_class( 1,  0) == TILE_CLASS_ROAD)*32 +	// SW
-		(nearby_tile_class( 1, -1) == TILE_CLASS_ROAD)*64 +	// W
-		(nearby_tile_class( 0, -1) == TILE_CLASS_ROAD)*128 	// NW
+		((nearby_tile_class(-1, -1) == TILE_CLASS_ROAD) || (nearby_tile_class(-1, -1) == TILE_CLASS_STATION))*1 +	// N
+		((nearby_tile_class(-1,  0) == TILE_CLASS_ROAD) || (nearby_tile_class(-1,  0) == TILE_CLASS_STATION))*2 +	// NE
+		((nearby_tile_class(-1,  1) == TILE_CLASS_ROAD) || (nearby_tile_class(-1,  1) == TILE_CLASS_STATION))*4 +	// E
+		((nearby_tile_class( 0,  1) == TILE_CLASS_ROAD) || (nearby_tile_class( 0,  1) == TILE_CLASS_STATION))*8 +	// SE
+		((nearby_tile_class( 1,  1) == TILE_CLASS_ROAD) || (nearby_tile_class( 1,  1) == TILE_CLASS_STATION))*16 +	// S
+		((nearby_tile_class( 1,  0) == TILE_CLASS_ROAD) || (nearby_tile_class( 1,  0) == TILE_CLASS_STATION))*32 +	// SW
+		((nearby_tile_class( 1, -1) == TILE_CLASS_ROAD) || (nearby_tile_class( 1, -1) == TILE_CLASS_STATION))*64 +	// W
+		((nearby_tile_class( 0, -1) == TILE_CLASS_ROAD) || (nearby_tile_class( 0, -1) == TILE_CLASS_STATION))*128 	// NW
 		) {
 		131: return 1;	// N corner (no road present in W or E tile)
 		199: return 1;  // N corner (road present in W and E tile)
