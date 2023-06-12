@@ -102,6 +102,7 @@ item (FEAT_HOUSES, item_town_houses, 2, HOUSE_SIZE_1X1) {
 		default:					era_switch_town_houses;
 		anim_control:				era_anim_town_houses;
 		construction_check:			town_houses_town_type;
+		protection:					func_old_town;
 	}
 }
 
