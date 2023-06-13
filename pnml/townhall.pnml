@@ -1,0 +1,119 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x-------------------------------------------- TOWN HALL --------------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era00 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_town_hall_era00_001_g, "gfx/town_hall_era00_001.PNG") { 	
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_town_hall_era00_001_b, "gfx/town_hall_era00_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era00 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_town_hall_era00_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_town_hall_era00_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_town_hall_era00_001_b;  }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switch for unique buildings */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, town_hall_unique, same_house_count_town) {
+        0: return 1;
+        return 0;
+}
+
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, town_hall_town_type, func_town_type()) {
+		1: 0; 2: town_hall_unique; 3: 0;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_town_hall_era00) {
+		1: spritelayout_town_hall_era00_001;
+}
+
+
+/* Switch for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_town_hall, animation_frame) {
+		0: random_town_hall_era00;
+		1: random_town_hall_era00;
+		2: random_town_hall_era00;
+		3: random_town_hall_era00;
+		4: random_town_hall_era00;
+}
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_town_hall, animation_frame) {
+	0:  func_anim_frame;
+	CB_RESULT_DO_NOTHING;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_town_hall, 5, HOUSE_SIZE_1X1) {
+	property {
+		substitute:					18;
+		name:						string(STR_TOWNHALL);
+		population:					30;
+		mail_multiplier:			50;
+		accepted_cargos:			[[PASS, 5], [MAIL, 4], [GOOD, 1]];
+		local_authority_impact:		255;
+		probability:				1;
+		years_available:			[1700, 9999];
+		minimum_lifetime:			50;
+		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
+		removal_cost_multiplier:	110;
+		building_class:				2;
+        building_flags:             bitmask(HOUSE_FLAG_PROTECTED)
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		default:					era_switch_town_hall;
+		anim_control:				era_anim_town_hall;
+		construction_check:			town_hall_town_type;
+	}
+}
