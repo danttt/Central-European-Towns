@@ -80,6 +80,7 @@ switch (FEAT_HOUSES, SELF, era_switch_town_hall, animation_frame) {
 		2: random_town_hall_era00;
 		3: random_town_hall_era00;
 		4: random_town_hall_era00;
+        5: random_town_hall_era00;
 }
 
 // This switch is called by the 'anim_control' callback and used for deciding which frame to use
