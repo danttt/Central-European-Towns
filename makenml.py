@@ -66,10 +66,17 @@ church.close()
 
 
 # Open the file containing the nml-code for this house type and append it to the "sections" list
-print ("Appending house type 'town_hall'...")
+print ("Appending house type 'town hall'...")
 town_hall = codecs.open("pnml/town_hall.pnml", 'r', 'utf8')
 sections.append(town_hall.read())
 town_hall.close()
+
+
+# Open the file containing the nml-code for this house type and append it to the "sections" list
+print ("Appending house type 'farm estate'...")
+farm_estate = codecs.open("pnml/farm_estate.pnml", 'r', 'utf8')
+sections.append(farm_estate.read())
+farm_estate.close()
 
 
 # Create the final .nml-file and make it writable
