@@ -1,3 +1,14 @@
+Central European Towns 0.2.0 (2023-06-13) (Build 2)
+----------------------------------------------------
+- FEATURE: road-awareness for block perimeter houses built in cities
+- FEATURE: old town creation for houses built prior to 1850 (era00)
+- ADD: house type church
+- ADD: house type town hall
+- ADD: house type farm estate
+- CHANGE: house type farm house is now limited to villages and town zones 2,3 and 4, in order to create denser village cores without so many fields or gardens (not yet implemented)
+- FIX: include stations into road-awareness function so that bus stops do not lead to wrong alignment
+
+
 Central European Towns 0.1.0 (2023-06-11) (Build 1)
 ----------------------------------------------------
 - First build within the new project management frame containing the elements listed below
