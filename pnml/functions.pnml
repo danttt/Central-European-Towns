@@ -97,25 +97,16 @@ switch (FEAT_HOUSES, SELF, func_anim_road, (func_anim_frame()*10) + func_road_de
 
 // Switch chain for generating an old town core typical for Central European towns
 
-// Define a 1/8 chance of an old building being protected
-random_switch (FEAT_HOUSES, SELF, random_old_town,) {
-	1: return 1;
-	7: return 0;
-}
-
-// Require another old town building within a radius of two tiles for protection
-switch (FEAT_HOUSES, SELF, func_old_town_3, nearest_house_matching_criterion(2, SEARCH_HOUSE_BY_CLASS)) {
+// Require a historic unique building ("initial church") to be present within a radius of 5 tiles
+switch (FEAT_HOUSES, SELF, func_old_town_2, (
+	(nearest_house_matching_criterion(5, SEARCH_HOUSE_BY_TYPE) == 0) && 
+	(nearest_house_matching_criterion(5, SEARCH_HOUSE_BY_CLASS) != 0))
+	) {
 		0: return 0;
 		return 1;
 }
 
-// Define that protection can only be enabled given the existence of an "initial" church in town
-switch (FEAT_HOUSES, SELF, func_old_town_2, other_house_count_town(4)) {
-		1: func_old_town_3;
-		random_old_town;
-}
-
-// Define protection to be limited to the time after 1919 (era01)
+// Define protection to be limited to the time after 1850 (era00)
 switch (FEAT_HOUSES, SELF, func_old_town, (current_year > 1850)) {
 		0: return 0;
 		func_old_town_2;
