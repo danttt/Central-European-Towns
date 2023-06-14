@@ -37,6 +37,13 @@ sections.append(ground_sprites.read())
 ground_sprites.close()
 
 
+# Open the file containing the nml-code for the custom ground sprites this set provides and append it to the "sections" list
+print ("Appending farm fields...")
+farm_fields = codecs.open("pnml/farm_fields.pnml", 'r', 'utf8')
+sections.append(farm_fields.read())
+farm_fields.close()
+
+
 # Open the file containing the nml-code for this house type and append it to the "sections" list
 print ("Appending house type 'farm house'...")
 farm_house = codecs.open("pnml/farm_house.pnml", 'r', 'utf8')
@@ -77,6 +84,13 @@ print ("Appending house type 'farm estate'...")
 farm_estate = codecs.open("pnml/farm_estate.pnml", 'r', 'utf8')
 sections.append(farm_estate.read())
 farm_estate.close()
+
+
+# Open the file containing the nml-code for this house type and append it to the "sections" list
+print ("Appending house type 'small farm'...")
+small_farm = codecs.open("pnml/small_farm.pnml", 'r', 'utf8')
+sections.append(small_farm.read())
+small_farm.close()
 
 
 # Create the final .nml-file and make it writable
