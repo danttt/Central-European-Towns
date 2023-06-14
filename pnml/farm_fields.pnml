@@ -1,0 +1,115 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x------------------------------------------- FARM FIELDS -------------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/* Farm fields are used by small farms and have no item of their own */
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset (spriteset_farm_fields) {
+	f001: [  0, 0, 90, 80, -44, -29, "gfx/farm_fields.PNG"]
+    f002: [100, 0, 90, 80, -44, -29, "gfx/farm_fields.PNG"]
+    f003: [200, 0, 90, 80, -44, -29, "gfx/farm_fields.PNG"]
+    f004: [300, 0, 90, 80, -44, -29, "gfx/farm_fields.PNG"]
+    f005: [400, 0, 90, 80, -44, -29, "gfx/farm_fields.PNG"]
+    f006: [500, 0, 90, 80, -44, -29, "gfx/farm_fields.PNG"]
+    f007: [600, 0, 90, 80, -44, -29, "gfx/farm_fields.PNG"]
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_farm_fields_001 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; } 
+	building {
+		sprite: spriteset_farm_fields_(f001);
+		always_draw: 1; }
+}
+
+spritelayout spritelayout_farm_fields_002 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; } 
+	building {
+		sprite: spriteset_farm_fields_(f002);
+		always_draw: 1; }
+}
+
+spritelayout spritelayout_farm_fields_003 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; } 
+	building {
+		sprite: spriteset_farm_fields_(f003);
+		always_draw: 1; }
+}
+
+spritelayout spritelayout_farm_fields_004 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; } 
+	building {
+		sprite: spriteset_farm_fields_(f004);
+		always_draw: 1; }
+}
+
+spritelayout spritelayout_farm_fields_005 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; } 
+	building {
+		sprite: spriteset_farm_fields_(f005);
+		always_draw: 1; }
+}
+
+spritelayout spritelayout_farm_fields_006 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; } 
+	building {
+		sprite: spriteset_farm_fields_(f006);
+		always_draw: 1; }
+}
+
+spritelayout spritelayout_farm_fields_007 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; } 
+	building {
+		sprite: spriteset_farm_fields_(f007);
+		always_draw: 1; }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Random switches for the sets of spritelayouts */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_farm_fields) {
+		2: spritelayout_farm_fields_001;
+        2: spritelayout_farm_fields_002;
+        1: spritelayout_farm_fields_003;
+        1: spritelayout_farm_fields_004;
+        1: spritelayout_farm_fields_005;
+        2: spritelayout_farm_fields_006;
+        2: spritelayout_farm_fields_007;
+}
+
+
+
