@@ -1,0 +1,135 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x------------------------------------------- SMALL FARM --------------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/* This 1x2/2x1 (road-dependent) house type uses sprites of house type farm house and farm fields sprites for the other tile */
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switches for the construction check callback */
+/* --------------------------------------------------------------------------------------------------- */
+
+// Small farms have their house tile always where the road is
+// they can only be built in villages (func_town_type(1))
+switch (FEAT_HOUSES, SELF, small_farm_nw_road, (nearby_tile_class(-1, 0) == 1) + func_town_type()) {
+		1: return 1;
+		return 0;
+}
+switch (FEAT_HOUSES, SELF, small_farm_en_road, (nearby_tile_class(-1, 0) == 1) + func_town_type()) {
+		1: return 1;
+		return 0;
+}
+switch (FEAT_HOUSES, SELF, small_farm_wn_road, (nearby_tile_class(-1, 0) == 1) + func_town_type()) {
+		1: return 1;
+		return 0;
+}
+switch (FEAT_HOUSES, SELF, small_farm_ne_road, (nearby_tile_class(-1, 0) == 1) + func_town_type()) {
+		1: return 1;
+		return 0;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_small_farm_nw, 7, HOUSE_SIZE_2X1) {
+	property {
+		substitute:					74;
+		name:						string(STR_SMALLFARM);
+		population:					12;
+		mail_multiplier:			7;
+		accepted_cargos:			[[PASS, 3], [MAIL, 1], [GOOD, 0]];
+		local_authority_impact:		75;
+		probability:				1;
+		years_available:			[1700, 1949];
+		minimum_lifetime:			5;
+		availability_mask:			[bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB), ALL_CLIMATES];
+		removal_cost_multiplier:	75;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		graphics_north:				era_switch_farm_house;
+		graphics_west:				random_farm_fields;
+		construction_check:			small_farm_nw_road;
+	}
+}
+
+item (FEAT_HOUSES, item_small_farm_ne, 8, HOUSE_SIZE_1X2) {
+	property {
+		substitute:					07;
+		name:						string(STR_SMALLFARM);
+		population:					12;
+		mail_multiplier:			7;
+		accepted_cargos:			[[PASS, 3], [MAIL, 1], [GOOD, 0]];
+		local_authority_impact:		75;
+		probability:				1;
+		years_available:			[1700, 1949];
+		minimum_lifetime:			5;
+		availability_mask:			[bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB), ALL_CLIMATES];
+		removal_cost_multiplier:	75;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		graphics_north:				era_switch_farm_house;
+		graphics_east:				random_farm_fields;
+		construction_check:			small_farm_ne_road;
+	}
+}
+
+item (FEAT_HOUSES, item_small_farm_wn, 9, HOUSE_SIZE_2X1) {
+	property {
+		substitute:					74;
+		name:						string(STR_SMALLFARM);
+		population:					12;
+		mail_multiplier:			7;
+		accepted_cargos:			[[PASS, 3], [MAIL, 1], [GOOD, 0]];
+		local_authority_impact:		75;
+		probability:				1;
+		years_available:			[1700, 1949];
+		minimum_lifetime:			5;
+		availability_mask:			[bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB), ALL_CLIMATES];
+		removal_cost_multiplier:	75;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		graphics_north:				random_farm_fields;
+		graphics_west:				era_switch_farm_house;
+		construction_check:			small_farm_wn_road;
+	}
+}
+
+item (FEAT_HOUSES, item_small_farm_en, 10, HOUSE_SIZE_1X2) {
+	property {
+		substitute:					07;
+		name:						string(STR_SMALLFARM);
+		population:					12;
+		mail_multiplier:			7;
+		accepted_cargos:			[[PASS, 3], [MAIL, 1], [GOOD, 0]];
+		local_authority_impact:		75;
+		probability:				1;
+		years_available:			[1700, 1949];
+		minimum_lifetime:			5;
+		availability_mask:			[bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB), ALL_CLIMATES];
+		removal_cost_multiplier:	75;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		graphics_north:				random_farm_fields;
+		graphics_east:				era_switch_farm_house;
+		construction_check:			small_farm_en_road;
+	}
+}
