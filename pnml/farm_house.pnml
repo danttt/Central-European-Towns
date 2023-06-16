@@ -55,20 +55,6 @@ spriteset(spriteset_farm_house_era00_006_b, "gfx/farm_house_era00_006.PNG") {
 	tmpl_small_houses_building (0, 0)
 }
 
-spriteset(spriteset_farm_house_era00_007_g, "gfx/farm_house_era00_007.PNG") {
-	tmpl_small_houses_ground (0, 0)
-}
-spriteset(spriteset_farm_house_era00_007_b, "gfx/farm_house_era00_007.PNG") {
-	tmpl_small_houses_building (0, 0)
-}
-
-spriteset(spriteset_farm_house_era00_008_g, "gfx/farm_house_era00_008.PNG") {
-	tmpl_small_houses_ground (0, 0)
-}
-spriteset(spriteset_farm_house_era00_008_b, "gfx/farm_house_era00_008.PNG") {
-	tmpl_small_houses_building (0, 0)
-}
-
 
 /* Spritesets for era01 */
 /* --------------------------------------------------------------------------------------------------- */
@@ -98,6 +84,20 @@ spriteset(spriteset_farm_house_era01_004_g, "gfx/farm_house_era01_004.PNG") {
 	tmpl_small_houses_ground (0, 0)
 }
 spriteset(spriteset_farm_house_era01_004_b, "gfx/farm_house_era01_004.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_farm_house_era01_005_g, "gfx/farm_house_era01_005.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_farm_house_era01_005_b, "gfx/farm_house_era01_005.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_farm_house_era01_006_g, "gfx/farm_house_era01_006.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_farm_house_era01_006_b, "gfx/farm_house_era01_006.PNG") {
 	tmpl_small_houses_building (0, 0)
 }
 
@@ -170,26 +170,6 @@ spritelayout spritelayout_farm_house_era00_006 {
 		sprite: spriteset_farm_house_era00_006_b;  }
 }
 
-spritelayout spritelayout_farm_house_era00_007 {
-	ground { 
-		sprite: GROUNDSPRITE_NORMAL; }
-	childsprite {
-		sprite: spriteset_farm_house_era00_007_g; 
-		always_draw: 1; }
-	building {
-		sprite: spriteset_farm_house_era00_007_b;  }
-}
-
-spritelayout spritelayout_farm_house_era00_008 {
-	ground { 
-		sprite: GROUNDSPRITE_NORMAL; }
-	childsprite {
-		sprite: spriteset_farm_house_era00_008_g; 
-		always_draw: 1; }
-	building {
-		sprite: spriteset_farm_house_era00_008_b;  }
-}
-
 
 /* Spritelayouts for era01 */
 /* --------------------------------------------------------------------------------------------------- */
@@ -234,6 +214,26 @@ spritelayout spritelayout_farm_house_era01_004 {
 		sprite: spriteset_farm_house_era01_004_b;  }
 }
 
+spritelayout spritelayout_farm_house_era01_005 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_farm_house_era01_005_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_farm_house_era01_005_b;  }
+}
+
+spritelayout spritelayout_farm_house_era01_006 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_farm_house_era01_006_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_farm_house_era01_006_b;  }
+}
+
 
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -258,8 +258,6 @@ random_switch (FEAT_HOUSES, SELF, random_farm_house_era00) {
 		1: spritelayout_farm_house_era00_004;
 		1: spritelayout_farm_house_era00_005;
 		1: spritelayout_farm_house_era00_006;
-		1: spritelayout_farm_house_era00_007;
-		1: spritelayout_farm_house_era00_008;
 }
 
 random_switch (FEAT_HOUSES, SELF, random_farm_house_era01) {
@@ -267,6 +265,8 @@ random_switch (FEAT_HOUSES, SELF, random_farm_house_era01) {
 		1: spritelayout_farm_house_era01_002;
 		1: spritelayout_farm_house_era01_003;
 		1: spritelayout_farm_house_era01_004;
+		1: spritelayout_farm_house_era00_005;
+		1: spritelayout_farm_house_era00_006;
 }
 
 
