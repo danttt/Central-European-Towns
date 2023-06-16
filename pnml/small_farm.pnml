@@ -18,31 +18,47 @@
 /* --------------------------------------------------------------------------------------------------- */
 
 // Small farms have their house tile always where the road is
-// they can only be built in villages (func_town_type(1))
-switch (FEAT_HOUSES, SELF, small_farm_nw_road, (nearby_tile_class(-1, 0) == 1) + func_town_type()) {
-		1: return 1;
+switch (FEAT_HOUSES, SELF, small_farm_nw_road, nearby_tile_class(-1, 0)) {
+		TILE_CLASS_ROAD: return 1;
 		return 0;
 }
-switch (FEAT_HOUSES, SELF, small_farm_en_road, (nearby_tile_class(-1, 0) == 1) + func_town_type()) {
-		1: return 1;
+switch (FEAT_HOUSES, SELF, small_farm_ne_road, nearby_tile_class(0, -1)) {
+		TILE_CLASS_ROAD: return 1;
 		return 0;
 }
-switch (FEAT_HOUSES, SELF, small_farm_wn_road, (nearby_tile_class(-1, 0) == 1) + func_town_type()) {
-		1: return 1;
+switch (FEAT_HOUSES, SELF, small_farm_wn_road, nearby_tile_class(2, 0)) {
+		TILE_CLASS_ROAD: return 1;
 		return 0;
 }
-switch (FEAT_HOUSES, SELF, small_farm_ne_road, (nearby_tile_class(-1, 0) == 1) + func_town_type()) {
-		1: return 1;
+switch (FEAT_HOUSES, SELF, small_farm_en_road, nearby_tile_class(0, 2)) {
+		TILE_CLASS_ROAD: return 1;
 		return 0;
 }
 
+
+
+/* Switches defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, small_farm_nw_town_type, func_town_type()) {
+		1: small_farm_nw_road; 2: 0; 3: 0;
+}
+switch (FEAT_HOUSES, SELF, small_farm_ne_town_type, func_town_type()) {
+		1: small_farm_ne_road; 2: 0; 3: 0;
+}
+switch (FEAT_HOUSES, SELF, small_farm_wn_town_type, func_town_type()) {
+		1: small_farm_wn_road; 2: 0; 3: 0;
+}
+switch (FEAT_HOUSES, SELF, small_farm_en_town_type, func_town_type()) {
+		1: small_farm_en_road; 2: 0; 3: 0;
+}
 
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-item (FEAT_HOUSES, item_small_farm_nw, 7, HOUSE_SIZE_2X1) {
+item (FEAT_HOUSES, item_small_farm_nw, 10, HOUSE_SIZE_2X1) {
 	property {
 		substitute:					74;
 		name:						string(STR_SMALLFARM);
@@ -61,11 +77,12 @@ item (FEAT_HOUSES, item_small_farm_nw, 7, HOUSE_SIZE_2X1) {
 	graphics {
 		graphics_north:				era_switch_farm_house;
 		graphics_west:				random_farm_fields;
-		construction_check:			small_farm_nw_road;
+		anim_control:				era_anim_farm_house;
+		construction_check:			small_farm_nw_town_type;
 	}
 }
 
-item (FEAT_HOUSES, item_small_farm_ne, 8, HOUSE_SIZE_1X2) {
+item (FEAT_HOUSES, item_small_farm_ne, 12, HOUSE_SIZE_1X2) {
 	property {
 		substitute:					07;
 		name:						string(STR_SMALLFARM);
@@ -84,11 +101,12 @@ item (FEAT_HOUSES, item_small_farm_ne, 8, HOUSE_SIZE_1X2) {
 	graphics {
 		graphics_north:				era_switch_farm_house;
 		graphics_east:				random_farm_fields;
-		construction_check:			small_farm_ne_road;
+		anim_control:				era_anim_farm_house;
+		construction_check:			small_farm_ne_town_type;
 	}
 }
 
-item (FEAT_HOUSES, item_small_farm_wn, 9, HOUSE_SIZE_2X1) {
+item (FEAT_HOUSES, item_small_farm_wn, 14, HOUSE_SIZE_2X1) {
 	property {
 		substitute:					74;
 		name:						string(STR_SMALLFARM);
@@ -107,11 +125,12 @@ item (FEAT_HOUSES, item_small_farm_wn, 9, HOUSE_SIZE_2X1) {
 	graphics {
 		graphics_north:				random_farm_fields;
 		graphics_west:				era_switch_farm_house;
-		construction_check:			small_farm_wn_road;
+		anim_control:				era_anim_farm_house;
+		construction_check:			small_farm_wn_town_type;
 	}
 }
 
-item (FEAT_HOUSES, item_small_farm_en, 10, HOUSE_SIZE_1X2) {
+item (FEAT_HOUSES, item_small_farm_en, 16, HOUSE_SIZE_1X2) {
 	property {
 		substitute:					07;
 		name:						string(STR_SMALLFARM);
@@ -130,6 +149,7 @@ item (FEAT_HOUSES, item_small_farm_en, 10, HOUSE_SIZE_1X2) {
 	graphics {
 		graphics_north:				random_farm_fields;
 		graphics_east:				era_switch_farm_house;
-		construction_check:			small_farm_en_road;
+		anim_control:				era_anim_farm_house;
+		construction_check:			small_farm_en_town_type;
 	}
 }

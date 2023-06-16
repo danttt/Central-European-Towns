@@ -40,7 +40,7 @@ spritelayout spritelayout_farm_fields_001 {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; } 
 	building {
-		sprite: spriteset_farm_fields_(f001);
+		sprite: spriteset_farm_fields(f001);
 		always_draw: 1; }
 }
 
@@ -48,7 +48,7 @@ spritelayout spritelayout_farm_fields_002 {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; } 
 	building {
-		sprite: spriteset_farm_fields_(f002);
+		sprite: spriteset_farm_fields(f002);
 		always_draw: 1; }
 }
 
@@ -56,7 +56,7 @@ spritelayout spritelayout_farm_fields_003 {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; } 
 	building {
-		sprite: spriteset_farm_fields_(f003);
+		sprite: spriteset_farm_fields(f003);
 		always_draw: 1; }
 }
 
@@ -64,7 +64,7 @@ spritelayout spritelayout_farm_fields_004 {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; } 
 	building {
-		sprite: spriteset_farm_fields_(f004);
+		sprite: spriteset_farm_fields(f004);
 		always_draw: 1; }
 }
 
@@ -72,7 +72,7 @@ spritelayout spritelayout_farm_fields_005 {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; } 
 	building {
-		sprite: spriteset_farm_fields_(f005);
+		sprite: spriteset_farm_fields(f005);
 		always_draw: 1; }
 }
 
@@ -80,7 +80,7 @@ spritelayout spritelayout_farm_fields_006 {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; } 
 	building {
-		sprite: spriteset_farm_fields_(f006);
+		sprite: spriteset_farm_fields(f006);
 		always_draw: 1; }
 }
 
@@ -88,7 +88,7 @@ spritelayout spritelayout_farm_fields_007 {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; } 
 	building {
-		sprite: spriteset_farm_fields_(f007);
+		sprite: spriteset_farm_fields(f007);
 		always_draw: 1; }
 }
 
