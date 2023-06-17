@@ -1,0 +1,165 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x-------------------------------------------- WORKSHOP ---------------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era00 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_workshop_era00_001_g, "gfx/workshop_era00_001.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_workshop_era00_001_b, "gfx/workshop_era00_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+
+/* Spritesets for era01 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_workshop_era01_001_g, "gfx/workshop_era01_001.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_workshop_era01_001_b, "gfx/workshop_era01_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+
+/* Spritesets for era02 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_workshop_era02_001_g, "gfx/workshop_era02_001.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_workshop_era02_001_b, "gfx/workshop_era02_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era00 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_workshop_era00_001 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_workshop_era00_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_workshop_era00_001_b;  }
+}
+
+
+/* Spritelayouts for era02 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_workshop_era01_001 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_workshop_era01_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_workshop_era01_001_b;  }
+}
+
+
+/* Spritelayouts for era02 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_workshop_era02_001 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_workshop_era02_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_workshop_era02_001_b;  }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, workshop_v_town_type, func_town_type()) {
+		1: 1; 2: 0; 3: 0;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_workshop_era00) {
+		1: spritelayout_workshop_era00_001;
+}
+
+random_switch (FEAT_HOUSES, SELF, random_workshop_era01) {
+		1: spritelayout_workshop_era01_001;
+}
+
+random_switch (FEAT_HOUSES, SELF, random_workshop_era02) {
+		1: spritelayout_workshop_era02_001;
+}
+
+
+/* Switch for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_workshop, animation_frame) {
+		0: random_workshop_era00;
+		1: random_workshop_era01;
+		random_workshop_era02;
+}
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_workshop, animation_frame) {
+	0:  func_anim_frame;
+	CB_RESULT_DO_NOTHING;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_workshop_v, 19, HOUSE_SIZE_1X1) {
+	property {
+		substitute:					14;
+		name:						string(STR_WORKSHOP);
+		population:					18;
+		mail_multiplier:			10;
+		accepted_cargos:			[[PASS, 4], [MAIL, 1], [GOOD, 1]];
+		local_authority_impact:		90;
+		probability:				1;
+		years_available:			[1700, 1949];
+		minimum_lifetime:			10;
+		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
+		removal_cost_multiplier:	90;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		default:					era_switch_workshop;
+		anim_control:				era_anim_workshop;
+		construction_check:			workshop_v_town_type;
+	}
+}
