@@ -9,7 +9,7 @@ STR_GRF_DESC							:Full town replacement set with houses from Central Europe. G
 STR_CHURCH                              :Church
 STR_FARMESTATE                          :Farm Estate
 STR_FARMHOUSE                           :Farm House
-STR_FARMHOUSE                           :House
+STR_HOUSE                               :House
 STR_SCHOOL                              :School
 STR_SHOPSOFFICES                        :Shops and Offices
 STR_SMALLFARM                           :Small Farm

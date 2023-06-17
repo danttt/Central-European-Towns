@@ -93,6 +93,27 @@ sections.append(small_farm.read())
 small_farm.close()
 
 
+# Open the file containing the nml-code for this house type and append it to the "sections" list
+print ("Appending house type 'school'...")
+school = codecs.open("pnml/school.pnml", 'r', 'utf8')
+sections.append(school.read())
+school.close()
+
+
+# Open the file containing the nml-code for this house type and append it to the "sections" list
+print ("Appending house type 'old house'...")
+old_house = codecs.open("pnml/old_house.pnml", 'r', 'utf8')
+sections.append(old_house.read())
+old_house.close()
+
+
+# Open the file containing the nml-code for this house type and append it to the "sections" list
+print ("Appending house type 'workshop'...")
+workshop = codecs.open("pnml/workshop.pnml", 'r', 'utf8')
+sections.append(workshop.read())
+workshop.close()
+
+
 # Create the final .nml-file and make it writable
 # Then write the "sections" list into 'cet.nml' using new lines for each part
 print ("Creating NML file...")
