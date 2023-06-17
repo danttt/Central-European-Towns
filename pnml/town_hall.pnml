@@ -10,13 +10,13 @@
 /*-------------------------------------------- SPRITESETS ---------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Spritesets for era00 */
+/* Spritesets for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spriteset(spriteset_town_hall_era00_001_g, "gfx/town_hall_era00_001.PNG") { 	
+spriteset(spriteset_town_hall_era01_001_g, "gfx/town_hall_era01_001.PNG") { 	
 	tmpl_small_houses_ground (0, 0)
 }
-spriteset(spriteset_town_hall_era00_001_b, "gfx/town_hall_era00_001.PNG") {
+spriteset(spriteset_town_hall_era01_001_b, "gfx/town_hall_era01_001.PNG") {
 	tmpl_small_houses_building (0, 0)
 }
 
@@ -26,17 +26,17 @@ spriteset(spriteset_town_hall_era00_001_b, "gfx/town_hall_era00_001.PNG") {
 /*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Spritelayouts for era00 */
+/* Spritelayouts for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spritelayout spritelayout_town_hall_era00_001 {
+spritelayout spritelayout_town_hall_era01_001 {
 	ground { 
 		sprite: spriteset_ground_sprite_concrete; }
 	childsprite {
-		sprite: spriteset_town_hall_era00_001_g; 
+		sprite: spriteset_town_hall_era01_001_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_town_hall_era00_001_b;  }
+		sprite: spriteset_town_hall_era01_001_b;  }
 }
 
 
@@ -65,8 +65,8 @@ switch (FEAT_HOUSES, SELF, town_hall_town_type, func_town_type()) {
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
 
-random_switch (FEAT_HOUSES, SELF, random_town_hall_era00) {
-		1: spritelayout_town_hall_era00_001;
+random_switch (FEAT_HOUSES, SELF, random_town_hall_era01) {
+		1: spritelayout_town_hall_era01_001;
 }
 
 
@@ -75,12 +75,12 @@ random_switch (FEAT_HOUSES, SELF, random_town_hall_era00) {
 
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
 switch (FEAT_HOUSES, SELF, era_switch_town_hall, animation_frame) {
-		0: random_town_hall_era00;
-		1: random_town_hall_era00;
-		2: random_town_hall_era00;
-		3: random_town_hall_era00;
-		4: random_town_hall_era00;
-        5: random_town_hall_era00;
+		1: random_town_hall_era01;
+		2: random_town_hall_era01;
+		3: random_town_hall_era01;
+		4: random_town_hall_era01;
+		5: random_town_hall_era01;
+        6: random_town_hall_era01;
 }
 
 // This switch is called by the 'anim_control' callback and used for deciding which frame to use

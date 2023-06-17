@@ -10,17 +10,6 @@
 /*-------------------------------------------- SPRITESETS ---------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Spritesets for era00 */
-/* --------------------------------------------------------------------------------------------------- */
-
-spriteset(spriteset_school_era00_001_g, "gfx/school_era00_001.PNG") { 	
-	tmpl_small_houses_ground (0, 0)
-}
-spriteset(spriteset_school_era00_001_b, "gfx/school_era00_001.PNG") {
-	tmpl_small_houses_building (0, 0)
-}
-
-
 /* Spritesets for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
@@ -32,13 +21,13 @@ spriteset(spriteset_school_era01_001_b, "gfx/school_era01_001.PNG") {
 }
 
 
-/* Spritesets for era04 */
+/* Spritesets for era02 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spriteset(spriteset_school_era04_001_g, "gfx/school_era04_001.PNG") { 	
+spriteset(spriteset_school_era02_001_g, "gfx/school_era02_001.PNG") { 	
 	tmpl_small_houses_ground (0, 0)
 }
-spriteset(spriteset_school_era04_001_b, "gfx/school_era04_001.PNG") {
+spriteset(spriteset_school_era02_001_b, "gfx/school_era02_001.PNG") {
 	tmpl_small_houses_building (0, 0)
 }
 
@@ -54,24 +43,21 @@ spriteset(spriteset_school_era05_001_b, "gfx/school_era05_001.PNG") {
 }
 
 
+/* Spritesets for era06 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_school_era06_001_g, "gfx/school_era06_001.PNG") { 	
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_school_era06_001_b, "gfx/school_era06_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
-
-/* Spritelayouts for era00 */
-/* --------------------------------------------------------------------------------------------------- */
-
-spritelayout spritelayout_school_era00_001 {
-	ground { 
-		sprite: GROUNDSPRITE_NORMAL; }
-	childsprite {
-		sprite: spriteset_school_era00_001_g; 
-		always_draw: 1; }
-	building {
-		sprite: spriteset_school_era00_001_b;  }
-}
-
 
 /* Spritelayouts for era01 */
 /* --------------------------------------------------------------------------------------------------- */
@@ -87,17 +73,17 @@ spritelayout spritelayout_school_era01_001 {
 }
 
 
-/* Spritelayouts for era04 */
+/* Spritelayouts for era02 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spritelayout spritelayout_school_era04_001 {
+spritelayout spritelayout_school_era02_001 {
 	ground { 
-		sprite: spriteset_ground_sprite_concrete; }
+		sprite: GROUNDSPRITE_NORMAL; }
 	childsprite {
-		sprite: spriteset_school_era04_001_g; 
+		sprite: spriteset_school_era02_001_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_school_era04_001_b;  }
+		sprite: spriteset_school_era02_001_b;  }
 }
 
 
@@ -112,6 +98,20 @@ spritelayout spritelayout_school_era05_001 {
 		always_draw: 1; }
 	building {
 		sprite: spriteset_school_era05_001_b;  }
+}
+
+
+/* Spritelayouts for era06 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_school_era06_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_school_era06_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_school_era06_001_b;  }
 }
 
 
@@ -140,28 +140,28 @@ switch (FEAT_HOUSES, SELF, school_v_town_type, func_town_type()) {
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
 
-random_switch (FEAT_HOUSES, SELF, random_school_era00) {
-		1: spritelayout_school_era00_001;
-}
-
 random_switch (FEAT_HOUSES, SELF, random_school_era01) {
 		1: spritelayout_school_era01_001;
 }
 
 random_switch (FEAT_HOUSES, SELF, random_school_era02) {
-		1: spritelayout_school_era01_001;
+		1: spritelayout_school_era02_001;
 }
 
 random_switch (FEAT_HOUSES, SELF, random_school_era03) {
-		1: spritelayout_school_era01_001;
+		1: spritelayout_school_era02_001;
 }
 
 random_switch (FEAT_HOUSES, SELF, random_school_era04) {
-		1: spritelayout_school_era04_001;
+		1: spritelayout_school_era02_001;
 }
 
 random_switch (FEAT_HOUSES, SELF, random_school_era05) {
 		1: spritelayout_school_era05_001;
+}
+
+random_switch (FEAT_HOUSES, SELF, random_school_era06) {
+		1: spritelayout_school_era06_001;
 }
 
 
@@ -170,12 +170,12 @@ random_switch (FEAT_HOUSES, SELF, random_school_era05) {
 
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
 switch (FEAT_HOUSES, SELF, era_switch_school, animation_frame) {
-		0: random_school_era00;
-        1: random_school_era01;
-		2: random_school_era01;
-		3: random_school_era01;
-        4: random_school_era04;
-		5: random_school_era05;
+		1: random_school_era01;
+        2: random_school_era02;
+		3: random_school_era02;
+		4: random_school_era02;
+        5: random_school_era05;
+		6: random_school_era06;
 }
 
 // This switch is called by the 'anim_control' callback and used for deciding which frame to use

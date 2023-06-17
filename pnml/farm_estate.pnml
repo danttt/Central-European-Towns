@@ -10,31 +10,31 @@
 /*-------------------------------------------- SPRITESETS ---------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Spritesets for era00 */
+/* Spritesets for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spriteset(spriteset_farm_estate_era00_001_N_g, "gfx/farm_estate_era00_001.png") { 		
+spriteset(spriteset_farm_estate_era01_001_N_g, "gfx/farm_estate_era01_001.png") { 		
 	tmpl_small_houses_ground (0, 0)
 }
-spriteset(spriteset_farm_estate_era00_001_N_b, "gfx/farm_estate_era00_001.png") {
+spriteset(spriteset_farm_estate_era01_001_N_b, "gfx/farm_estate_era01_001.png") {
 	tmpl_small_houses_building (0, 0)
 }
-spriteset(spriteset_farm_estate_era00_001_E_g, "gfx/farm_estate_era00_001.png") {
+spriteset(spriteset_farm_estate_era01_001_E_g, "gfx/farm_estate_era01_001.png") {
 	tmpl_small_houses_ground (0, 100)
 }
-spriteset(spriteset_farm_estate_era00_001_E_b, "gfx/farm_estate_era00_001.png") {
+spriteset(spriteset_farm_estate_era01_001_E_b, "gfx/farm_estate_era01_001.png") {
 	tmpl_small_houses_building (0, 100)
 }
-spriteset(spriteset_farm_estate_era00_001_S_g, "gfx/farm_estate_era00_001.png") { 		
+spriteset(spriteset_farm_estate_era01_001_S_g, "gfx/farm_estate_era01_001.png") { 		
 	tmpl_small_houses_ground (0, 200)
 }
-spriteset(spriteset_farm_estate_era00_001_S_b, "gfx/farm_estate_era00_001.png") {
+spriteset(spriteset_farm_estate_era01_001_S_b, "gfx/farm_estate_era01_001.png") {
 	tmpl_small_houses_building (0, 200)
 }
-spriteset(spriteset_farm_estate_era00_001_W_g, "gfx/farm_estate_era00_001.png") {
+spriteset(spriteset_farm_estate_era01_001_W_g, "gfx/farm_estate_era01_001.png") {
 	tmpl_small_houses_ground (0, 300)
 }
-spriteset(spriteset_farm_estate_era00_001_W_b, "gfx/farm_estate_era00_001.png") {
+spriteset(spriteset_farm_estate_era01_001_W_b, "gfx/farm_estate_era01_001.png") {
 	tmpl_small_houses_building (0, 300)
 }
 
@@ -44,44 +44,44 @@ spriteset(spriteset_farm_estate_era00_001_W_b, "gfx/farm_estate_era00_001.png") 
 /*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Spritelayouts for era00 */
+/* Spritelayouts for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spritelayout spritelayout_farm_estate_era00_001_N {
+spritelayout spritelayout_farm_estate_era01_001_N {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; }
 	childsprite {
-		sprite: spriteset_farm_estate_era00_001_N_g; 
+		sprite: spriteset_farm_estate_era01_001_N_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_farm_estate_era00_001_N_b;  }
+		sprite: spriteset_farm_estate_era01_001_N_b;  }
 }
-spritelayout spritelayout_farm_estate_era00_001_E {
+spritelayout spritelayout_farm_estate_era01_001_E {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; }
 	childsprite {
-		sprite: spriteset_farm_estate_era00_001_E_g; 
+		sprite: spriteset_farm_estate_era01_001_E_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_farm_estate_era00_001_E_b;  }
+		sprite: spriteset_farm_estate_era01_001_E_b;  }
 }
-spritelayout spritelayout_farm_estate_era00_001_S {
+spritelayout spritelayout_farm_estate_era01_001_S {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; }
 	childsprite {
-		sprite: spriteset_farm_estate_era00_001_S_g; 
+		sprite: spriteset_farm_estate_era01_001_S_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_farm_estate_era00_001_S_b;  }
+		sprite: spriteset_farm_estate_era01_001_S_b;  }
 }
-spritelayout spritelayout_farm_estate_era00_001_W {
+spritelayout spritelayout_farm_estate_era01_001_W {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; }
 	childsprite {
-		sprite: spriteset_farm_estate_era00_001_W_g; 
+		sprite: spriteset_farm_estate_era01_001_W_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_farm_estate_era00_001_W_b;  }
+		sprite: spriteset_farm_estate_era01_001_W_b;  }
 }
 
 
@@ -110,21 +110,21 @@ switch (FEAT_HOUSES, SELF, farm_estate_town_type, func_town_type()) {
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
 
-random_switch (FEAT_HOUSES, SELF, random_farm_estate_era00_N) {
-		1: spritelayout_farm_estate_era00_001_N;
-		1: spritelayout_farm_estate_era00_001_N;
+random_switch (FEAT_HOUSES, SELF, random_farm_estate_era01_N) {
+		1: spritelayout_farm_estate_era01_001_N;
+		1: spritelayout_farm_estate_era01_001_N;
 }
-random_switch (FEAT_HOUSES, SELF, random_farm_estate_era00_E) {
-		1: spritelayout_farm_estate_era00_001_E;
-		1: spritelayout_farm_estate_era00_001_E;
+random_switch (FEAT_HOUSES, SELF, random_farm_estate_era01_E) {
+		1: spritelayout_farm_estate_era01_001_E;
+		1: spritelayout_farm_estate_era01_001_E;
 }
-random_switch (FEAT_HOUSES, SELF, random_farm_estate_era00_S) {
-		1: spritelayout_farm_estate_era00_001_S;
-		1: spritelayout_farm_estate_era00_001_S;
+random_switch (FEAT_HOUSES, SELF, random_farm_estate_era01_S) {
+		1: spritelayout_farm_estate_era01_001_S;
+		1: spritelayout_farm_estate_era01_001_S;
 }
-random_switch (FEAT_HOUSES, SELF, random_farm_estate_era00_W) {
-		1: spritelayout_farm_estate_era00_001_W;
-		1: spritelayout_farm_estate_era00_001_W;
+random_switch (FEAT_HOUSES, SELF, random_farm_estate_era01_W) {
+		1: spritelayout_farm_estate_era01_001_W;
+		1: spritelayout_farm_estate_era01_001_W;
 }
 
 
@@ -133,20 +133,16 @@ random_switch (FEAT_HOUSES, SELF, random_farm_estate_era00_W) {
 
 // These switches are called by the 'default' callback and bind the sets of spritelayouts to an animation frame
 switch (FEAT_HOUSES, SELF, era_switch_farm_estate_N, animation_frame) {
-		0: random_farm_estate_era00_N;
-        1: random_farm_estate_era00_N;        
+		random_farm_estate_era01_N;      
 }
 switch (FEAT_HOUSES, SELF, era_switch_farm_estate_E, animation_frame) {
-		0: random_farm_estate_era00_E;
-        1: random_farm_estate_era00_E;
+		random_farm_estate_era01_E;
 }
 switch (FEAT_HOUSES, SELF, era_switch_farm_estate_S, animation_frame) {
-		0: random_farm_estate_era00_S;
-        1: random_farm_estate_era00_S;
+		random_farm_estate_era01_S;
 }
 switch (FEAT_HOUSES, SELF, era_switch_farm_estate_W, animation_frame) {
-		0: random_farm_estate_era00_W;
-        1: random_farm_estate_era00_W;
+		random_farm_estate_era01_W;
 }
 
 

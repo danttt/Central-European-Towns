@@ -10,17 +10,6 @@
 /*-------------------------------------------- SPRITESETS ---------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Spritesets for era00 */
-/* --------------------------------------------------------------------------------------------------- */
-
-spriteset(spriteset_workshop_era00_001_g, "gfx/workshop_era00_001.PNG") {
-	tmpl_small_houses_ground (0, 0)
-}
-spriteset(spriteset_workshop_era00_001_b, "gfx/workshop_era00_001.PNG") {
-	tmpl_small_houses_building (0, 0)
-}
-
-
 /* Spritesets for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
@@ -43,26 +32,23 @@ spriteset(spriteset_workshop_era02_001_b, "gfx/workshop_era02_001.PNG") {
 }
 
 
+/* Spritesets for era03 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_workshop_era03_001_g, "gfx/workshop_era03_001.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_workshop_era03_001_b, "gfx/workshop_era03_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Spritelayouts for era00 */
-/* --------------------------------------------------------------------------------------------------- */
-
-spritelayout spritelayout_workshop_era00_001 {
-	ground { 
-		sprite: GROUNDSPRITE_NORMAL; }
-	childsprite {
-		sprite: spriteset_workshop_era00_001_g; 
-		always_draw: 1; }
-	building {
-		sprite: spriteset_workshop_era00_001_b;  }
-}
-
-
-/* Spritelayouts for era02 */
+/* Spritelayouts for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
 spritelayout spritelayout_workshop_era01_001 {
@@ -76,7 +62,7 @@ spritelayout spritelayout_workshop_era01_001 {
 }
 
 
-/* Spritelayouts for era02 */
+/* Spritelayouts for era03 */
 /* --------------------------------------------------------------------------------------------------- */
 
 spritelayout spritelayout_workshop_era02_001 {
@@ -87,6 +73,20 @@ spritelayout spritelayout_workshop_era02_001 {
 		always_draw: 1; }
 	building {
 		sprite: spriteset_workshop_era02_001_b;  }
+}
+
+
+/* Spritelayouts for era03 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_workshop_era03_001 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_workshop_era03_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_workshop_era03_001_b;  }
 }
 
 
@@ -106,10 +106,6 @@ switch (FEAT_HOUSES, SELF, workshop_v_town_type, func_town_type()) {
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
 
-random_switch (FEAT_HOUSES, SELF, random_workshop_era00) {
-		1: spritelayout_workshop_era00_001;
-}
-
 random_switch (FEAT_HOUSES, SELF, random_workshop_era01) {
 		1: spritelayout_workshop_era01_001;
 }
@@ -118,15 +114,19 @@ random_switch (FEAT_HOUSES, SELF, random_workshop_era02) {
 		1: spritelayout_workshop_era02_001;
 }
 
+random_switch (FEAT_HOUSES, SELF, random_workshop_era03) {
+		1: spritelayout_workshop_era03_001;
+}
+
 
 /* Switch for binding the sets of spritelayouts to the historical eras */
 /* --------------------------------------------------------------------------------------------------- */
 
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
 switch (FEAT_HOUSES, SELF, era_switch_workshop, animation_frame) {
-		0: random_workshop_era00;
 		1: random_workshop_era01;
-		random_workshop_era02;
+		2: random_workshop_era02;
+		random_workshop_era03;
 }
 
 // This switch is called by the 'anim_control' callback and used for deciding which frame to use

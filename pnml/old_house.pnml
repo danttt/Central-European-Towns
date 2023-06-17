@@ -10,13 +10,13 @@
 /*-------------------------------------------- SPRITESETS ---------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Spritesets for era01 */
+/* Spritesets for era02 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spriteset(spriteset_old_house_era01_001_g, "gfx/old_house_era01_001.PNG") {
+spriteset(spriteset_old_house_era02_001_g, "gfx/old_house_era02_001.PNG") {
 	tmpl_small_houses_ground (0, 0)
 }
-spriteset(spriteset_old_house_era01_001_b, "gfx/old_house_era01_001.PNG") {
+spriteset(spriteset_old_house_era02_001_b, "gfx/old_house_era02_001.PNG") {
 	tmpl_small_houses_building (0, 0)
 }
 
@@ -26,17 +26,17 @@ spriteset(spriteset_old_house_era01_001_b, "gfx/old_house_era01_001.PNG") {
 /*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Spritelayouts for era01 */
+/* Spritelayouts for era02 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spritelayout spritelayout_old_house_era01_001 {
+spritelayout spritelayout_old_house_era02_001 {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; }
 	childsprite {
-		sprite: spriteset_old_house_era01_001_g; 
+		sprite: spriteset_old_house_era02_001_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_old_house_era01_001_b;  }
+		sprite: spriteset_old_house_era02_001_b;  }
 }
 
 
@@ -56,8 +56,8 @@ switch (FEAT_HOUSES, SELF, old_house_town_type, func_town_type()) {
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
 
-random_switch (FEAT_HOUSES, SELF, random_old_house_era01) {
-		1: spritelayout_old_house_era01_001;
+random_switch (FEAT_HOUSES, SELF, random_old_house_era02) {
+		1: spritelayout_old_house_era02_001;
 }
 
 
@@ -66,7 +66,7 @@ random_switch (FEAT_HOUSES, SELF, random_old_house_era01) {
 
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
 switch (FEAT_HOUSES, SELF, era_switch_old_house, animation_frame) {
-		random_old_house_era01;
+		random_old_house_era02;
 }
 
 // This switch is called by the 'anim_control' callback and used for deciding which frame to use
@@ -100,6 +100,6 @@ item (FEAT_HOUSES, item_old_house, 19, HOUSE_SIZE_1X1) {
 	graphics {
 		default:					era_switch_old_house;
 		anim_control:				era_anim_old_house;
-		construction_check:			old_house-town_type;
+		construction_check:			old_house_town_type;
 	}
 }

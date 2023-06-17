@@ -10,52 +10,6 @@
 /*-------------------------------------------- SPRITESETS ---------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Spritesets for era00 */
-/* --------------------------------------------------------------------------------------------------- */
-
-spriteset(spriteset_farm_house_era00_001_g, "gfx/farm_house_era00_001.PNG") {
-	tmpl_small_houses_ground (0, 0)
-}
-spriteset(spriteset_farm_house_era00_001_b, "gfx/farm_house_era00_001.PNG") {
-	tmpl_small_houses_building (0, 0)
-}
-
-spriteset(spriteset_farm_house_era00_002_g, "gfx/farm_house_era00_002.PNG") {
-	tmpl_small_houses_ground (0, 0)
-}
-spriteset(spriteset_farm_house_era00_002_b, "gfx/farm_house_era00_002.PNG") {
-	tmpl_small_houses_building (0, 0)
-}
-
-spriteset(spriteset_farm_house_era00_003_g, "gfx/farm_house_era00_003.PNG") {
-	tmpl_small_houses_ground (0, 0)
-}
-spriteset(spriteset_farm_house_era00_003_b, "gfx/farm_house_era00_003.PNG") {
-	tmpl_small_houses_building (0, 0)
-}
-
-spriteset(spriteset_farm_house_era00_004_g, "gfx/farm_house_era00_004.PNG") {
-	tmpl_small_houses_ground (0, 0)
-}
-spriteset(spriteset_farm_house_era00_004_b, "gfx/farm_house_era00_004.PNG") {
-	tmpl_small_houses_building (0, 0)
-}
-
-spriteset(spriteset_farm_house_era00_005_g, "gfx/farm_house_era00_005.PNG") {
-	tmpl_small_houses_ground (0, 0)
-}
-spriteset(spriteset_farm_house_era00_005_b, "gfx/farm_house_era00_005.PNG") {
-	tmpl_small_houses_building (0, 0)
-}
-
-spriteset(spriteset_farm_house_era00_006_g, "gfx/farm_house_era00_006.PNG") {
-	tmpl_small_houses_ground (0, 0)
-}
-spriteset(spriteset_farm_house_era00_006_b, "gfx/farm_house_era00_006.PNG") {
-	tmpl_small_houses_building (0, 0)
-}
-
-
 /* Spritesets for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
@@ -102,74 +56,56 @@ spriteset(spriteset_farm_house_era01_006_b, "gfx/farm_house_era01_006.PNG") {
 }
 
 
+/* Spritesets for era02 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_farm_house_era02_001_g, "gfx/farm_house_era02_001.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_farm_house_era02_001_b, "gfx/farm_house_era02_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_farm_house_era02_002_g, "gfx/farm_house_era02_002.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_farm_house_era02_002_b, "gfx/farm_house_era02_002.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_farm_house_era02_003_g, "gfx/farm_house_era02_003.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_farm_house_era02_003_b, "gfx/farm_house_era02_003.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_farm_house_era02_004_g, "gfx/farm_house_era02_004.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_farm_house_era02_004_b, "gfx/farm_house_era02_004.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_farm_house_era02_005_g, "gfx/farm_house_era02_005.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_farm_house_era02_005_b, "gfx/farm_house_era02_005.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_farm_house_era02_006_g, "gfx/farm_house_era02_006.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_farm_house_era02_006_b, "gfx/farm_house_era02_006.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
-
-/* Spritelayouts for era00 */
-/* --------------------------------------------------------------------------------------------------- */
-
-spritelayout spritelayout_farm_house_era00_001 {
-	ground { 
-		sprite: GROUNDSPRITE_NORMAL; }
-	childsprite {
-		sprite: spriteset_farm_house_era00_001_g; 
-		always_draw: 1; }
-	building {
-		sprite: spriteset_farm_house_era00_001_b;  }
-}
-
-spritelayout spritelayout_farm_house_era00_002 {
-	ground { 
-		sprite: GROUNDSPRITE_NORMAL; }
-	childsprite {
-		sprite: spriteset_farm_house_era00_002_g; 
-		always_draw: 1; }
-	building {
-		sprite: spriteset_farm_house_era00_002_b;  }
-}
-
-spritelayout spritelayout_farm_house_era00_003 {
-	ground { 
-		sprite: GROUNDSPRITE_NORMAL; }
-	childsprite {
-		sprite: spriteset_farm_house_era00_003_g; 
-		always_draw: 1; }
-	building {
-		sprite: spriteset_farm_house_era00_003_b;  }
-}
-
-spritelayout spritelayout_farm_house_era00_004 {
-	ground { 
-		sprite: GROUNDSPRITE_NORMAL; }
-	childsprite {
-		sprite: spriteset_farm_house_era00_004_g; 
-		always_draw: 1; }
-	building {
-		sprite: spriteset_farm_house_era00_004_b;  }
-}
-
-spritelayout spritelayout_farm_house_era00_005 {
-	ground { 
-		sprite: GROUNDSPRITE_NORMAL; }
-	childsprite {
-		sprite: spriteset_farm_house_era00_005_g; 
-		always_draw: 1; }
-	building {
-		sprite: spriteset_farm_house_era00_005_b;  }
-}
-
-spritelayout spritelayout_farm_house_era00_006 {
-	ground { 
-		sprite: GROUNDSPRITE_NORMAL; }
-	childsprite {
-		sprite: spriteset_farm_house_era00_006_g; 
-		always_draw: 1; }
-	building {
-		sprite: spriteset_farm_house_era00_006_b;  }
-}
-
 
 /* Spritelayouts for era01 */
 /* --------------------------------------------------------------------------------------------------- */
@@ -235,6 +171,70 @@ spritelayout spritelayout_farm_house_era01_006 {
 }
 
 
+/* Spritelayouts for era02 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_farm_house_era02_001 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_farm_house_era02_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_farm_house_era02_001_b;  }
+}
+
+spritelayout spritelayout_farm_house_era02_002 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_farm_house_era02_002_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_farm_house_era02_002_b;  }
+}
+
+spritelayout spritelayout_farm_house_era02_003 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_farm_house_era02_003_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_farm_house_era02_003_b;  }
+}
+
+spritelayout spritelayout_farm_house_era02_004 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_farm_house_era02_004_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_farm_house_era02_004_b;  }
+}
+
+spritelayout spritelayout_farm_house_era02_005 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_farm_house_era02_005_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_farm_house_era02_005_b;  }
+}
+
+spritelayout spritelayout_farm_house_era02_006 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_farm_house_era02_006_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_farm_house_era02_006_b;  }
+}
+
+
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
@@ -251,22 +251,22 @@ switch (FEAT_HOUSES, SELF, farm_house_town_type, func_town_type()) {
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
 
-random_switch (FEAT_HOUSES, SELF, random_farm_house_era00) {
-		1: spritelayout_farm_house_era00_001;
-		1: spritelayout_farm_house_era00_002;
-		1: spritelayout_farm_house_era00_003;
-		1: spritelayout_farm_house_era00_004;
-		1: spritelayout_farm_house_era00_005;
-		1: spritelayout_farm_house_era00_006;
-}
-
 random_switch (FEAT_HOUSES, SELF, random_farm_house_era01) {
 		1: spritelayout_farm_house_era01_001;
 		1: spritelayout_farm_house_era01_002;
 		1: spritelayout_farm_house_era01_003;
 		1: spritelayout_farm_house_era01_004;
-		1: spritelayout_farm_house_era00_005;
-		1: spritelayout_farm_house_era00_006;
+		1: spritelayout_farm_house_era01_005;
+		1: spritelayout_farm_house_era01_006;
+}
+
+random_switch (FEAT_HOUSES, SELF, random_farm_house_era02) {
+		1: spritelayout_farm_house_era02_001;
+		1: spritelayout_farm_house_era02_002;
+		1: spritelayout_farm_house_era02_003;
+		1: spritelayout_farm_house_era02_004;
+		1: spritelayout_farm_house_era02_005;
+		1: spritelayout_farm_house_era02_006;
 }
 
 
@@ -275,10 +275,10 @@ random_switch (FEAT_HOUSES, SELF, random_farm_house_era01) {
 
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
 switch (FEAT_HOUSES, SELF, era_switch_farm_house, animation_frame) {
-		0: random_farm_house_era00;
 		1: random_farm_house_era01;
-		2: random_farm_house_era01;
-		3: random_farm_house_era01;
+		2: random_farm_house_era02;
+		3: random_farm_house_era02;
+		4: random_farm_house_era02;
 }
 
 // This switch is called by the 'anim_control' callback and used for deciding which frame to use

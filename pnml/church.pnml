@@ -10,13 +10,13 @@
 /*-------------------------------------------- SPRITESETS ---------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Spritesets for era00 */
+/* Spritesets for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spriteset(spriteset_church_era00_001_g, "gfx/church_era00_001.PNG") { 	
+spriteset(spriteset_church_era01_001_g, "gfx/church_era01_001.PNG") { 	
 	tmpl_small_houses_ground (0, 0)
 }
-spriteset(spriteset_church_era00_001_b, "gfx/church_era00_001.PNG") {
+spriteset(spriteset_church_era01_001_b, "gfx/church_era01_001.PNG") {
 	tmpl_small_houses_building (0, 0)
 }
 
@@ -26,17 +26,17 @@ spriteset(spriteset_church_era00_001_b, "gfx/church_era00_001.PNG") {
 /*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Spritelayouts for era00 */
+/* Spritelayouts for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spritelayout spritelayout_church_era00_001 {
+spritelayout spritelayout_church_era01_001 {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; }
 	childsprite {
-		sprite: spriteset_church_era00_001_g; 
+		sprite: spriteset_church_era01_001_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_church_era00_001_b;  }
+		sprite: spriteset_church_era01_001_b;  }
 }
 
 
@@ -56,8 +56,8 @@ switch (FEAT_HOUSES, SELF, church_town_type, func_town_type()) {
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
 
-random_switch (FEAT_HOUSES, SELF, random_church_era00) {
-		1: spritelayout_church_era00_001;
+random_switch (FEAT_HOUSES, SELF, random_church_era01) {
+		1: spritelayout_church_era01_001;
 }
 
 
@@ -84,7 +84,7 @@ item (FEAT_HOUSES, item_church_i, 4, HOUSE_SIZE_1X1) {
 
 	}
 	graphics {
-		default:					random_church_era00;
+		default:					random_church_era01;
 		construction_check:			church_town_type;
 	}
 }
