@@ -1,0 +1,116 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x----------------------------------------------- FARM ----------------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/* This 2x2 house type uses its own sprites for the east tile and farm fields sprites for the other tiles */
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era03 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_farm_era03_001_g, "gfx/farm_era03_001.png") { 		
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_farm_era03_001_b, "gfx/farm_era03_001.png") {
+	tmpl_small_houses_building (0, 0)
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era03 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_farm_era03_001 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_farm_era03_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_farm_era03_001_b;  }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, farm_town_type, func_town_type()) {
+		1: 1; 2: 0; 3: 0;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_farm_era03) {
+		1: spritelayout_farm_era03_001;
+}
+
+
+/* Switch for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// These switches are called by the 'default' callback and bind the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_farm, animation_frame) {
+		random_farm_era03;      
+}
+
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_farm, animation_frame) {
+	0:  func_anim_frame;
+	CB_RESULT_DO_NOTHING;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_farm, 23, HOUSE_SIZE_2X2) {
+	property {
+		substitute:					20;
+		name:						string(STR_FARM);
+		population:					20;
+		mail_multiplier:			10;
+		accepted_cargos:			[[PASS, 4], [MAIL, 1], [GOOD, 1]];
+		local_authority_impact:		85;
+		probability:				1;
+		years_available:			[1920, 2009];
+		minimum_lifetime:			20;
+		availability_mask:			[bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB), ALL_CLIMATES];
+		removal_cost_multiplier:	120;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		graphics_north:				random_farm_fields;	
+		graphics_east:				era_switch_farm;
+		graphics_south:				random_farm_fields;
+		graphics_west:				random_farm_fields;
+		anim_control:				era_anim_farm;
+		construction_check:			farm_town_type;
+	}
+}
+
+
+

@@ -158,7 +158,7 @@ switch (FEAT_HOUSES, SELF, era_anim_farm_estate, animation_frame) {
 /*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-item (FEAT_HOUSES, item_farm_estate_2x2, 6, HOUSE_SIZE_2X2) {
+item (FEAT_HOUSES, item_farm_estate, 6, HOUSE_SIZE_2X2) {
 	property {
 		substitute:					20;
 		name:						string(STR_FARMESTATE);
