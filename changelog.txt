@@ -1,3 +1,18 @@
+Central European Towns 0.3.0 (2023-06-18) (Build 3)
+----------------------------------------------------
+- ADD: farm fields for the use with various house types
+- ADD: house type small farm
+- ADD: house type school for villages
+- ADD: house type old house
+- ADD: house type workshop for villages
+- ADD: house type house for villages
+- ADD: house type shop for villages
+- ADD: house type farm
+- CHANGE: farm house has now equal amount of sprites for eras 01, 02
+- CHANGE: town houses now available in all town zones
+- FIX: reset numbering of era from 1-6 instead of 0-5 since era definition "0" for the first historical era caused sprites to change after 1850
+
+
 Central European Towns 0.2.0 (2023-06-13) (Build 2)
 ----------------------------------------------------
 - FEATURE: road-awareness for block perimeter houses built in cities
