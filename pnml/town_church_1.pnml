@@ -13,11 +13,17 @@
 /* Spritesets for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spriteset(spriteset_town_church_1_era01_001_g, "gfx/town_church_1_era01_001.PNG") { 	
+spriteset(spriteset_town_church_1_era01_N_001_g, "gfx/town_church_1_era01_001.PNG") { 	
 	tmpl_small_houses_ground (0, 0)
 }
-spriteset(spriteset_town_church_1_era01_001_b, "gfx/town_church_1_era01_001.PNG") {
+spriteset(spriteset_town_church_1_era01_N_001_b, "gfx/town_church_1_era01_001.PNG") {
 	tmpl_small_houses_building (0, 0)
+}
+spriteset(spriteset_town_church_1_era01_W_001_g, "gfx/town_church_1_era01_001.PNG") { 	
+	tmpl_small_houses_ground (0, 100)
+}
+spriteset(spriteset_town_church_1_era01_W_001_b, "gfx/town_church_1_era01_001.PNG") {
+	tmpl_small_houses_building (0, 100)
 }
 
 
@@ -29,14 +35,23 @@ spriteset(spriteset_town_church_1_era01_001_b, "gfx/town_church_1_era01_001.PNG"
 /* Spritelayouts for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spritelayout spritelayout_town_church_1_era01_001 {
+spritelayout spritelayout_town_church_1_era01_N_001 {
 	ground { 
 		sprite: spriteset_ground_sprite_concrete; }
 	childsprite {
-		sprite: spriteset_town_church_1_era01_001_g; 
+		sprite: spriteset_town_church_1_era01_N_001_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_town_church_1_era01_001_b;  }
+		sprite: spriteset_town_church_1_era01_N_001_b;  }
+}
+spritelayout spritelayout_town_church_1_era01_W_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_town_church_1_era01_W_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_town_church_1_era01_W_001_b;  }
 }
 
 
@@ -65,8 +80,11 @@ switch (FEAT_HOUSES, SELF, town_church_1_town_type, func_town_type()) {
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
 
-random_switch (FEAT_HOUSES, SELF, random_town_church_1_era01) {
-		1: spritelayout_town_church_1_era01_001;
+random_switch (FEAT_HOUSES, SELF, random_town_church_1_era01_N) {
+		1: spritelayout_town_church_1_era01_N_001;
+}
+random_switch (FEAT_HOUSES, SELF, random_town_church_1_era01_W) {
+		1: spritelayout_town_church_1_era01_W_001;
 }
 
 
@@ -74,13 +92,11 @@ random_switch (FEAT_HOUSES, SELF, random_town_church_1_era01) {
 /* --------------------------------------------------------------------------------------------------- */
 
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
-switch (FEAT_HOUSES, SELF, era_switch_town_church_1, animation_frame) {
-		1: random_town_church_1_era01;
-		2: random_town_church_1_era01;
-		3: random_town_church_1_era01;
-		4: random_town_church_1_era01;
-		5: random_town_church_1_era01;
-        6: random_town_church_1_era01;
+switch (FEAT_HOUSES, SELF, era_switch_town_church_1_N, animation_frame) {
+		random_town_church_1_era01_N;
+}
+switch (FEAT_HOUSES, SELF, era_switch_town_church_1_W, animation_frame) {
+		random_town_church_1_era01_W;
 }
 
 // This switch is called by the 'anim_control' callback and used for deciding which frame to use
@@ -95,7 +111,7 @@ switch (FEAT_HOUSES, SELF, era_anim_town_church_1, animation_frame) {
 /*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-item (FEAT_HOUSES, item_town_church_1, 29, HOUSE_SIZE_1X1) {
+item (FEAT_HOUSES, item_town_church_1, 29, HOUSE_SIZE_2X1) {
 	property {
 		substitute:					74;
 		name:						string(STR_TOWNCHURCH);
@@ -113,7 +129,8 @@ item (FEAT_HOUSES, item_town_church_1, 29, HOUSE_SIZE_1X1) {
 		animation_info:				[ANIMATION_NON_LOOPING, 1];
 	}
 	graphics {
-		default:					era_switch_town_church_1;
+		graphics_north:				era_switch_town_church_1_N;
+		graphics_west:				era_switch_town_church_1_W;
 		anim_control:				era_anim_town_church_1;
 		construction_check:			town_church_1_town_type;
 	}
