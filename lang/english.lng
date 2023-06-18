@@ -18,6 +18,7 @@ STR_SHOPSOFFICES                        :Shops and Offices
 STR_SMALLFARM                           :Small Farm
 STR_TOWNCHURCH                          :Town Church
 STR_TOWNHALL                            :Town Hall
-STR_TOWNHOUSES                          :Town House
+STR_TOWNHOUSE                           :Town House
 STR_TOWNHOUSES                          :Town Houses
+STR_TRADINGHOUSE                        :Trading House
 STR_WORKSHOP                            :Workshop
