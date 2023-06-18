@@ -94,7 +94,7 @@ switch (FEAT_HOUSES, SELF, era_anim_alley_houses, animation_frame) {
 item (FEAT_HOUSES, item_alley_houses, 27, HOUSE_SIZE_1X1) {
 	property {
 		substitute:					16;
-		name:						string(STR_ALLEYHOUSE);
+		name:						string(STR_ALLEYHOUSES);
 		population:					60;
 		mail_multiplier:			25;
 		accepted_cargos:			[[PASS, 6], [MAIL, 3], [GOOD, 3]];
