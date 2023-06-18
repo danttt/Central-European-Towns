@@ -183,3 +183,6 @@ item (FEAT_HOUSES, item_farm_estate, 6, HOUSE_SIZE_2X2) {
 		construction_check:			farm_estate_town_type;
 	}
 }
+
+
+

@@ -163,3 +163,6 @@ item (FEAT_HOUSES, item_workshop_v, 20, HOUSE_SIZE_1X1) {
 		construction_check:			workshop_v_town_type;
 	}
 }
+
+
+
