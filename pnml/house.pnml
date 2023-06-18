@@ -5,6 +5,8 @@
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 
+// The variant for towns and cities (item_house_t_c) uses sprites from house type old house for eras 01-03
+
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------- SPRITESETS ---------------------------------------------*/
@@ -45,16 +47,23 @@ spritelayout spritelayout_house_era04_001 {
 /*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Switch defining what town types this house type can be built in */
+/* Switches defining what town types these house types can be built in */
 /* --------------------------------------------------------------------------------------------------- */
 
-switch (FEAT_HOUSES, SELF, house_town_type, func_town_type()) {
+switch (FEAT_HOUSES, SELF, house_v_town_type, func_town_type()) {
 		1: 1; 2: 0; 3: 0;
 }
 
+switch (FEAT_HOUSES, SELF, house_t_c_town_type, func_town_type()) {
+		1: 0; 2: 1; 3: 1;
+}
 
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_house_era02) {
+		1: spritelayout_old_house_era02_001;
+}
 
 random_switch (FEAT_HOUSES, SELF, random_house_era04) {
 		1: spritelayout_house_era04_001;
@@ -66,6 +75,8 @@ random_switch (FEAT_HOUSES, SELF, random_house_era04) {
 
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
 switch (FEAT_HOUSES, SELF, era_switch_house, animation_frame) {
+		2: random_house_era02;
+		3: random_house_era02;
 		random_house_era04;
 }
 
@@ -100,7 +111,30 @@ item (FEAT_HOUSES, item_house_v, 21, HOUSE_SIZE_1X1) {
 	graphics {
 		default:					era_switch_house;
 		anim_control:				era_anim_house;
-        construction_check:         house_town_type;
+        construction_check:         house_v_town_type;
+	}
+}
+
+item (FEAT_HOUSES, item_house_t_c, 28, HOUSE_SIZE_1X1) {
+	property {
+		substitute:					24;
+		name:						string(STR_HOUSE);
+		population:					12;
+		mail_multiplier:			7;
+		accepted_cargos:			[[PASS, 3], [MAIL, 1], [GOOD, 0]];
+		local_authority_impact:		80;
+		probability:				1;
+		years_available:			[1850, 9999];
+		minimum_lifetime:			5;
+		availability_mask:			[bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB), ALL_CLIMATES];
+		removal_cost_multiplier:	75;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		default:					era_switch_house;
+		anim_control:				era_anim_house;
+        construction_check:         house_t_c_town_type;
 	}
 }
 
