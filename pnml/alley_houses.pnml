@@ -1,0 +1,116 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x------------------------------------------ ALLEY HOUSES -------------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era01 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_alley_houses_era01_001_g, "gfx/alley_houses_era01_001.PNG") { 	
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_alley_houses_era01_001_b, "gfx/alley_houses_era01_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era01 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_alley_houses_era01_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_alley_houses_era01_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_alley_houses_era01_001_b;  }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switch for orientation in case of specific tile classes being around the house */
+/* --------------------------------------------------------------------------------------------------- */
+
+// Alley houses need another house tile on their SW border to create an alley in front of them
+switch (FEAT_HOUSES, SELF, alley_check, nearby_tile_class(1, 0) == TILE_CLASS_HOUSE) {
+		1: return 1;
+		return 0;
+}
+
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, alley_houses_town_type, func_town_type()) {
+		1: 0; 2: alley_check; 3: 0;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_alley_houses_era01) {
+		1: spritelayout_alley_houses_era01_001;
+}
+
+
+/* Switch for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_alley_houses, animation_frame) {
+		random_alley_houses_era01;
+}
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_alley_houses, animation_frame) {
+	0:  func_anim_frame;
+	CB_RESULT_DO_NOTHING;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_alley_houses, 27, HOUSE_SIZE_1X1) {
+	property {
+		substitute:					16;
+		name:						string(STR_ALLEYHOUSE);
+		population:					60;
+		mail_multiplier:			25;
+		accepted_cargos:			[[PASS, 6], [MAIL, 3], [GOOD, 3]];
+		local_authority_impact:		130;
+		probability:				1;
+		years_available:			[1700, 1919];
+		minimum_lifetime:			10;
+		availability_mask:			[bitmask(TOWNZONE_INNER_SUBURB, TOWNZONE_CENTRE), ALL_CLIMATES];
+		removal_cost_multiplier:	120;
+		building_class:				1;
+        animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		default:					era_switch_alley_houses;
+        anim_control:               era_anim_alley_houses;
+		construction_check:			alley_houses_town_type;
+		protection:					func_old_town;
+	}
+}
