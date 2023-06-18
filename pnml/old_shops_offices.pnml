@@ -33,10 +33,10 @@ spritelayout spritelayout_old_shops_offices_era02_001 {
 	ground { 
 		sprite: spriteset_ground_sprite_concrete; }
 	childsprite {
-		sprite: spriteset_old_shops_offices_1_era02_001_g; 
+		sprite: spriteset_old_shops_offices_era02_001_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_old_shops_offices_1_era02_001_b;  }
+		sprite: spriteset_old_shops_offices_era02_001_b;  }
 }
 
 
@@ -66,8 +66,8 @@ random_switch (FEAT_HOUSES, SELF, random_old_shops_offices_era02) {
 
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
 switch (FEAT_HOUSES, SELF, era_switch_old_shops_offices, animation_frame) {
-		random_old_shops_offices_1_era02;
-
+		random_old_shops_offices_era02;
+}
 
 // This switch is called by the 'anim_control' callback and used for deciding which frame to use
 switch (FEAT_HOUSES, SELF, era_anim_old_shops_offices, animation_frame) {
