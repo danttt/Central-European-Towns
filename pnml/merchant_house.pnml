@@ -1,0 +1,2271 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x------------------------------------------ MERCHANT HOUSE -----------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era01 */
+/* --------------------------------------------------------------------------------------------------- */
+
+// building sprites for half-tile houses with size 16x7px which are meant to be combined with 16x9px half-tile houses via multiple sprite layouts
+spriteset(spriteset_merchant_house_era01_167_001, "gfx/merchant_house_era01_167_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_167_002, "gfx/merchant_house_era01_167_002.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+// building sprites for half-tile houses with size 16x9px which are meant to be combined with 16x7px half-tile houses via multiple sprite layouts
+spriteset(spriteset_merchant_house_era01_169_001, "gfx/merchant_house_era01_169_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_169_002, "gfx/merchant_house_era01_169_002.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+// building sprites for half-tile houses with size 7x16px which are meant to be combined with 9x16px half-tile houses via multiple sprite layouts
+spriteset(spriteset_merchant_house_era01_716_001, "gfx/merchant_house_era01_716_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_716_002, "gfx/merchant_house_era01_716_002.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_716_003, "gfx/merchant_house_era01_716_003.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_716_004, "gfx/merchant_house_era01_716_004.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_716_005, "gfx/merchant_house_era01_716_005.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_716_006, "gfx/merchant_house_era01_716_006.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_716_007, "gfx/merchant_house_era01_716_007.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_716_008, "gfx/merchant_house_era01_716_008.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_716_009, "gfx/merchant_house_era01_716_009.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_716_010, "gfx/merchant_house_era01_716_010.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_716_011, "gfx/merchant_house_era01_716_011.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_716_012, "gfx/merchant_house_era01_716_012.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+
+// building sprites for half-tile houses with size 9x16px which are meant to be combined with 7x16px half-tile houses via multiple sprite layouts
+spriteset(spriteset_merchant_house_era01_916_001, "gfx/merchant_house_era01_916_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_916_002, "gfx/merchant_house_era01_916_002.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_916_003, "gfx/merchant_house_era01_916_003.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_916_004, "gfx/merchant_house_era01_916_004.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_916_005, "gfx/merchant_house_era01_916_005.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_916_006, "gfx/merchant_house_era01_916_006.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_916_007, "gfx/merchant_house_era01_916_007.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_916_008, "gfx/merchant_house_era01_916_008.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_916_009, "gfx/merchant_house_era01_916_009.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_916_010, "gfx/merchant_house_era01_916_010.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_916_011, "gfx/merchant_house_era01_916_011.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_merchant_house_era01_916_012, "gfx/merchant_house_era01_916_012.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era01 */
+/* --------------------------------------------------------------------------------------------------- */
+
+// Spritelayouts combining 16x7px sprites with 16x9px sprites
+spritelayout spritelayout_merchant_house_era01_1719_001001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_167_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_169_001; xoffset: 55; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_1719_001002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_167_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_169_002; xoffset: 55; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_1719_002001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_167_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_169_001; xoffset: 55; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_1719_002002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_167_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_169_002; xoffset: 55; yoffset: 75; }
+}
+
+
+// Spritelayouts combining 16x9px sprites with 16x7px sprites
+spritelayout spritelayout_merchant_house_era01_1917_001001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_169_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_167_001; xoffset: 55; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_1917_001002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_169_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_167_002; xoffset: 55; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_1917_002001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_169_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_167_001; xoffset: 55; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_1917_002002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_169_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_167_002; xoffset: 55; yoffset: 75; }
+}
+
+// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
+random_switch (FEAT_HOUSES, SELF, random_merchant_house_era01_01) {
+		1: spritelayout_merchant_house_era01_1719_001001;
+		1: spritelayout_merchant_house_era01_1719_001002;
+		1: spritelayout_merchant_house_era01_1719_002001;
+		1: spritelayout_merchant_house_era01_1719_002002;
+		1: spritelayout_merchant_house_era01_1917_001001;
+		1: spritelayout_merchant_house_era01_1917_001002;
+		1: spritelayout_merchant_house_era01_1917_002001;
+		1: spritelayout_merchant_house_era01_1917_002002;
+}
+
+
+// Spritelayouts combining 7x16px sprites with 9x16px sprites
+spritelayout spritelayout_merchant_house_era01_7191_001001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_001002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_001003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_001004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_001005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_001006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_001007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_001008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_001009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_001010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_001011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_011; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_001012 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_012; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+spritelayout spritelayout_merchant_house_era01_7191_002001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_002002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_002003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_002004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_002005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_002006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_002007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_002008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_002009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_002010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_002011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_011; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_002012 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_012; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_7191_003001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_003002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_003003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_003004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_003005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_003006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_003007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_003008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_003009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_003010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_003011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_011; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_003012 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_012; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_7191_004001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_004002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_004003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_004004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_004005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_004006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_004007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_004008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_004009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_004010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_004011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_011; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_004012 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_012; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_7191_005001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_005002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_005003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_005004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_005005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_005006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_005007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_005008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_005009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_005010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_005011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_011; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_005012 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_012; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_7191_006001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_006002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_006003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_006004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_006005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_006006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_006007 {
+	ground {sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_006008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_006009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_006010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_006011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_011; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_006012 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_012; xoffset: 27; yoffset: 75; }
+}
+
+
+// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
+random_switch (FEAT_HOUSES, SELF, random_merchant_house_era01_02) {
+		1: spritelayout_merchant_house_era01_7191_001001;
+		1: spritelayout_merchant_house_era01_7191_001002;
+		1: spritelayout_merchant_house_era01_7191_001003;
+		1: spritelayout_merchant_house_era01_7191_001004;
+		1: spritelayout_merchant_house_era01_7191_001005;
+		1: spritelayout_merchant_house_era01_7191_001006;
+		1: spritelayout_merchant_house_era01_7191_001007;
+		1: spritelayout_merchant_house_era01_7191_001008;
+		1: spritelayout_merchant_house_era01_7191_001009;
+		1: spritelayout_merchant_house_era01_7191_001010;
+		1: spritelayout_merchant_house_era01_7191_001011;
+		1: spritelayout_merchant_house_era01_7191_001012;
+		1: spritelayout_merchant_house_era01_7191_002001;
+		1: spritelayout_merchant_house_era01_7191_002002;
+		1: spritelayout_merchant_house_era01_7191_002003;
+		1: spritelayout_merchant_house_era01_7191_002004;
+		1: spritelayout_merchant_house_era01_7191_002005;
+		1: spritelayout_merchant_house_era01_7191_002006;
+		1: spritelayout_merchant_house_era01_7191_002007;
+		1: spritelayout_merchant_house_era01_7191_002008;
+		1: spritelayout_merchant_house_era01_7191_002009;
+		1: spritelayout_merchant_house_era01_7191_002010;
+		1: spritelayout_merchant_house_era01_7191_002011;
+		1: spritelayout_merchant_house_era01_7191_002012;
+		1: spritelayout_merchant_house_era01_7191_003001;
+		1: spritelayout_merchant_house_era01_7191_003002;
+		1: spritelayout_merchant_house_era01_7191_003003;
+		1: spritelayout_merchant_house_era01_7191_003004;
+		1: spritelayout_merchant_house_era01_7191_003005;
+		1: spritelayout_merchant_house_era01_7191_003006;
+		1: spritelayout_merchant_house_era01_7191_003007;
+		1: spritelayout_merchant_house_era01_7191_003008;
+		1: spritelayout_merchant_house_era01_7191_003009;
+		1: spritelayout_merchant_house_era01_7191_003010;
+		1: spritelayout_merchant_house_era01_7191_003011;
+		1: spritelayout_merchant_house_era01_7191_003012;
+		1: spritelayout_merchant_house_era01_7191_004001;
+		1: spritelayout_merchant_house_era01_7191_004002;
+		1: spritelayout_merchant_house_era01_7191_004003;
+		1: spritelayout_merchant_house_era01_7191_004004;
+		1: spritelayout_merchant_house_era01_7191_004005;
+		1: spritelayout_merchant_house_era01_7191_004006;
+		1: spritelayout_merchant_house_era01_7191_004007;
+		1: spritelayout_merchant_house_era01_7191_004008;
+		1: spritelayout_merchant_house_era01_7191_004009;
+		1: spritelayout_merchant_house_era01_7191_004010;
+		1: spritelayout_merchant_house_era01_7191_004011;
+		1: spritelayout_merchant_house_era01_7191_004012;
+		1: spritelayout_merchant_house_era01_7191_005001;
+		1: spritelayout_merchant_house_era01_7191_005002;
+		1: spritelayout_merchant_house_era01_7191_005003;
+		1: spritelayout_merchant_house_era01_7191_005004;
+		1: spritelayout_merchant_house_era01_7191_005005;
+		1: spritelayout_merchant_house_era01_7191_005006;
+		1: spritelayout_merchant_house_era01_7191_005007;
+		1: spritelayout_merchant_house_era01_7191_005008;
+		1: spritelayout_merchant_house_era01_7191_005009;
+		1: spritelayout_merchant_house_era01_7191_005010;
+		1: spritelayout_merchant_house_era01_7191_005011;
+		1: spritelayout_merchant_house_era01_7191_005012;
+		1: spritelayout_merchant_house_era01_7191_006001;
+		1: spritelayout_merchant_house_era01_7191_006002;
+		1: spritelayout_merchant_house_era01_7191_006003;
+		1: spritelayout_merchant_house_era01_7191_006004;
+		1: spritelayout_merchant_house_era01_7191_006005;
+		1: spritelayout_merchant_house_era01_7191_006006;
+		1: spritelayout_merchant_house_era01_7191_006007;
+		1: spritelayout_merchant_house_era01_7191_006008;
+		1: spritelayout_merchant_house_era01_7191_006009;
+		1: spritelayout_merchant_house_era01_7191_006010;
+		1: spritelayout_merchant_house_era01_7191_006011;
+		1: spritelayout_merchant_house_era01_7191_006012;
+}
+
+
+spritelayout spritelayout_merchant_house_era01_7191_007001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_007002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_007003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_007004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_007005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_007006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_007007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_007008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_007009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_007010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_007011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_011; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_007012 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_012; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_7191_008001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_008002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_008003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_008004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_008005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_008006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_008007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_008008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_008009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_008010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_008011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_011; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_008012 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_012; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_7191_009001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_009002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_009003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_009004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_009005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_009006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_009007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_009008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_009009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_009010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_009011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_011; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_009012 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_012; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_7191_010001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_010002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_010003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_010004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_010005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_010006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_010007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_010008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_010009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_010010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_010011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_011; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_010012 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_012; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_7191_011001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_011002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_011003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_011004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_011005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_011006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_011007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_011008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_011009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_011010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_011011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_011; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_011012 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_012; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_7191_012001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_012002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_012003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_012004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_012005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_012006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_012007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_012008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_012009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_012010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_012011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_011; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_7191_012012 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_716_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_916_012; xoffset: 27; yoffset: 75; }
+}
+
+
+// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
+random_switch (FEAT_HOUSES, SELF, random_merchant_house_era01_03) {
+		1: spritelayout_merchant_house_era01_7191_007001;
+		1: spritelayout_merchant_house_era01_7191_007002;
+		1: spritelayout_merchant_house_era01_7191_007003;
+		1: spritelayout_merchant_house_era01_7191_007004;
+		1: spritelayout_merchant_house_era01_7191_007005;
+		1: spritelayout_merchant_house_era01_7191_007006;
+		1: spritelayout_merchant_house_era01_7191_007007;
+		1: spritelayout_merchant_house_era01_7191_007008;
+		1: spritelayout_merchant_house_era01_7191_007009;
+		1: spritelayout_merchant_house_era01_7191_007010;
+		1: spritelayout_merchant_house_era01_7191_007011;
+		1: spritelayout_merchant_house_era01_7191_007012;
+		1: spritelayout_merchant_house_era01_7191_008001;
+		1: spritelayout_merchant_house_era01_7191_008002;
+		1: spritelayout_merchant_house_era01_7191_008003;
+		1: spritelayout_merchant_house_era01_7191_008004;
+		1: spritelayout_merchant_house_era01_7191_008005;
+		1: spritelayout_merchant_house_era01_7191_008006;
+		1: spritelayout_merchant_house_era01_7191_008007;
+		1: spritelayout_merchant_house_era01_7191_008008;
+		1: spritelayout_merchant_house_era01_7191_008009;
+		1: spritelayout_merchant_house_era01_7191_008010;
+		1: spritelayout_merchant_house_era01_7191_008011;
+		1: spritelayout_merchant_house_era01_7191_008012;
+		1: spritelayout_merchant_house_era01_7191_009001;
+		1: spritelayout_merchant_house_era01_7191_009002;
+		1: spritelayout_merchant_house_era01_7191_009003;
+		1: spritelayout_merchant_house_era01_7191_009004;
+		1: spritelayout_merchant_house_era01_7191_009005;
+		1: spritelayout_merchant_house_era01_7191_009006;
+		1: spritelayout_merchant_house_era01_7191_009007;
+		1: spritelayout_merchant_house_era01_7191_009008;
+		1: spritelayout_merchant_house_era01_7191_009009;
+		1: spritelayout_merchant_house_era01_7191_009010;
+		1: spritelayout_merchant_house_era01_7191_009011;
+		1: spritelayout_merchant_house_era01_7191_009012;
+		1: spritelayout_merchant_house_era01_7191_010001;
+		1: spritelayout_merchant_house_era01_7191_010002;
+		1: spritelayout_merchant_house_era01_7191_010003;
+		1: spritelayout_merchant_house_era01_7191_010004;
+		1: spritelayout_merchant_house_era01_7191_010005;
+		1: spritelayout_merchant_house_era01_7191_010006;
+		1: spritelayout_merchant_house_era01_7191_010007;
+		1: spritelayout_merchant_house_era01_7191_010008;
+		1: spritelayout_merchant_house_era01_7191_010009;
+		1: spritelayout_merchant_house_era01_7191_010010;
+		1: spritelayout_merchant_house_era01_7191_010011;
+		1: spritelayout_merchant_house_era01_7191_010012;
+		1: spritelayout_merchant_house_era01_7191_011001;
+		1: spritelayout_merchant_house_era01_7191_011002;
+		1: spritelayout_merchant_house_era01_7191_011003;
+		1: spritelayout_merchant_house_era01_7191_011004;
+		1: spritelayout_merchant_house_era01_7191_011005;
+		1: spritelayout_merchant_house_era01_7191_011006;
+		1: spritelayout_merchant_house_era01_7191_011007;
+		1: spritelayout_merchant_house_era01_7191_011008;
+		1: spritelayout_merchant_house_era01_7191_011009;
+		1: spritelayout_merchant_house_era01_7191_011010;
+		1: spritelayout_merchant_house_era01_7191_011011;
+		1: spritelayout_merchant_house_era01_7191_011012;
+		1: spritelayout_merchant_house_era01_7191_012001;
+		1: spritelayout_merchant_house_era01_7191_012002;
+		1: spritelayout_merchant_house_era01_7191_012003;
+		1: spritelayout_merchant_house_era01_7191_012004;
+		1: spritelayout_merchant_house_era01_7191_012005;
+		1: spritelayout_merchant_house_era01_7191_012006;
+		1: spritelayout_merchant_house_era01_7191_012007;
+		1: spritelayout_merchant_house_era01_7191_012008;
+		1: spritelayout_merchant_house_era01_7191_012009;
+		1: spritelayout_merchant_house_era01_7191_012010;
+		1: spritelayout_merchant_house_era01_7191_012011;
+		1: spritelayout_merchant_house_era01_7191_012012;
+}
+
+
+// Spritelayouts combining 9x16px sprites with 7x16px sprites
+spritelayout spritelayout_merchant_house_era01_9171_001001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_001002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_001003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_001004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_001005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_001006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_001007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_001008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_001009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_001010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_001011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_001; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_011; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_9171_002001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_002002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_002003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_002004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_002005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_002006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_002007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_002008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_002009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_002010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_002011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_002; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_011; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_9171_003001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_003002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_003003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_003004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_003005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_003006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_003007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_003008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_003009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_003010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_003011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_003; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_011; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_9171_004001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_004002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_004003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_004004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_004005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_004006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_004007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_004008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_004009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_004010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_004011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_004; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_011; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_9171_005001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_005002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_005003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_005004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_005005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_005006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_005007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_005008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_005009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_005010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_005011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_005; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_011; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_9171_006001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_006002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_006003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_006004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_006005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_006006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_006007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_006008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_006009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_006010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_006011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_006; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_011; xoffset: 27; yoffset: 75; }
+}
+
+
+// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
+random_switch (FEAT_HOUSES, SELF, random_merchant_house_era01_04) {	
+		1: spritelayout_merchant_house_era01_9171_001001;
+		1: spritelayout_merchant_house_era01_9171_001002;
+		1: spritelayout_merchant_house_era01_9171_001003;
+		1: spritelayout_merchant_house_era01_9171_001004;
+		1: spritelayout_merchant_house_era01_9171_001005;
+		1: spritelayout_merchant_house_era01_9171_001006;
+		1: spritelayout_merchant_house_era01_9171_001007;
+		1: spritelayout_merchant_house_era01_9171_001008;
+		1: spritelayout_merchant_house_era01_9171_001009;
+		1: spritelayout_merchant_house_era01_9171_001010;
+		1: spritelayout_merchant_house_era01_9171_001011;
+		1: spritelayout_merchant_house_era01_9171_002001;
+		1: spritelayout_merchant_house_era01_9171_002002;
+		1: spritelayout_merchant_house_era01_9171_002003;
+		1: spritelayout_merchant_house_era01_9171_002004;
+		1: spritelayout_merchant_house_era01_9171_002005;
+		1: spritelayout_merchant_house_era01_9171_002006;
+		1: spritelayout_merchant_house_era01_9171_002007;
+		1: spritelayout_merchant_house_era01_9171_002008;
+		1: spritelayout_merchant_house_era01_9171_002009;
+		1: spritelayout_merchant_house_era01_9171_002010;
+		1: spritelayout_merchant_house_era01_9171_002011;
+		1: spritelayout_merchant_house_era01_9171_003001;
+		1: spritelayout_merchant_house_era01_9171_003002;
+		1: spritelayout_merchant_house_era01_9171_003003;
+		1: spritelayout_merchant_house_era01_9171_003004;
+		1: spritelayout_merchant_house_era01_9171_003005;
+		1: spritelayout_merchant_house_era01_9171_003006;
+		1: spritelayout_merchant_house_era01_9171_003007;
+		1: spritelayout_merchant_house_era01_9171_003008;
+		1: spritelayout_merchant_house_era01_9171_003009;
+		1: spritelayout_merchant_house_era01_9171_003010;
+		1: spritelayout_merchant_house_era01_9171_003011;
+		1: spritelayout_merchant_house_era01_9171_004001;
+		1: spritelayout_merchant_house_era01_9171_004002;
+		1: spritelayout_merchant_house_era01_9171_004003;
+		1: spritelayout_merchant_house_era01_9171_004004;
+		1: spritelayout_merchant_house_era01_9171_004005;
+		1: spritelayout_merchant_house_era01_9171_004006;
+		1: spritelayout_merchant_house_era01_9171_004007;
+		1: spritelayout_merchant_house_era01_9171_004008;
+		1: spritelayout_merchant_house_era01_9171_004009;
+		1: spritelayout_merchant_house_era01_9171_004010;
+		1: spritelayout_merchant_house_era01_9171_004011;
+		1: spritelayout_merchant_house_era01_9171_005001;
+		1: spritelayout_merchant_house_era01_9171_005002;
+		1: spritelayout_merchant_house_era01_9171_005003;
+		1: spritelayout_merchant_house_era01_9171_005004;
+		1: spritelayout_merchant_house_era01_9171_005005;
+		1: spritelayout_merchant_house_era01_9171_005006;
+		1: spritelayout_merchant_house_era01_9171_005007;
+		1: spritelayout_merchant_house_era01_9171_005008;
+		1: spritelayout_merchant_house_era01_9171_005009;
+		1: spritelayout_merchant_house_era01_9171_005010;
+		1: spritelayout_merchant_house_era01_9171_005011;
+		1: spritelayout_merchant_house_era01_9171_006001;
+		1: spritelayout_merchant_house_era01_9171_006002;
+		1: spritelayout_merchant_house_era01_9171_006003;
+		1: spritelayout_merchant_house_era01_9171_006004;
+		1: spritelayout_merchant_house_era01_9171_006005;
+		1: spritelayout_merchant_house_era01_9171_006006;
+		1: spritelayout_merchant_house_era01_9171_006007;
+		1: spritelayout_merchant_house_era01_9171_006008;
+		1: spritelayout_merchant_house_era01_9171_006009;
+		1: spritelayout_merchant_house_era01_9171_006010;
+		1: spritelayout_merchant_house_era01_9171_006011;
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_007001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_007002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_007003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_007004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_007005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_007006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_007007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_007008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_007009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_007010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_007011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_007; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_011; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_9171_008001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_008002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_008003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_008004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_008005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_008006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_008007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_008008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_008009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_008010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_008011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_008; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_011; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_9171_009001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_009002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_009003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_009004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_009005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_009006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_009007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_009008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_009009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_009010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_009011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_009; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_011; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_9171_010001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_010002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_010003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_010004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_010005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_010006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_010007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_010008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_010009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_010010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_010011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_010; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_011; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+
+spritelayout spritelayout_merchant_house_era01_9171_011001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_011002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_011003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_011004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_011005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_011006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_011007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_011008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_011009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_011010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_011011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_011; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_011; xoffset: 27; yoffset: 75; }
+}
+// -----------------------------------------------------------------------------
+
+spritelayout spritelayout_merchant_house_era01_9171_012001 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_001; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_012002 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_002; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_012003 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_003; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_012004 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_004; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_012005 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_005; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_012006 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_006; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_012007 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_007; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_012008 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_008; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_012009 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_009; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_012010 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_010; xoffset: 27; yoffset: 75; }
+}
+
+spritelayout spritelayout_merchant_house_era01_9171_012011 {
+	ground { sprite: spriteset_ground_sprite_concrete; }
+	building { sprite: spriteset_merchant_house_era01_916_012; }
+	childsprite { sprite: spriteset_merchant_house_era01_716_011; xoffset: 27; yoffset: 75; }
+}
+
+// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
+random_switch (FEAT_HOUSES, SELF, random_merchant_house_era01_05) {
+		1: spritelayout_merchant_house_era01_9171_007001;
+		1: spritelayout_merchant_house_era01_9171_007002;
+		1: spritelayout_merchant_house_era01_9171_007003;
+		1: spritelayout_merchant_house_era01_9171_007004;
+		1: spritelayout_merchant_house_era01_9171_007005;
+		1: spritelayout_merchant_house_era01_9171_007006;
+		1: spritelayout_merchant_house_era01_9171_007007;
+		1: spritelayout_merchant_house_era01_9171_007008;
+		1: spritelayout_merchant_house_era01_9171_007009;
+		1: spritelayout_merchant_house_era01_9171_007010;
+		1: spritelayout_merchant_house_era01_9171_007011;
+		1: spritelayout_merchant_house_era01_9171_008001;
+		1: spritelayout_merchant_house_era01_9171_008002;
+		1: spritelayout_merchant_house_era01_9171_008003;
+		1: spritelayout_merchant_house_era01_9171_008004;
+		1: spritelayout_merchant_house_era01_9171_008005;
+		1: spritelayout_merchant_house_era01_9171_008006;
+		1: spritelayout_merchant_house_era01_9171_008007;
+		1: spritelayout_merchant_house_era01_9171_008008;
+		1: spritelayout_merchant_house_era01_9171_008009;
+		1: spritelayout_merchant_house_era01_9171_008010;
+		1: spritelayout_merchant_house_era01_9171_008011;
+		1: spritelayout_merchant_house_era01_9171_009001;
+		1: spritelayout_merchant_house_era01_9171_009002;
+		1: spritelayout_merchant_house_era01_9171_009003;
+		1: spritelayout_merchant_house_era01_9171_009004;
+		1: spritelayout_merchant_house_era01_9171_009005;
+		1: spritelayout_merchant_house_era01_9171_009006;
+		1: spritelayout_merchant_house_era01_9171_009007;
+		1: spritelayout_merchant_house_era01_9171_009008;
+		1: spritelayout_merchant_house_era01_9171_009009;
+		1: spritelayout_merchant_house_era01_9171_009010;
+		1: spritelayout_merchant_house_era01_9171_009011;
+		1: spritelayout_merchant_house_era01_9171_010001;
+		1: spritelayout_merchant_house_era01_9171_010002;
+		1: spritelayout_merchant_house_era01_9171_010003;
+		1: spritelayout_merchant_house_era01_9171_010004;
+		1: spritelayout_merchant_house_era01_9171_010005;
+		1: spritelayout_merchant_house_era01_9171_010006;
+		1: spritelayout_merchant_house_era01_9171_010007;
+		1: spritelayout_merchant_house_era01_9171_010008;
+		1: spritelayout_merchant_house_era01_9171_010009;
+		1: spritelayout_merchant_house_era01_9171_010010;
+		1: spritelayout_merchant_house_era01_9171_010011;
+		1: spritelayout_merchant_house_era01_9171_011001;
+		1: spritelayout_merchant_house_era01_9171_011002;
+		1: spritelayout_merchant_house_era01_9171_011003;
+		1: spritelayout_merchant_house_era01_9171_011004;
+		1: spritelayout_merchant_house_era01_9171_011005;
+		1: spritelayout_merchant_house_era01_9171_011006;
+		1: spritelayout_merchant_house_era01_9171_011007;
+		1: spritelayout_merchant_house_era01_9171_011008;
+		1: spritelayout_merchant_house_era01_9171_011009;
+		1: spritelayout_merchant_house_era01_9171_011010;
+		1: spritelayout_merchant_house_era01_9171_011011;
+		1: spritelayout_merchant_house_era01_9171_012001;
+		1: spritelayout_merchant_house_era01_9171_012002;
+		1: spritelayout_merchant_house_era01_9171_012003;
+		1: spritelayout_merchant_house_era01_9171_012004;
+		1: spritelayout_merchant_house_era01_9171_012005;
+		1: spritelayout_merchant_house_era01_9171_012006;
+		1: spritelayout_merchant_house_era01_9171_012007;
+		1: spritelayout_merchant_house_era01_9171_012008;
+		1: spritelayout_merchant_house_era01_9171_012009;
+		1: spritelayout_merchant_house_era01_9171_012010;
+		1: spritelayout_merchant_house_era01_9171_012011;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, merchant_house_town_type, func_town_type()) {
+		1: 0; 2: 1; 3: 0;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_merchant_house_era01) {
+		1: random_merchant_house_era01_01;
+		1: random_merchant_house_era01_02;
+		1: random_merchant_house_era01_03;
+		1: random_merchant_house_era01_04;
+		1: random_merchant_house_era01_05;
+}
+}
+
+
+/* Switch for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_merchant_house, animation_frame) {
+		random_merchant_house_era01;
+}
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_merchant_house, animation_frame) {
+	0:  func_anim_frame;
+	CB_RESULT_DO_NOTHING;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_merchant_house, 33, HOUSE_SIZE_1X1) {
+	property {
+		substitute:					14;
+		name:						string(STR_MERCHANTHOUSE);
+		population:					100;
+		mail_multiplier:			50;
+		accepted_cargos:			[[PASS, 6], [MAIL, 3], [GOOD, 3]];
+		local_authority_impact:		140;
+		probability:				1;
+		years_available:			[1700, 1919];
+		minimum_lifetime:			10;
+		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
+		removal_cost_multiplier:	120;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		default:					era_switch_merchant_house;
+		anim_control:				era_anim_merchant_house;
+		construction_check:			merchant_house_town_type;
+		protection:					func_old_town;
+	}
+}
+
+
+
