@@ -2220,7 +2220,6 @@ random_switch (FEAT_HOUSES, SELF, random_merchant_house_era01) {
 		1: random_merchant_house_era01_04;
 		1: random_merchant_house_era01_05;
 }
-}
 
 
 /* Switch for binding the sets of spritelayouts to the historical eras */
