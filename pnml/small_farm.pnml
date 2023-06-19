@@ -69,7 +69,7 @@ item (FEAT_HOUSES, item_small_farm_nw, 10, HOUSE_SIZE_2X1) {
 		probability:				1;
 		years_available:			[1700, 1949];
 		minimum_lifetime:			5;
-		availability_mask:			[bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB), ALL_CLIMATES];
+		availability_mask:			[bitmask(ALL_TOWNZONES & ~bitmask(TOWNZONE_CENTRE)), ALL_CLIMATES];
 		removal_cost_multiplier:	75;
 		building_class:				1;
 		animation_info:				[ANIMATION_NON_LOOPING, 1];
@@ -93,7 +93,7 @@ item (FEAT_HOUSES, item_small_farm_ne, 12, HOUSE_SIZE_1X2) {
 		probability:				1;
 		years_available:			[1700, 1949];
 		minimum_lifetime:			5;
-		availability_mask:			[bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB), ALL_CLIMATES];
+		availability_mask:			[bitmask(ALL_TOWNZONES & ~bitmask(TOWNZONE_CENTRE)), ALL_CLIMATES];
 		removal_cost_multiplier:	75;
 		building_class:				1;
 		animation_info:				[ANIMATION_NON_LOOPING, 1];
@@ -117,7 +117,7 @@ item (FEAT_HOUSES, item_small_farm_wn, 14, HOUSE_SIZE_2X1) {
 		probability:				1;
 		years_available:			[1700, 1949];
 		minimum_lifetime:			5;
-		availability_mask:			[bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB), ALL_CLIMATES];
+		availability_mask:			[bitmask(ALL_TOWNZONES & ~bitmask(TOWNZONE_CENTRE)), ALL_CLIMATES];
 		removal_cost_multiplier:	75;
 		building_class:				1;
 		animation_info:				[ANIMATION_NON_LOOPING, 1];
@@ -141,7 +141,7 @@ item (FEAT_HOUSES, item_small_farm_en, 16, HOUSE_SIZE_1X2) {
 		probability:				1;
 		years_available:			[1700, 1949];
 		minimum_lifetime:			5;
-		availability_mask:			[bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB), ALL_CLIMATES];
+		availability_mask:			[bitmask(ALL_TOWNZONES & ~bitmask(TOWNZONE_CENTRE)), ALL_CLIMATES];
 		removal_cost_multiplier:	75;
 		building_class:				1;
 		animation_info:				[ANIMATION_NON_LOOPING, 1];
