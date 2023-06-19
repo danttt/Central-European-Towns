@@ -48,7 +48,7 @@ spritelayout spritelayout_church_era01_001 {
 /* Switch defining what town types this house type can be built in */
 /* --------------------------------------------------------------------------------------------------- */
 
-switch (FEAT_HOUSES, SELF, church_town_type, func_town_type()) {
+switch (FEAT_HOUSES, SELF, church_v_town_type, func_town_type()) {
 		1: 1; 2: 0; 3: 0;
 }
 
@@ -66,7 +66,7 @@ random_switch (FEAT_HOUSES, SELF, random_church_era01) {
 /*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-item (FEAT_HOUSES, item_church_i, 4, HOUSE_SIZE_1X1) {
+item (FEAT_HOUSES, item_church_v, 4, HOUSE_SIZE_1X1) {
 	property {
 		substitute:					03;
 		name:						string(STR_CHURCH);
@@ -85,7 +85,7 @@ item (FEAT_HOUSES, item_church_i, 4, HOUSE_SIZE_1X1) {
 	}
 	graphics {
 		default:					random_church_era01;
-		construction_check:			church_town_type;
+		construction_check:			church_v_town_type;
 	}
 }
 
