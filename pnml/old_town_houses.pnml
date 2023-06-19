@@ -1,6 +1,6 @@
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*x---------------------------------------------------------------------------------------------------x*/
-/*x------------------------------------------- TOWN HOUSES -------------------------------------------x*/
+/*x----------------------------------------- OLD TOWN HOUSES -----------------------------------------x*/
 /*x---------------------------------------------------------------------------------------------------x*/
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
@@ -13,10 +13,10 @@
 /* Spritesets for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spriteset(spriteset_town_houses_era01_001_g, "gfx/town_houses_era01_001.PNG") {
+spriteset(spriteset_old_town_houses_era01_001_g, "gfx/old_town_houses_era01_001.PNG") {
 	tmpl_small_houses_ground (0, 0)
 }
-spriteset(spriteset_town_houses_era01_001_b, "gfx/town_houses_era01_001.PNG") {
+spriteset(spriteset_old_town_houses_era01_001_b, "gfx/old_town_houses_era01_001.PNG") {
 	tmpl_small_houses_building (0, 0)
 }
 
@@ -29,14 +29,14 @@ spriteset(spriteset_town_houses_era01_001_b, "gfx/town_houses_era01_001.PNG") {
 /* Spritelayouts for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spritelayout spritelayout_town_houses_era01_001 {
+spritelayout spritelayout_old_town_houses_era01_001 {
 	ground { 
 		sprite: spriteset_ground_sprite_concrete; }
 	childsprite {
-		sprite: spriteset_town_houses_era01_001_g; 
+		sprite: spriteset_old_town_houses_era01_001_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_town_houses_era01_001_b;  }
+		sprite: spriteset_old_town_houses_era01_001_b;  }
 }
 
 
@@ -48,7 +48,7 @@ spritelayout spritelayout_town_houses_era01_001 {
 /* Switch defining what town types this house type can be built in */
 /* --------------------------------------------------------------------------------------------------- */
 
-switch (FEAT_HOUSES, SELF, town_houses_town_type, func_town_type()) {
+switch (FEAT_HOUSES, SELF, old_town_houses_town_type, func_town_type()) {
 		1: 0; 2: 1; 3: 0;
 }
 
@@ -56,8 +56,8 @@ switch (FEAT_HOUSES, SELF, town_houses_town_type, func_town_type()) {
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
 
-random_switch (FEAT_HOUSES, SELF, random_town_houses_era01) {
-		1: spritelayout_town_houses_era01_001;
+random_switch (FEAT_HOUSES, SELF, random_old_town_houses_era01) {
+		1: spritelayout_old_town_houses_era01_001;
 }
 
 
@@ -65,12 +65,12 @@ random_switch (FEAT_HOUSES, SELF, random_town_houses_era01) {
 /* --------------------------------------------------------------------------------------------------- */
 
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
-switch (FEAT_HOUSES, SELF, era_switch_town_houses, animation_frame) {
-		random_town_houses_era01;
+switch (FEAT_HOUSES, SELF, era_switch_old_town_houses, animation_frame) {
+		random_old_town_houses_era01;
 }
 
 // This switch is called by the 'anim_control' callback and used for deciding which frame to use
-switch (FEAT_HOUSES, SELF, era_anim_town_houses, animation_frame) {
+switch (FEAT_HOUSES, SELF, era_anim_old_town_houses, animation_frame) {
 	0:  func_anim_frame;
 	CB_RESULT_DO_NOTHING;
 }
@@ -81,7 +81,7 @@ switch (FEAT_HOUSES, SELF, era_anim_town_houses, animation_frame) {
 /*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-item (FEAT_HOUSES, item_town_houses, 2, HOUSE_SIZE_1X1) {
+item (FEAT_HOUSES, item_old_town_houses, 2, HOUSE_SIZE_1X1) {
 	property {
 		substitute:					06;
 		name:						string(STR_TOWNHOUSES);
@@ -98,9 +98,9 @@ item (FEAT_HOUSES, item_town_houses, 2, HOUSE_SIZE_1X1) {
 		animation_info:				[ANIMATION_NON_LOOPING, 1];
 	}
 	graphics {
-		default:					era_switch_town_houses;
-		anim_control:				era_anim_town_houses;
-		construction_check:			town_houses_town_type;
+		default:					era_switch_old_town_houses;
+		anim_control:				era_anim_old_town_houses;
+		construction_check:			old_town_houses_town_type;
 		protection:					func_old_town;
 	}
 }
