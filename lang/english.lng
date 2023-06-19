@@ -15,6 +15,7 @@ STR_HOUSE                               :House
 STR_MERCHANTHOUSE                       :Merchant House
 STR_SCHOOL                              :School
 STR_SHOP                                :Shop
+STR_SHOPS                               :Shops
 STR_SHOPSOFFICES                        :Shops and Offices
 STR_SMALLFARM                           :Small Farm
 STR_TOWNCHURCH                          :Town Church

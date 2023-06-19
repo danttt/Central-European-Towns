@@ -170,6 +170,13 @@ sections.append(merchant_house.read())
 merchant_house.close()
 
 
+# Open the file containing the nml-code for this house type and append it to the "sections" list
+print ("Appending house type 'shops'...")
+shops = codecs.open("pnml/shops.pnml", 'r', 'utf8')
+sections.append(shops.read())
+shops.close()
+
+
 # Create the final .nml-file and make it writable
 # Then write the "sections" list into 'cet.nml' using new lines for each part
 print ("Creating NML file...")
