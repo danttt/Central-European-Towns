@@ -52,10 +52,10 @@ farm_house.close()
 
 
 # Open the file containing the nml-code for this house type and append it to the "sections" list
-print ("Appending house type 'town houses'...")
-town_houses = codecs.open("pnml/town_houses.pnml", 'r', 'utf8')
-sections.append(town_houses.read())
-town_houses.close()
+print ("Appending house type 'old town houses'...")
+old_town_houses = codecs.open("pnml/old_town_houses.pnml", 'r', 'utf8')
+sections.append(old_town_houses.read())
+old_town_houses.close()
 
 
 # Open the file containing the nml-code for this house type and append it to the "sections" list
@@ -164,10 +164,10 @@ trading_house.close()
 
 
 # Open the file containing the nml-code for this house type and append it to the "sections" list
-print ("Appending house type 'old shops and offices'...")
-old_shops_offices = codecs.open("pnml/old_shops_offices.pnml", 'r', 'utf8')
-sections.append(old_shops_offices.read())
-old_shops_offices.close()
+print ("Appending house type 'merchant house'...")
+merchant_house = codecs.open("pnml/merchant_house.pnml", 'r', 'utf8')
+sections.append(merchant_house.read())
+merchant_house.close()
 
 
 # Create the final .nml-file and make it writable
