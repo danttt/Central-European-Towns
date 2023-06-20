@@ -15,6 +15,7 @@ STR_FARMHOUSE                           :Farm House
 STR_HOUSE                               :House
 STR_MANSION                             :Mansion
 STR_MERCHANTHOUSE                       :Merchant House
+STR_MULTIFAMILYHOME                     :Multi Family Home
 STR_SCHOOL                              :School
 STR_SHOP                                :Shop
 STR_SHOPS                               :Shops
