@@ -1,0 +1,105 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x--------------------------------------------- MANSION ---------------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era03 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_mansion_era03_001_g, "gfx/mansion_era03_001.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_mansion_era03_001_b, "gfx/mansion_era03_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era03 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_mansion_era03_001 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_mansion_era03_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_mansion_era03_001_b;  }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, mansion_town_type, func_town_type()) {
+		1: 0; 2: 1; 3: 1;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_mansion_era03) {
+		spritelayout_mansion_era03_001;
+}
+
+
+/* Switch for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_mansion, animation_frame) {
+		random_mansion_era03;
+}
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_mansion, animation_frame) {
+	0:  func_anim_frame;
+	CB_RESULT_DO_NOTHING;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_mansion, 36, HOUSE_SIZE_1X1) {
+	property {
+		substitute:					06;
+		name:						string(STR_MANSION);
+		population:					25;
+		mail_multiplier:			8;
+		accepted_cargos:			[[PASS, 4], [MAIL, 1], [GOOD, 0]];
+		local_authority_impact:		100;
+		probability:				1;
+		years_available:			[1920, 9999];
+		minimum_lifetime:			10;
+		availability_mask:			[bitmask(TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB), ALL_CLIMATES];
+		removal_cost_multiplier:	100;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		default:					era_switch_mansion;
+		anim_control:				era_anim_mansion;
+		construction_check:			mansion_town_type;
+	}
+}
