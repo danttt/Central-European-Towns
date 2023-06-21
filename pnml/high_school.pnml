@@ -13,16 +13,16 @@
 /* Spritesets for era03 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spriteset(spriteset_high_school_era03_001_N_g, "gfx/high_school_era03_001.png") { 		
+spriteset(spriteset_high_school_era03_N_001_g, "gfx/high_school_era03_001.png") { 		
 	tmpl_small_houses_ground (0, 0)
 }
-spriteset(spriteset_high_school_era03_001_N_b, "gfx/high_school_era03_001.png") {
+spriteset(spriteset_high_school_era03_N_001_b, "gfx/high_school_era03_001.png") {
 	tmpl_small_houses_building (0, 0)
 }
-spriteset(spriteset_high_school_era03_001_W_g, "gfx/high_school_era03_001.png") {
+spriteset(spriteset_high_school_era03_W_001_g, "gfx/high_school_era03_001.png") {
 	tmpl_small_houses_ground (0, 100)
 }
-spriteset(spriteset_high_school_era03_001_W_b, "gfx/high_school_era03_001.png") {
+spriteset(spriteset_high_school_era03_W_001_b, "gfx/high_school_era03_001.png") {
 	tmpl_small_houses_building (0, 100)
 }
 
@@ -35,23 +35,23 @@ spriteset(spriteset_high_school_era03_001_W_b, "gfx/high_school_era03_001.png") 
 /* Spritelayouts for era03 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spritelayout spritelayout_high_school_era03_001_N {
+spritelayout spritelayout_high_school_era03_N_001 {
 	ground { 
-		sprite: spriteset_ground_sprite_concrete; }
+		sprite: GROUNDSPRITE_NORMAL; }
 	childsprite {
-		sprite: spriteset_high_school_era03_001_N_g; 
+		sprite: spriteset_high_school_era03_N_001_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_high_school_era03_001_N_b;  }
+		sprite: spriteset_high_school_era03_N_001_b;  }
 }
-spritelayout spritelayout_high_school_era03_001_W {
+spritelayout spritelayout_high_school_era03_W_001 {
 	ground { 
-		sprite: spriteset_ground_sprite_concrete; }
+		sprite: GROUNDSPRITE_NORMAL; }
 	childsprite {
-		sprite: spriteset_high_school_era03_001_W_g; 
+		sprite: spriteset_high_school_era03_W_001_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_high_school_era03_001_W_b;  }
+		sprite: spriteset_high_school_era03_W_001_b;  }
 }
 
 

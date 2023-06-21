@@ -31,7 +31,7 @@ spriteset(spriteset_apartment_building_era03_001_b, "gfx/apartment_building_era0
 
 spritelayout spritelayout_apartment_building_era03_001 {
 	ground { 
-		sprite: spriteset_ground_sprite_concrete; }
+		sprite: GROUNDSPRITE_NORMAL; }
 	childsprite {
 		sprite: spriteset_apartment_building_era03_001_g; 
 		always_draw: 1; }
@@ -84,7 +84,7 @@ switch (FEAT_HOUSES, SELF, era_anim_apartment_building, animation_frame) {
 item (FEAT_HOUSES, item_apartment_building_t, 37, HOUSE_SIZE_1X1) {
 	property {
 		substitute:					27;
-		name:						string(STR_APARTMENTBUILDING);
+		name:						string(STR_APARTBUILDING);
 		population:					80;
 		mail_multiplier:			40;
 		accepted_cargos:			[[PASS, 5], [MAIL, 3], [GOOD, 0]];
@@ -100,6 +100,6 @@ item (FEAT_HOUSES, item_apartment_building_t, 37, HOUSE_SIZE_1X1) {
 	graphics {
 		default:					era_switch_apartment_building;
 		anim_control:				era_anim_apartment_building;
-		construction_check:			apartment_building_t_func_town_type;
+		construction_check:			apartment_building_t_town_type;
 	}
 }

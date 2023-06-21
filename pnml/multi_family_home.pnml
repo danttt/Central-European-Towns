@@ -31,7 +31,7 @@ spriteset(spriteset_multi_family_home_era04_001_b, "gfx/multi_family_home_era04_
 
 spritelayout spritelayout_multi_family_home_era04_001 {
 	ground { 
-		sprite: spriteset_ground_sprite_concrete; }
+		sprite: GROUNDSPRITE_NORMAL; }
 	childsprite {
 		sprite: spriteset_multi_family_home_era04_001_g; 
 		always_draw: 1; }

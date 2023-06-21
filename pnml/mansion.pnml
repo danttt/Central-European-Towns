@@ -57,7 +57,7 @@ switch (FEAT_HOUSES, SELF, mansion_town_type, func_town_type()) {
 /* --------------------------------------------------------------------------------------------------- */
 
 random_switch (FEAT_HOUSES, SELF, random_mansion_era03) {
-		spritelayout_mansion_era03_001;
+		1: spritelayout_mansion_era03_001;
 }
 
 
