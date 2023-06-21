@@ -214,7 +214,7 @@ high_school.close()
 
 # Open the file containing the nml-code for this house type and append it to the "sections" list
 print ("Appending house type 'theatre'...")
-high_school = codecs.open("pnml/theatre.pnml", 'r', 'utf8')
+theatre = codecs.open("pnml/theatre.pnml", 'r', 'utf8')
 sections.append(theatre.read())
 theatre.close()
 
