@@ -95,11 +95,15 @@ spritelayout spritelayout_workshop_era03_001 {
 /*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Switch defining what town types this house type can be built in */
+/* Switches defining what town types this house type can be built in */
 /* --------------------------------------------------------------------------------------------------- */
 
 switch (FEAT_HOUSES, SELF, workshop_v_town_type, func_town_type()) {
 		1: 1; 2: 0; 3: 0;
+}
+
+switch (FEAT_HOUSES, SELF, workshop_t_c_town_type, func_town_type()) {
+		1: 0; 2: 1; 3: 1;
 }
 
 
@@ -161,6 +165,29 @@ item (FEAT_HOUSES, item_workshop_v, 20, HOUSE_SIZE_1X1) {
 		default:					era_switch_workshop;
 		anim_control:				era_anim_workshop;
 		construction_check:			workshop_v_town_type;
+	}
+}
+
+item (FEAT_HOUSES, item_workshop_t_c, 46, HOUSE_SIZE_1X1) {
+	property {
+		substitute:					14;
+		name:						string(STR_WORKSHOP);
+		population:					18;
+		mail_multiplier:			10;
+		accepted_cargos:			[[PASS, 4], [MAIL, 1], [GOOD, 1]];
+		local_authority_impact:		90;
+		probability:				1;
+		years_available:			[1700, 1979];
+		minimum_lifetime:			10;
+		availability_mask:			[ALL_TOWNZONES & ~bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
+		removal_cost_multiplier:	90;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		default:					era_switch_workshop;
+		anim_control:				era_anim_workshop;
+		construction_check:			workshop_t_c_town_type;
 	}
 }
 
