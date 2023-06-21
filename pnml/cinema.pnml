@@ -1,0 +1,118 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x--------------------------------------------- CINEMA ----------------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era06 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_cinema_era06_001_g, "gfx/cinema_era06_001.PNG") { 	
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_cinema_era06_001_b, "gfx/cinema_era06_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era06 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_cinema_era06_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_cinema_era06_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_cinema_era06_001_b;  }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switch for distance check */
+/* --------------------------------------------------------------------------------------------------- */
+
+// cinemas cannot be built closer to each other than at a radius of 12 tiles (manhattan distance)
+switch (FEAT_HOUSES, SELF, cinema_distance, nearest_house_matching_criterion(12, SEARCH_HOUSE_BY_TYPE) == 0) {
+		1: return 1;
+		return 0;
+}
+
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, cinema_town_type, func_town_type()) {
+		1: 0; 2: cinema_distance; 3: 0;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_cinema_era06) {
+		1: spritelayout_cinema_era06_001;
+}
+
+
+/* Switch for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_cinema, animation_frame) {
+		random_cinema_era06;
+}
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_cinema, animation_frame) {
+	0:  func_anim_frame;
+	CB_RESULT_DO_NOTHING;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_cinema, 42, HOUSE_SIZE_1X1) {
+	property {
+		substitute:					39;
+		name:						string(STR_CINEMA);
+		population:					25;
+		mail_multiplier:			30;
+		accepted_cargos:			[[PASS, 8], [MAIL, 2], [GOOD, 4]];
+		local_authority_impact:		160;
+		probability:				1;
+		years_available:			[2010, 9999];
+		minimum_lifetime:			20;
+		availability_mask:			[bitmask(TOWNZONE_INNER_SUBURB, TOWNZONE_CENTRE), ALL_CLIMATES];
+		removal_cost_multiplier:	140;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		default:					era_switch_cinema;
+		anim_control:				era_anim_cinema;
+		construction_check:			cinema_town_type;			
+	}
+}
+
+
+

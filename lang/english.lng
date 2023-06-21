@@ -9,6 +9,7 @@ STR_GRF_DESC							:Full town replacement set with houses from Central Europe. G
 STR_ALLEYHOUSES                         :Alley Houses
 STR_APARTBUILDING                       :Apartment Building
 STR_CHURCH                              :Church
+STR_CINEMA                              :Cinema
 STR_FARM                                :Farm
 STR_FARMESTATE                          :Farm Estate
 STR_FARMHOUSE                           :Farm House
