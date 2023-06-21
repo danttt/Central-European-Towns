@@ -120,6 +120,16 @@ spritelayout spritelayout_school_era06_001 {
 /*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
+/* Switch for distance check for the town and city school */
+/* --------------------------------------------------------------------------------------------------- */
+
+// Schools in towns and cities cannot be built closer to each other than at a radius of 12 tiles (manhattan distance)
+switch (FEAT_HOUSES, SELF, school_t_c_distance, nearest_house_matching_criterion(12, SEARCH_HOUSE_BY_TYPE) == 0) {
+		1: return 1;
+		return 0;
+}
+
+
 /* Switch for unique buildings for the village school */
 /* --------------------------------------------------------------------------------------------------- */
 
@@ -129,11 +139,15 @@ switch (FEAT_HOUSES, SELF, school_v_unique, same_house_count_town) {
 }
 
 
-/* Switch defining what town types this house type can be built in */
+/* Switches defining what town types this house type can be built in */
 /* --------------------------------------------------------------------------------------------------- */
 
 switch (FEAT_HOUSES, SELF, school_v_town_type, func_town_type()) {
 		1: school_v_unique; 2: 0; 3: 0;
+}
+
+switch (FEAT_HOUSES, SELF, school_t_c_town_type, func_town_type()) {
+		1: 0; 2: school_t_c_distance; 3: school_t_c_distance;
 }
 
 
@@ -200,7 +214,7 @@ item (FEAT_HOUSES, item_school_v, 18, HOUSE_SIZE_1X1) {
 		local_authority_impact:		180;
 		probability:				1;
 		years_available:			[1700, 9999];
-		minimum_lifetime:			10;
+		minimum_lifetime:			20;
 		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
 		removal_cost_multiplier:	90;
 		building_class:				1;
@@ -211,7 +225,29 @@ item (FEAT_HOUSES, item_school_v, 18, HOUSE_SIZE_1X1) {
 		default:					era_switch_school;
 		anim_control:				era_anim_school;
 		construction_check:			school_v_town_type;	
-		
+	}
+}
+
+item (FEAT_HOUSES, item_school_t_c, 44, HOUSE_SIZE_1X1) {
+	property {
+		substitute:					01;
+		name:						string(STR_SCHOOL);
+		population:					15;
+		mail_multiplier:			12;
+		accepted_cargos:			[[PASS, 4], [MAIL, 2], [GOOD, 0]];
+		local_authority_impact:		180;
+		probability:				1;
+		years_available:			[1700, 9999];
+		minimum_lifetime:			20;
+		availability_mask:			[bitmask(TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB), ALL_CLIMATES];
+		removal_cost_multiplier:	90;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		default:					era_switch_school;
+		anim_control:				era_anim_school;
+		construction_check:			school_t_c_town_type;	
 	}
 }
 
