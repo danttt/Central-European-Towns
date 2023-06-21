@@ -91,7 +91,7 @@ switch (FEAT_HOUSES, SELF, era_anim_cinema, animation_frame) {
 /*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-item (FEAT_HOUSES, item_cinema, 42, HOUSE_SIZE_1X1) {
+item (FEAT_HOUSES, item_cinema, 43, HOUSE_SIZE_1X1) {
 	property {
 		substitute:					39;
 		name:						string(STR_CINEMA);
