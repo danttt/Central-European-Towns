@@ -147,7 +147,7 @@ spritelayout spritelayout_stadium_era05_001_W {
 /* Switch for distance check */
 /* --------------------------------------------------------------------------------------------------- */
 
-// Stadiums cannot be built closer to each other than at a radius of 25 tiles (manhattan distance)
+// Stadiums cannot be built closer to each other than at a radius of 20 tiles (manhattan distance)
 switch (FEAT_HOUSES, SELF, stadium_distance, nearest_house_matching_criterion(20, SEARCH_HOUSE_BY_TYPE) == 0) {
 		1: return 1;
 		return 0;
