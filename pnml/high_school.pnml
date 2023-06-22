@@ -13,16 +13,16 @@
 /* Spritesets for era03 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spriteset(spriteset_high_school_era03_N_001_g, "gfx/high_school_era03_001.png") { 		
+spriteset(spriteset_high_school_era03_001_N_g, "gfx/high_school_era03_001.png") { 		
 	tmpl_small_houses_ground (0, 0)
 }
-spriteset(spriteset_high_school_era03_N_001_b, "gfx/high_school_era03_001.png") {
+spriteset(spriteset_high_school_era03_001_N_b, "gfx/high_school_era03_001.png") {
 	tmpl_small_houses_building (0, 0)
 }
-spriteset(spriteset_high_school_era03_W_001_g, "gfx/high_school_era03_001.png") {
+spriteset(spriteset_high_school_era03_001_W_g, "gfx/high_school_era03_001.png") {
 	tmpl_small_houses_ground (0, 100)
 }
-spriteset(spriteset_high_school_era03_W_001_b, "gfx/high_school_era03_001.png") {
+spriteset(spriteset_high_school_era03_001_W_b, "gfx/high_school_era03_001.png") {
 	tmpl_small_houses_building (0, 100)
 }
 
@@ -35,23 +35,23 @@ spriteset(spriteset_high_school_era03_W_001_b, "gfx/high_school_era03_001.png") 
 /* Spritelayouts for era03 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spritelayout spritelayout_high_school_era03_N_001 {
+spritelayout spritelayout_high_school_era03_001_N {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; }
 	childsprite {
-		sprite: spriteset_high_school_era03_N_001_g; 
+		sprite: spriteset_high_school_era03_001_N_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_high_school_era03_N_001_b;  }
+		sprite: spriteset_high_school_era03_001_N_b;  }
 }
-spritelayout spritelayout_high_school_era03_W_001 {
+spritelayout spritelayout_high_school_era03_001_W {
 	ground { 
 		sprite: GROUNDSPRITE_NORMAL; }
 	childsprite {
-		sprite: spriteset_high_school_era03_W_001_g; 
+		sprite: spriteset_high_school_era03_001_W_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_high_school_era03_W_001_b;  }
+		sprite: spriteset_high_school_era03_001_W_b;  }
 }
 
 
@@ -81,10 +81,10 @@ switch (FEAT_HOUSES, SELF, high_school_t_town_type, func_town_type()) {
 /* --------------------------------------------------------------------------------------------------- */
 
 random_switch (FEAT_HOUSES, SELF, random_high_school_era03_N) {
-		1: spritelayout_high_school_era03_N_001;
+		1: spritelayout_high_school_era03_001_N;
 }
 random_switch (FEAT_HOUSES, SELF, random_high_school_era03_W) {
-		1: spritelayout_high_school_era03_W_001;
+		1: spritelayout_high_school_era03_001_W;
 }
 
 

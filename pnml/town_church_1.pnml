@@ -13,16 +13,16 @@
 /* Spritesets for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spriteset(spriteset_town_church_1_era01_N_001_g, "gfx/town_church_1_era01_001.PNG") { 	
+spriteset(spriteset_town_church_1_era01_001_N_g, "gfx/town_church_1_era01_001.PNG") { 	
 	tmpl_small_houses_ground (0, 0)
 }
-spriteset(spriteset_town_church_1_era01_N_001_b, "gfx/town_church_1_era01_001.PNG") {
+spriteset(spriteset_town_church_1_era01_001_N_b, "gfx/town_church_1_era01_001.PNG") {
 	tmpl_small_houses_building (0, 0)
 }
-spriteset(spriteset_town_church_1_era01_W_001_g, "gfx/town_church_1_era01_001.PNG") { 	
+spriteset(spriteset_town_church_1_era01_001_W_g, "gfx/town_church_1_era01_001.PNG") { 	
 	tmpl_small_houses_ground (0, 100)
 }
-spriteset(spriteset_town_church_1_era01_W_001_b, "gfx/town_church_1_era01_001.PNG") {
+spriteset(spriteset_town_church_1_era01_001_W_b, "gfx/town_church_1_era01_001.PNG") {
 	tmpl_small_houses_building (0, 100)
 }
 
@@ -35,23 +35,23 @@ spriteset(spriteset_town_church_1_era01_W_001_b, "gfx/town_church_1_era01_001.PN
 /* Spritelayouts for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spritelayout spritelayout_town_church_1_era01_N_001 {
+spritelayout spritelayout_town_church_1_era01_001_N {
 	ground { 
 		sprite: spriteset_ground_sprite_concrete; }
 	childsprite {
-		sprite: spriteset_town_church_1_era01_N_001_g; 
+		sprite: spriteset_town_church_1_era01_001_N_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_town_church_1_era01_N_001_b;  }
+		sprite: spriteset_town_church_1_era01_001_N_b;  }
 }
-spritelayout spritelayout_town_church_1_era01_W_001 {
+spritelayout spritelayout_town_church_1_era01_001_W {
 	ground { 
 		sprite: spriteset_ground_sprite_concrete; }
 	childsprite {
-		sprite: spriteset_town_church_1_era01_W_001_g; 
+		sprite: spriteset_town_church_1_era01_001_W_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_town_church_1_era01_W_001_b;  }
+		sprite: spriteset_town_church_1_era01_001_W_b;  }
 }
 
 
@@ -81,10 +81,10 @@ switch (FEAT_HOUSES, SELF, town_church_1_town_type, func_town_type()) {
 /* --------------------------------------------------------------------------------------------------- */
 
 random_switch (FEAT_HOUSES, SELF, random_town_church_1_era01_N) {
-		1: spritelayout_town_church_1_era01_N_001;
+		1: spritelayout_town_church_1_era01_001_N;
 }
 random_switch (FEAT_HOUSES, SELF, random_town_church_1_era01_W) {
-		1: spritelayout_town_church_1_era01_W_001;
+		1: spritelayout_town_church_1_era01_001_W;
 }
 
 
