@@ -1,0 +1,270 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x--------------------------------------------- STADIUM ---------------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era03 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_stadium_era03_001_N_g, "gfx/stadium_era03_001.png") { 		
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_stadium_era03_001_N_b, "gfx/stadium_era03_001.png") {
+	tmpl_small_houses_building (0, 0)
+}
+spriteset(spriteset_stadium_era03_001_E_g, "gfx/stadium_era03_001.png") {
+	tmpl_small_houses_ground (0, 100)
+}
+spriteset(spriteset_stadium_era03_001_E_b, "gfx/stadium_era03_001.png") {
+	tmpl_small_houses_building (0, 100)
+}
+spriteset(spriteset_stadium_era03_001_S_g, "gfx/stadium_era03_001.png") {
+	tmpl_small_houses_ground (0, 200)
+}
+spriteset(spriteset_stadium_era03_001_S_b, "gfx/stadium_era03_001.png") {
+	tmpl_small_houses_building (0, 200)
+}
+spriteset(spriteset_stadium_era03_001_W_g, "gfx/stadium_era03_001.png") {
+	tmpl_small_houses_ground (0, 300)
+}
+spriteset(spriteset_stadium_era03_001_W_b, "gfx/stadium_era03_001.png") {
+	tmpl_small_houses_building (0, 300)
+}
+
+
+/* Spritesets for era05 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_stadium_era05_001_N_g, "gfx/stadium_era05_001.png") { 		
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_stadium_era05_001_N_b, "gfx/stadium_era05_001.png") {
+	tmpl_small_houses_building (0, 0)
+}
+spriteset(spriteset_stadium_era05_001_E_g, "gfx/stadium_era05_001.png") {
+	tmpl_small_houses_ground (0, 100)
+}
+spriteset(spriteset_stadium_era05_001_E_b, "gfx/stadium_era05_001.png") {
+	tmpl_small_houses_building (0, 100)
+}
+spriteset(spriteset_stadium_era05_001_S_g, "gfx/stadium_era05_001.png") {
+	tmpl_small_houses_ground (0, 200)
+}
+spriteset(spriteset_stadium_era05_001_S_b, "gfx/stadium_era05_001.png") {
+	tmpl_small_houses_building (0, 200)
+}
+spriteset(spriteset_stadium_era05_001_W_g, "gfx/stadium_era05_001.png") {
+	tmpl_small_houses_ground (0, 300)
+}
+spriteset(spriteset_stadium_era05_001_W_b, "gfx/stadium_era05_001.png") {
+	tmpl_small_houses_building (0, 300)
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era03 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_stadium_era03_001_N {
+	ground { 
+	sprite: spriteset_stadium_era03_001_N_g; 
+	}
+	building {
+	sprite: spriteset_stadium_era03_001_N_b; }
+}
+spritelayout spritelayout_stadium_era03_001_E {
+	ground { 
+	sprite: spriteset_stadium_era03_001_E_g; 
+	}
+	building {
+	sprite: spriteset_stadium_era03_001_E_b; }
+}
+spritelayout spritelayout_stadium_era03_001_S {
+	ground { 
+	sprite: spriteset_stadium_era03_001_S_g; 
+	}
+	building {
+	sprite: spriteset_stadium_era03_001_S_b; }
+}
+spritelayout spritelayout_stadium_era03_001_W {
+	ground { 
+	sprite: spriteset_stadium_era03_001_W_g; 
+	}
+	building {
+	sprite: spriteset_stadium_era03_001_W_b; }
+}
+
+
+/* Spritelayouts for era05 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_stadium_era05_001_N {
+	ground { 
+	sprite: spriteset_stadium_era05_001_N_g; 
+	}
+	building {
+	sprite: spriteset_stadium_era05_001_N_b; }
+}
+spritelayout spritelayout_stadium_era05_001_E {
+	ground { 
+	sprite: spriteset_stadium_era05_001_E_g; 
+	}
+	building {
+	sprite: spriteset_stadium_era05_001_E_b; }
+}
+spritelayout spritelayout_stadium_era05_001_S {
+	ground { 
+	sprite: spriteset_stadium_era05_001_S_g; 
+	}
+	building {
+	sprite: spriteset_stadium_era05_001_S_b; }
+}
+spritelayout spritelayout_stadium_era05_001_W {
+	ground { 
+	sprite: spriteset_stadium_era05_001_W_g; 
+	}
+	building {
+	sprite: spriteset_stadium_era05_001_W_b; }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switch for distance check */
+/* --------------------------------------------------------------------------------------------------- */
+
+// Stadiums cannot be built closer to each other than at a radius of 25 tiles (manhattan distance)
+switch (FEAT_HOUSES, SELF, stadium_distance, nearest_house_matching_criterion(20, SEARCH_HOUSE_BY_TYPE) == 0) {
+		1: return 1;
+		return 0;
+}
+
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, stadium_town_type, func_town_type()) {
+		1: 0; 2: stadium_distance; 3: stadium_distance;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_stadium_era03_N) {
+		1: spritelayout_stadium_era03_001_N;
+}
+random_switch (FEAT_HOUSES, SELF, random_stadium_era03_E) {
+		1: spritelayout_stadium_era03_001_E;
+}
+random_switch (FEAT_HOUSES, SELF, random_stadium_era03_S) {
+		1: spritelayout_stadium_era03_001_S;
+}
+random_switch (FEAT_HOUSES, SELF, random_stadium_era03_W) {
+		1: spritelayout_stadium_era03_001_W;
+}
+
+random_switch (FEAT_HOUSES, SELF, random_stadium_era05_N) {
+		1: spritelayout_stadium_era05_001_N;
+}
+random_switch (FEAT_HOUSES, SELF, random_stadium_era05_E) {
+		1: spritelayout_stadium_era05_001_E;
+}
+random_switch (FEAT_HOUSES, SELF, random_stadium_era05_S) {
+		1: spritelayout_stadium_era05_001_S;
+}
+random_switch (FEAT_HOUSES, SELF, random_stadium_era05_W) {
+		1: spritelayout_stadium_era05_001_W;
+}
+
+
+/* Switches for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// These switches are called by the 'default' callback and bind the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_stadium_N, animation_frame) {
+		1: random_stadium_era03_N;
+		2: random_stadium_era03_N;
+		3: random_stadium_era03_N;
+		random_stadium_era05_N;
+}
+switch (FEAT_HOUSES, SELF, era_switch_stadium_E, animation_frame) {
+		1: random_stadium_era03_E;
+		2: random_stadium_era03_E;
+		3: random_stadium_era03_E;
+		random_stadium_era05_E;
+}
+switch (FEAT_HOUSES, SELF, era_switch_stadium_S, animation_frame) {
+		1: random_stadium_era03_S;
+		2: random_stadium_era03_S;
+		3: random_stadium_era03_S;
+		random_stadium_era05_S;
+}
+switch (FEAT_HOUSES, SELF, era_switch_stadium_W, animation_frame) {
+		1: random_stadium_era03_W;
+		2: random_stadium_era03_W;
+		3: random_stadium_era03_W;
+		random_stadium_era05_W;
+}
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_stadium, animation_frame) {
+	0:  func_anim_frame;
+	CB_RESULT_DO_NOTHING;
+}
+
+// This house type behaves differently for each town type
+switch (FEAT_HOUSES, SELF, stadium_town_type_switch, func_town_type() ) {
+		1: return 0;
+		2: special_town_switch;
+		3: stadium_distance_check;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_stadium, 190, HOUSE_SIZE_2X2) {
+	property {
+		substitute:					20;
+		name:						string(STR_STADIUM);
+		population:					65;
+		mail_multiplier:			20;
+		accepted_cargos:			[[PASS, 8], [MAIL, 1], [GOOD, 1]];
+		local_authority_impact:		200;
+		probability:				1;
+		years_available:			[1920, 9999];
+		minimum_lifetime:			50;
+		availability_mask:			[ALL_TOWNZONES & ~bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
+		removal_cost_multiplier:	200;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		graphics_north:				era_switch_stadium_N;
+		graphics_east:				era_switch_stadium_E;
+		graphics_south:				era_switch_stadium_S;
+		graphics_west:				era_switch_stadium_W;
+		anim_control:				era_anim_stadium;
+		construction_check:			stadium_town_type;
+	}
+}
+
+
+
