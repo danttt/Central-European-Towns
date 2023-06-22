@@ -103,11 +103,20 @@ switch (FEAT_HOUSES, SELF, church_t_c_distance, nearest_house_matching_criterion
 }
 
 
+/* Switch for unique buildings for the village church */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, church_v_unique, same_house_count_town) {
+        0: return 1;
+        return 0;
+}
+
+
 /* Switches defining what town types this house type can be built in */
 /* --------------------------------------------------------------------------------------------------- */
 
 switch (FEAT_HOUSES, SELF, church_v_town_type, func_town_type()) {
-		1: 1; 2: 0; 3: 0;
+		1: church_v_unique; 2: 0; 3: 0;
 }
 
 switch (FEAT_HOUSES, SELF, church_t_c_town_type, func_town_type()) {
@@ -180,7 +189,7 @@ item (FEAT_HOUSES, item_church_v, 4, HOUSE_SIZE_1X1) {
 
 item (FEAT_HOUSES, item_church_t_c, 44, HOUSE_SIZE_1X1) {
 	property {
-		substitute:					03;
+		substitute:					11;
 		name:						string(STR_CHURCH);
 		population:					7;
 		mail_multiplier:			2;
