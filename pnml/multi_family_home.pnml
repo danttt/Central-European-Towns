@@ -56,6 +56,10 @@ switch (FEAT_HOUSES, SELF, multi_family_home_t_town_type, func_town_type()) {
 		1: 0; 2: 1; 3: 0;
 }
 
+switch (FEAT_HOUSES, SELF, multi_family_home_c_town_type, func_town_type()) {
+		1: 0; 2: 0; 3: 1;
+}
+
 
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
@@ -128,6 +132,29 @@ item (FEAT_HOUSES, item_multi_family_home_t, 39, HOUSE_SIZE_1X1) {
 		default:					era_switch_multi_family_home;
 		anim_control:				era_anim_multi_family_home;
 		construction_check:			multi_family_home_t_town_type;
+	}
+}
+
+item (FEAT_HOUSES, item_multi_family_home_c, 60, HOUSE_SIZE_1X1) {
+	property {
+		substitute:					18;
+		name:						string(STR_MULTIFAMILYHOME);
+		population:					30;
+		mail_multiplier:			12;
+		accepted_cargos:			[[PASS, 4], [MAIL, 2], [GOOD, 0]];
+		local_authority_impact:		90;
+		probability:				1;
+		years_available:			[1950, 9999];
+		minimum_lifetime:			10;
+		availability_mask:			[bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB), ALL_CLIMATES];
+		removal_cost_multiplier:	90;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		default:					era_switch_multi_family_home;
+		anim_control:				era_anim_multi_family_home;
+		construction_check:			multi_family_home_c_town_type;
 	}
 }
 
