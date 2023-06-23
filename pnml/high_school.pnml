@@ -60,20 +60,21 @@ spritelayout spritelayout_high_school_era03_001_W {
 /*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Switch for unique buildings */
+/* Switch for distance check */
 /* --------------------------------------------------------------------------------------------------- */
 
-switch (FEAT_HOUSES, SELF, high_school_t_unique, same_house_count_town) {
-        0: return 1;
-        return 0;
+// High Schools cannot be built closer to each other than at a radius of 20 tiles (manhattan distance)
+switch (FEAT_HOUSES, SELF, high_school_distance, nearest_house_matching_criterion(20, SEARCH_HOUSE_BY_TYPE) == 0) {
+		1: return 1;
+		return 0;
 }
 
 
 /* Switch defining what town types this house type can be built in */
 /* --------------------------------------------------------------------------------------------------- */
 
-switch (FEAT_HOUSES, SELF, high_school_t_town_type, func_town_type()) {
-		1: 0; 2: high_school_t_unique; 3: 0;
+switch (FEAT_HOUSES, SELF, high_school_town_type, func_town_type()) {
+		1: 0; 2: high_school_distance; 3: high_school_distance;
 }
 
 
@@ -111,7 +112,7 @@ switch (FEAT_HOUSES, SELF, era_anim_high_school, animation_frame) {
 /*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-item (FEAT_HOUSES, item_high_school_t, 40, HOUSE_SIZE_2X1) {
+item (FEAT_HOUSES, item_high_school, 40, HOUSE_SIZE_2X1) {
 	property {
 		substitute:					74;
 		name:						string(STR_HIGHSCHOOL);
@@ -132,7 +133,7 @@ item (FEAT_HOUSES, item_high_school_t, 40, HOUSE_SIZE_2X1) {
 		graphics_north:				era_switch_high_school_N;
 		graphics_west:				era_switch_high_school_W;
 		anim_control:				era_anim_high_school;
-		construction_check:			high_school_t_town_type;
+		construction_check:			high_school_town_type;
 	}
 }
 
