@@ -60,12 +60,13 @@ spritelayout spritelayout_town_church_1_era01_001_W {
 /*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Switch for unique buildings */
+/* Switch for distance check */
 /* --------------------------------------------------------------------------------------------------- */
 
-switch (FEAT_HOUSES, SELF, town_church_1_unique, same_house_count_town) {
-        0: return 1;
-        return 0;
+// Town churches cannot be built closer to each other than at a radius of 20 tiles (manhattan distance)
+switch (FEAT_HOUSES, SELF, town_church_1_distance, nearest_house_matching_criterion(20, SEARCH_HOUSE_BY_TYPE) == 0) {
+		1: return 1;
+		return 0;
 }
 
 
@@ -73,7 +74,7 @@ switch (FEAT_HOUSES, SELF, town_church_1_unique, same_house_count_town) {
 /* --------------------------------------------------------------------------------------------------- */
 
 switch (FEAT_HOUSES, SELF, town_church_1_town_type, func_town_type()) {
-		1: 0; 2: town_church_1_unique; 3: 0;
+		1: 0; 2: town_church_1_distance; 3: town_church_1_distance;
 }
 
 
