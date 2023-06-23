@@ -45,11 +45,24 @@ spritelayout spritelayout_old_town_houses_era01_001 {
 /*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Switch defining what town types this house type can be built in */
+/* Switches defining what town types this house type can be built in */
 /* --------------------------------------------------------------------------------------------------- */
 
-switch (FEAT_HOUSES, SELF, old_town_houses_town_type, func_town_type()) {
+switch (FEAT_HOUSES, SELF, old_town_houses_town, func_town_type()) {
 		1: 0; 2: 1; 3: 0;
+}
+
+switch (FEAT_HOUSES, SELF, old_town_houses_city, func_town_type()) {
+		1: 0; 2: 1; 3: 1;
+}
+
+
+/* Switch for varying attribution to town types in different eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, old_town_houses_t_c_switch, func_anim_frame()) {
+		1: old_town_houses_city;
+		old_town_houses_town;
 }
 
 
@@ -100,7 +113,7 @@ item (FEAT_HOUSES, item_old_town_houses, 2, HOUSE_SIZE_1X1) {
 	graphics {
 		default:					era_switch_old_town_houses;
 		anim_control:				era_anim_old_town_houses;
-		construction_check:			old_town_houses_town_type;
+		construction_check:			old_town_houses_t_c_switch;
 		protection:					func_old_town;
 	}
 }
