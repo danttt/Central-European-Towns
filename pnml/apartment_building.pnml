@@ -52,6 +52,10 @@ switch (FEAT_HOUSES, SELF, apartment_building_t_town_type, func_town_type()) {
 		1: 0; 2: 1; 3: 0;
 }
 
+switch (FEAT_HOUSES, SELF, apartment_building_c_town_type, func_town_type()) {
+		1: 0; 2: 0; 3: 1;
+}
+
 
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
@@ -103,3 +107,29 @@ item (FEAT_HOUSES, item_apartment_building_t, 37, HOUSE_SIZE_1X1) {
 		construction_check:			apartment_building_t_town_type;
 	}
 }
+
+item (FEAT_HOUSES, item_apartment_building_c, 59, HOUSE_SIZE_1X1) {
+	property {
+		substitute:					27;
+		name:						string(STR_APARTBUILDING);
+		population:					80;
+		mail_multiplier:			40;
+		accepted_cargos:			[[PASS, 5], [MAIL, 3], [GOOD, 0]];
+		local_authority_impact:		100;
+		probability:				1;
+		years_available:			[1920, 9999];
+		minimum_lifetime:			10;
+		availability_mask:			[bitmask(TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB,), ALL_CLIMATES];
+		removal_cost_multiplier:	120;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		default:					era_switch_apartment_building;
+		anim_control:				era_anim_apartment_building;
+		construction_check:			apartment_building_c_town_type;
+	}
+}
+
+
+
