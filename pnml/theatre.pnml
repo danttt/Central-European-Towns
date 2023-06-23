@@ -59,7 +59,7 @@ switch (FEAT_HOUSES, SELF, theatre_distance, nearest_house_matching_criterion(10
 /* --------------------------------------------------------------------------------------------------- */
 
 switch (FEAT_HOUSES, SELF, theatre_town_type, func_town_type()) {
-		1: 0; 2: theatre_distance; 3: 0;
+		1: 0; 2: theatre_distance; 3: theatre_distance;
 }
 
 
