@@ -49,7 +49,7 @@ spritelayout spritelayout_trading_house_era01_001 {
 /* --------------------------------------------------------------------------------------------------- */
 
 switch (FEAT_HOUSES, SELF, trading_house_town_type, func_town_type()) {
-		1: 0; 2: 1; 3: 0;
+		1: 0; 2: 0; 3: 1;
 }
 
 
@@ -90,7 +90,7 @@ item (FEAT_HOUSES, item_trading_house, 19, HOUSE_SIZE_1X1) {
 		accepted_cargos:			[[PASS, 8], [MAIL, 4], [GOOD, 3]];
 		local_authority_impact:		140;
 		probability:				1;
-		years_available:			[1700, 1919];
+		years_available:			[1700, 1850];
 		minimum_lifetime:			10;
 		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
 		removal_cost_multiplier:	120;
