@@ -1,3 +1,30 @@
+Central European Towns 0.4.0 (2023-06-23) (Build 4)
+----------------------------------------------------
+- ADD: house type alley houses for Towns
+- ADD: house type house for towns and cities
+- ADD: house type town church 1 (2X1 orientation)
+- ADD: house type old town house
+- ADD: house type trading house (for towns)
+- ADD: house type merchant house (for towns)
+- ADD: house type shops for towns
+- ADD: house type shops and offices 2 for towns
+- ADD: house type mansion
+- ADD: house type apartment building for towns
+- ADD: house type multi family home for villages and towns
+- ADD: house type high school for towns
+- ADD: house type theatre (for towns)
+- ADD: house type cinema (for towns)
+- ADD: expanded house type church to appear in towns and cities
+- ADD: house type stadium
+- ADD: house type hospital
+- CHANGE: Rename house type town houses as old town houses 
+- CHANGE: Excluded renamed house type old town houses from town zone 4 (was all before)
+- CHANGE: Rename house type church item for villages
+- CHANGE: Expand church appearance to all eras
+- FIX: Unified sprites so that all are ready for snow addition
+- FIX: Unified sprite denotation for the parts of multi-tile houses (..._00x_N instead of ..._N_00x)
+
+
 Central European Towns 0.3.0 (2023-06-18) (Build 3)
 ----------------------------------------------------
 - ADD: farm fields for the use with various house types
