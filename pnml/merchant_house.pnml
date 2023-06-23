@@ -2202,11 +2202,24 @@ random_switch (FEAT_HOUSES, SELF, random_merchant_house_era01_05) {
 /*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Switch defining what town types this house type can be built in */
+/* Switches defining what town types this house type can be built in */
 /* --------------------------------------------------------------------------------------------------- */
 
-switch (FEAT_HOUSES, SELF, merchant_house_town_type, func_town_type()) {
+switch (FEAT_HOUSES, SELF, merchant_house_town, func_town_type()) {
 		1: 0; 2: 1; 3: 0;
+}
+
+switch (FEAT_HOUSES, SELF, merchant_house_city, func_town_type()) {
+		1: 0; 2: 1; 3: 1;
+}
+
+
+/* Switch for varying attribution to town types in different eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, merchant_house_t_c_switch, func_anim_frame()) {
+		1: merchant_house_city;
+		merchant_house_town;
 }
 
 
@@ -2261,7 +2274,7 @@ item (FEAT_HOUSES, item_merchant_house, 33, HOUSE_SIZE_1X1) {
 	graphics {
 		default:					era_switch_merchant_house;
 		anim_control:				era_anim_merchant_house;
-		construction_check:			merchant_house_town_type;
+		construction_check:			merchant_house_t_c_switch;
 		protection:					func_old_town;
 	}
 }
