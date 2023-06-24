@@ -55,6 +55,7 @@ switch (FEAT_HOUSES, SELF, func_road_detect,
 		((nearby_tile_class( 1, -1) == TILE_CLASS_ROAD) || (nearby_tile_class( 1, -1) == TILE_CLASS_STATION))*64 +	// W
 		((nearby_tile_class( 0, -1) == TILE_CLASS_ROAD) || (nearby_tile_class( 0, -1) == TILE_CLASS_STATION))*128 	// NW
 		) {
+		0:	 return 0;  // No road or station is around house tile
 		131: return 1;	// N corner (no road present in W or E tile)
 		199: return 1;  // N corner (road present in W and E tile)
 		195: return 1;	// N corner (road present in W tile)
@@ -75,7 +76,7 @@ switch (FEAT_HOUSES, SELF, func_road_detect,
 		240: return 7;  // W corner (road present in S tile)
 		225: return 7;  // W corner (road present in N tile)
 		193: return 8;	// NW block
-		return 0;
+		return 9;
 }
 
 // Combine the output of the historical era and road detection functions
