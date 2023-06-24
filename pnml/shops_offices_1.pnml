@@ -20,6 +20,13 @@ spriteset(spriteset_shops_offices_1_era02_A_001_b, "gfx/shops_offices_1_era02_A_
 	tmpl_small_houses_building (0, 0)                                            
 }
 
+spriteset(spriteset_shops_offices_1_era02_B_001_g, "gfx/shops_offices_1_era02_B_001.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_shops_offices_1_era02_B_001_b, "gfx/shops_offices_1_era02_B_001.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
 spriteset(spriteset_shops_offices_1_era02_N_001_g, "gfx/shops_offices_1_era02_N_001.PNG") {
 	tmpl_small_houses_ground (0, 0)                                              
 }                                                                              
@@ -93,6 +100,16 @@ spritelayout spritelayout_shops_offices_1_era02_A_001 {
 		always_draw: 1; }
 	building {
 		sprite: spriteset_shops_offices_1_era02_A_001_b;  }
+}
+
+spritelayout spritelayout_shops_offices_1_era02_B_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shops_offices_1_era02_B_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shops_offices_1_era02_B_001_b;  }
 }
 
 spritelayout spritelayout_shops_offices_1_era02_N_001 {
@@ -195,6 +212,9 @@ switch (FEAT_HOUSES, SELF, shops_offices_1_town_type, func_town_type()) {
 random_switch (FEAT_HOUSES, SELF, random_shops_offices_1_era02_A) {
 		1: spritelayout_shops_offices_1_era02_A_001;
 }
+random_switch (FEAT_HOUSES, SELF, random_shops_offices_1_era02_B) {
+		1: spritelayout_shops_offices_1_era02_B_001;
+}
 random_switch (FEAT_HOUSES, SELF, random_shops_offices_1_era02_N) {
 		1: spritelayout_shops_offices_1_era02_N_001;
 }
@@ -226,7 +246,7 @@ random_switch (FEAT_HOUSES, SELF, random_shops_offices_1_era02_NW) {
 
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
 switch (FEAT_HOUSES, SELF, era_switch_shops_offices_1, animation_frame) {
-		20: random_shops_offices_1_era02_A;
+		20: random_shops_offices_1_era02_B;
 		21: random_shops_offices_1_era02_N;
 		22: random_shops_offices_1_era02_NE;
 		23: random_shops_offices_1_era02_E;
@@ -235,7 +255,8 @@ switch (FEAT_HOUSES, SELF, era_switch_shops_offices_1, animation_frame) {
 		26: random_shops_offices_1_era02_SW;
 		27: random_shops_offices_1_era02_W;
 		28: random_shops_offices_1_era02_NW;
-		30: random_shops_offices_1_era02_A;
+		29: random_shops_offices_1_era02_A;
+		30: random_shops_offices_1_era02_B;
 		31: random_shops_offices_1_era02_N;
 		32: random_shops_offices_1_era02_NE;
 		33: random_shops_offices_1_era02_E;
@@ -244,7 +265,8 @@ switch (FEAT_HOUSES, SELF, era_switch_shops_offices_1, animation_frame) {
 		36: random_shops_offices_1_era02_SW;
 		37: random_shops_offices_1_era02_W;
 		38: random_shops_offices_1_era02_NW;
-		40: random_shops_offices_1_era02_A;
+		39: random_shops_offices_1_era02_A;
+		40: random_shops_offices_1_era02_B;
 		41: random_shops_offices_1_era02_N;
 		42: random_shops_offices_1_era02_NE;
 		43: random_shops_offices_1_era02_E;
@@ -253,7 +275,8 @@ switch (FEAT_HOUSES, SELF, era_switch_shops_offices_1, animation_frame) {
 		46: random_shops_offices_1_era02_SW;
 		47: random_shops_offices_1_era02_W;
 		48: random_shops_offices_1_era02_NW;
-		50: random_shops_offices_1_era02_A;
+		49: random_shops_offices_1_era02_A;
+		50: random_shops_offices_1_era02_B;
 		51: random_shops_offices_1_era02_N;
 		52: random_shops_offices_1_era02_NE;
 		53: random_shops_offices_1_era02_E;
@@ -262,7 +285,8 @@ switch (FEAT_HOUSES, SELF, era_switch_shops_offices_1, animation_frame) {
 		56: random_shops_offices_1_era02_SW;
 		57: random_shops_offices_1_era02_W;
 		58: random_shops_offices_1_era02_NW;
-		60: random_shops_offices_1_era02_A;
+		59: random_shops_offices_1_era02_A;
+		60: random_shops_offices_1_era02_B;
 		61: random_shops_offices_1_era02_N;
 		62: random_shops_offices_1_era02_NE;
 		63: random_shops_offices_1_era02_E;
@@ -271,6 +295,7 @@ switch (FEAT_HOUSES, SELF, era_switch_shops_offices_1, animation_frame) {
 		66: random_shops_offices_1_era02_SW;
 		67: random_shops_offices_1_era02_W;
 		68: random_shops_offices_1_era02_NW;
+		69: random_shops_offices_1_era02_A;
 }
 
 // This switch is called by the 'anim_control' callback and used for deciding which frame to use
