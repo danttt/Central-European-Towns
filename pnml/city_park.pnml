@@ -69,6 +69,48 @@ spriteset(spriteset_city_park_era02_008_b, "gfx/city_park_era02_008.PNG") {
 	tmpl_small_houses_building (0, 0)
 }
 
+spriteset(spriteset_city_park_era02_009_g, "gfx/city_park_era02_009.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_park_era02_009_b, "gfx/city_park_era02_009.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_city_park_era02_010_g, "gfx/city_park_era02_010.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_park_era02_010_b, "gfx/city_park_era02_010.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_city_park_era02_011_g, "gfx/city_park_era02_011.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_park_era02_011_b, "gfx/city_park_era02_011.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_city_park_era02_012_g, "gfx/city_park_era02_012.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_park_era02_012_b, "gfx/city_park_era02_012.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_city_park_era02_013_g, "gfx/city_park_era02_013.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_park_era02_013_b, "gfx/city_park_era02_013.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_city_park_era02_014_g, "gfx/city_park_era02_014.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_park_era02_014_b, "gfx/city_park_era02_014.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
 
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -158,6 +200,66 @@ spritelayout spritelayout_city_park_era02_008 {
 		sprite: spriteset_city_park_era02_008_b;  }
 }
 
+spritelayout spritelayout_city_park_era02_009 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_city_park_era02_009_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_park_era02_009_b;  }
+}
+
+spritelayout spritelayout_city_park_era02_010 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_city_park_era02_010_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_park_era02_010_b;  }
+}
+
+spritelayout spritelayout_city_park_era02_011 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_city_park_era02_011_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_park_era02_011_b;  }
+}
+
+spritelayout spritelayout_city_park_era02_012 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_city_park_era02_012_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_park_era02_012_b;  }
+}
+
+spritelayout spritelayout_city_park_era02_013 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_city_park_era02_013_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_park_era02_013_b;  }
+}
+
+spritelayout spritelayout_city_park_era02_014 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_city_park_era02_014_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_park_era02_014_b;  }
+}
+
 
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -214,7 +316,13 @@ random_switch (FEAT_HOUSES, SELF, random_city_park_era02) {
 		1: spritelayout_city_park_era02_005;
 		1: spritelayout_city_park_era02_006;
 		1: spritelayout_city_park_era02_007;
-        1: spritelayout_city_park_era04_008;
+        1: spritelayout_city_park_era02_008;
+		1: spritelayout_city_park_era02_009;
+		1: spritelayout_city_park_era02_010;
+		1: spritelayout_city_park_era02_011;
+		1: spritelayout_city_park_era02_012;
+		1: spritelayout_city_park_era02_013;
+		1: spritelayout_city_park_era02_014;
 }
 
 
