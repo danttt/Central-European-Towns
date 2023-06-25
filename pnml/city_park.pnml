@@ -1,0 +1,266 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x-------------------------------------------- CITY PARK --------------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era02 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_city_park_era02_001_g, "gfx/city_park_era02_001.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_park_era02_001_b, "gfx/city_park_era02_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_city_park_era02_002_g, "gfx/city_park_era02_002.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_park_era02_002_b, "gfx/city_park_era02_002.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_city_park_era02_003_g, "gfx/city_park_era02_003.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_park_era02_003_b, "gfx/city_park_era02_003.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_city_park_era02_004_g, "gfx/city_park_era02_004.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_park_era02_004_b, "gfx/city_park_era02_004.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_city_park_era02_005_g, "gfx/city_park_era02_005.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_park_era02_005_b, "gfx/city_park_era02_005.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_city_park_era02_006_g, "gfx/city_park_era02_006.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_park_era02_006_b, "gfx/city_park_era02_006.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_city_park_era02_007_g, "gfx/city_park_era02_007.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_park_era02_007_b, "gfx/city_park_era02_007.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+spriteset(spriteset_city_park_era02_008_g, "gfx/city_park_era02_008.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_park_era02_008_b, "gfx/city_park_era02_008.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era02 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_city_park_era02_001 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_city_park_era02_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_park_era02_001_b;  }
+}
+
+spritelayout spritelayout_city_park_era02_002 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_city_park_era02_002_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_park_era02_002_b;  }
+}
+
+spritelayout spritelayout_city_park_era02_003 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_city_park_era02_003_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_park_era02_003_b;  }
+}
+
+spritelayout spritelayout_city_park_era02_004 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_city_park_era02_004_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_park_era02_004_b;  }
+}
+
+spritelayout spritelayout_city_park_era02_005 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_city_park_era02_005_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_park_era02_005_b;  }
+}
+
+spritelayout spritelayout_city_park_era02_006 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_city_park_era02_006_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_park_era02_006_b;  }
+}
+
+spritelayout spritelayout_city_park_era02_007 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_city_park_era02_007_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_park_era02_007_b;  }
+}
+
+spritelayout spritelayout_city_park_era02_008 {
+	ground { 
+		sprite: GROUNDSPRITE_NORMAL; }
+	childsprite {
+		sprite: spriteset_city_park_era02_008_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_park_era02_008_b;  }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switches City Park spread and clustering */
+/* --------------------------------------------------------------------------------------------------- */
+
+// Other than the first one, city park tiles can only be built next to others
+switch (FEAT_HOUSES, SELF, city_park_cluster,
+        nearby_tile_house_id( 0, -1) == 318 ||
+		nearby_tile_house_id( 1, -1) == 318 ||
+		nearby_tile_house_id( 1,  0) == 318 ||
+		nearby_tile_house_id( 1,  1) == 318 ||
+		nearby_tile_house_id( 0,  1) == 318 ||
+		nearby_tile_house_id(-1,  1) == 318 ||
+		nearby_tile_house_id(-1,  0) == 318 ||
+		nearby_tile_house_id(-1, -1) == 318 
+		) {
+		1: return 1;
+		return 0;
+}
+
+// The first city park tile and some following ones can be built everywhere to increase chances for auto-creation of a large city park
+switch (FEAT_HOUSES, SELF, city_park_spread, same_house_count_town) {
+		0: 	return 1;
+		1: 	return 1;
+		2:  return 1;
+		5:	return 1;
+		10:	return 1;
+		15: return 1;
+		20: return 1;
+		city_park_cluster;
+}
+
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, city_park_town_type, func_town_type()) {
+		1: 0; 2: 0; 3: city_park_spread;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_city_park_era02) {
+		1: spritelayout_city_park_era02_001;
+		1: spritelayout_city_park_era02_002;
+		1: spritelayout_city_park_era02_003;
+		1: spritelayout_city_park_era02_004;
+		1: spritelayout_city_park_era02_005;
+		1: spritelayout_city_park_era02_006;
+		1: spritelayout_city_park_era02_007;
+        1: spritelayout_city_park_era04_008;
+}
+
+
+/* Switch for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_city_park, animation_frame) {
+		random_city_park_era02;
+}
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_city_park, animation_frame) {
+	0:  func_anim_frame;
+	CB_RESULT_DO_NOTHING;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_city_park, 62, HOUSE_SIZE_1X1) {
+	property {
+		substitute:					10;
+		name:						string(STR_CITYPARK);
+		population:					0;
+		mail_multiplier:			0;
+		accepted_cargos:			[[PASS, 6], [MAIL, 1], [GOOD, 1]];
+		local_authority_impact:		80;
+		probability:				1;
+		years_available:			[1850, 9999];
+		minimum_lifetime:			50;
+		availability_mask:			[bitmask(TOWNZONE_INNER_SUBURB, TOWNZONE_CENTRE), ALL_CLIMATES];
+		removal_cost_multiplier:	40;
+		building_class:				1;
+        building_flags:             bitmask(HOUSE_FLAG_PROTECTED);
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		default:					era_switch_city_park;
+		anim_control:				era_anim_city_park;
+		construction_check:			city_park_town_type;
+	}
+}
+
+
+
