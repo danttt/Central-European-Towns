@@ -1,0 +1,271 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x-------------------------------------------- CITY HALL --------------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era01 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_city_hall_era01_001_N_g, "gfx/city_hall_era01_001.png") { 		
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_hall_era01_001_N_b, "gfx/city_hall_era01_001.png") {
+	tmpl_small_houses_building (0, 0)
+}
+spriteset(spriteset_city_hall_era01_001_E_g, "gfx/city_hall_era01_001.png") {
+	tmpl_small_houses_ground (0, 100)
+}
+spriteset(spriteset_city_hall_era01_001_E_b, "gfx/city_hall_era01_001.png") {
+	tmpl_small_houses_building (0, 100)
+}
+spriteset(spriteset_city_hall_era01_001_S_g, "gfx/city_hall_era01_001.png") { 		
+	tmpl_small_houses_ground (0, 200)
+}
+spriteset(spriteset_city_hall_era01_001_S_b, "gfx/city_hall_era01_001.png") {
+	tmpl_small_houses_building (0, 200)
+}
+spriteset(spriteset_city_hall_era01_001_W_g, "gfx/city_hall_era01_001.png") {
+	tmpl_small_houses_ground (0, 300)
+}
+spriteset(spriteset_city_hall_era01_001_W_b, "gfx/city_hall_era01_001.png") {
+	tmpl_small_houses_building (0, 300)
+}
+
+
+/* Spritesets for era02 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_city_hall_era02_001_N_g, "gfx/city_hall_era02_001.png") { 		
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_city_hall_era02_001_N_b, "gfx/city_hall_era02_001.png") {
+	tmpl_small_houses_building (0, 0)
+}
+spriteset(spriteset_city_hall_era02_001_E_g, "gfx/city_hall_era02_001.png") {
+	tmpl_small_houses_ground (0, 100)
+}
+spriteset(spriteset_city_hall_era02_001_E_b, "gfx/city_hall_era02_001.png") {
+	tmpl_small_houses_building (0, 100)
+}
+spriteset(spriteset_city_hall_era02_001_S_g, "gfx/city_hall_era02_001.png") {
+	tmpl_small_houses_ground (0, 200)
+}
+spriteset(spriteset_city_hall_era02_001_S_b, "gfx/city_hall_era02_001.png") {
+	tmpl_small_houses_building (0, 200)
+}
+spriteset(spriteset_city_hall_era02_001_W_g, "gfx/city_hall_era02_001.png") {
+	tmpl_small_houses_ground (0, 300)
+}
+spriteset(spriteset_city_hall_era02_001_W_b, "gfx/city_hall_era02_001.png") {
+	tmpl_small_houses_building (0, 300)
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era01 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_city_hall_era01_001_N {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_city_hall_era01_001_N_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_hall_era01_001_N_b;  }
+}
+spritelayout spritelayout_city_hall_era01_001_E {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_city_hall_era01_001_E_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_hall_era01_001_E_b;  }
+}
+spritelayout spritelayout_city_hall_era01_001_S {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_city_hall_era01_001_S_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_hall_era01_001_S_b;  }
+}
+spritelayout spritelayout_city_hall_era01_001_W {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_city_hall_era01_001_W_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_hall_era01_001_W_b;  }
+}
+
+
+/* Spritelayouts for era02 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_city_hall_era02_001_N {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_city_hall_era02_001_N_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_hall_era02_001_N_b;  }
+}
+spritelayout spritelayout_city_hall_era02_001_E {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_city_hall_era02_001_E_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_hall_era02_001_E_b;  }
+}
+spritelayout spritelayout_city_hall_era02_001_S {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_city_hall_era02_001_S_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_hall_era02_001_S_b;  }
+}
+spritelayout spritelayout_city_hall_era02_001_W {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_city_hall_era02_001_W_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_city_hall_era02_001_W_b;  }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+/* Switch for unique buildings */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, city_hall_unique, same_house_count_town) {
+        0: return 1;
+        return 0;
+}
+
+
+switch (FEAT_HOUSES, SELF, city_hall_town_type, func_town_type()) {
+		1: 0; 2: 0; 3: city_hall_unique;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_city_hall_era01_N) {
+		1: spritelayout_city_hall_era01_001_N;
+}
+random_switch (FEAT_HOUSES, SELF, random_city_hall_era01_E) {
+		1: spritelayout_city_hall_era01_001_E;
+}
+random_switch (FEAT_HOUSES, SELF, random_city_hall_era01_S) {
+		1: spritelayout_city_hall_era01_001_S;
+}
+random_switch (FEAT_HOUSES, SELF, random_city_hall_era01_W) {
+		1: spritelayout_city_hall_era01_001_W;
+}
+
+random_switch (FEAT_HOUSES, SELF, random_city_hall_era02_N) {
+		1: spritelayout_city_hall_era02_001_N;
+}
+random_switch (FEAT_HOUSES, SELF, random_city_hall_era02_E) {
+		1: spritelayout_city_hall_era02_001_E;
+}
+random_switch (FEAT_HOUSES, SELF, random_city_hall_era02_S) {
+		1: spritelayout_city_hall_era02_001_S;
+}
+random_switch (FEAT_HOUSES, SELF, random_city_hall_era02_W) {
+		1: spritelayout_city_hall_era02_001_W;
+}
+
+
+/* Switches for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// These switches are called by the 'default' callback and bind the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_city_hall_N, animation_frame) {
+		1: random_city_hall_era01_N;
+		random_city_hall_era02_N;
+}
+switch (FEAT_HOUSES, SELF, era_switch_city_hall_E, animation_frame) {
+		1: random_city_hall_era01_E;
+		random_city_hall_era02_E;
+}
+switch (FEAT_HOUSES, SELF, era_switch_city_hall_S, animation_frame) {
+		1: random_city_hall_era01_S;
+		random_city_hall_era02_S;
+}
+switch (FEAT_HOUSES, SELF, era_switch_city_hall_W, animation_frame) {
+		1: random_city_hall_era01_W;
+		random_city_hall_era02_W;
+}
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_city_hall, animation_frame) {
+	0:  func_anim_frame;
+	CB_RESULT_DO_NOTHING;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_city_hall, 184, HOUSE_SIZE_2X2) {
+	property {
+		substitute:					20;
+		name:						string(STR_CITYHALL);
+		population:					60;
+		mail_multiplier:			80;
+		accepted_cargos:			[[PASS, 8], [MAIL, 6], [GOOD, 4]];
+		local_authority_impact:		255;
+		probability:				1;
+		years_available:			[1700, 9999];
+		minimum_lifetime:			50;
+		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
+		removal_cost_multiplier:	220;
+		building_class:				1;
+        building_flags:             bitmask(HOUSE_FLAG_PROTECTED);
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		graphics_north:				era_switch_city_hall_N;
+		graphics_east:				era_switch_city_hall_E;
+		graphics_south:				era_switch_city_hall_S;
+		graphics_west:				era_switch_city_hall_W;
+		anim_control:				era_anim_city_hall;
+		construction_check:			city_hall_town_type;
+	}
+}
+
+
+
