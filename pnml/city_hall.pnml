@@ -240,7 +240,7 @@ switch (FEAT_HOUSES, SELF, era_anim_city_hall, animation_frame) {
 /*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-item (FEAT_HOUSES, item_city_hall, 184, HOUSE_SIZE_2X2) {
+item (FEAT_HOUSES, item_city_hall, 67, HOUSE_SIZE_2X2) {
 	property {
 		substitute:					20;
 		name:						string(STR_CITYHALL);
