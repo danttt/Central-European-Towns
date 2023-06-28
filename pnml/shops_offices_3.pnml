@@ -319,7 +319,7 @@ item (FEAT_HOUSES, item_shops_offices_3, 61, HOUSE_SIZE_1X1) {
 		accepted_cargos:			[[PASS, 6], [MAIL, 4], [GOOD, 3]];
 		local_authority_impact:		120;
 		probability:				1;
-		years_available:			[1850, 9999];
+		years_available:			[1920, 9999];
 		minimum_lifetime:			10;
 		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
 		removal_cost_multiplier:	120;
