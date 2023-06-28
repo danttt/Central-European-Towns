@@ -1,0 +1,130 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x------------------------------------------- GRAND HOTEL -------------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era02 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_grand_hotel_era02_001_N_g, "gfx/grand_hotel_era02_001.png") { 		
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_grand_hotel_era02_001_N_b, "gfx/grand_hotel_era02_001.png") {
+	tmpl_small_houses_building (0, 0)
+}
+spriteset(spriteset_grand_hotel_era02_001_E_g, "gfx/grand_hotel_era02_001.png") {
+	tmpl_small_houses_ground (0, 100)
+}
+spriteset(spriteset_grand_hotel_era02_001_E_b, "gfx/grand_hotel_era02_001.png") {
+	tmpl_small_houses_building (0, 100)
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era02 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_grand_hotel_era02_001_N {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_grand_hotel_era02_001_N_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_grand_hotel_era02_001_N_b;  }
+}
+spritelayout spritelayout_grand_hotel_era02_001_E {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_grand_hotel_era02_001_E_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_grand_hotel_era02_001_E_b;  }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, grand_hotel_town_type, func_town_type()) {
+		1: 0; 2: 0; 3: 1;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_grand_hotel_era02_N) {
+		1: spritelayout_grand_hotel_era02_001_N;
+}
+random_switch (FEAT_HOUSES, SELF, random_grand_hotel_era02_E) {
+		1: spritelayout_grand_hotel_era02_001_E;
+}
+
+
+/* Switches for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// These switches are called by the 'default' callback and bind the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_grand_hotel_N, animation_frame) {
+		random_grand_hotel_era02_N;
+}
+switch (FEAT_HOUSES, SELF, era_switch_grand_hotel_E, animation_frame) {
+		random_grand_hotel_era02_E;
+}
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_grand_hotel, animation_frame) {
+	0:  func_anim_frame;
+	CB_RESULT_DO_NOTHING;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_grand_hotel, 71, HOUSE_SIZE_1X2) {
+	property {
+		substitute:					07;
+		name:						string(STR_HOTEL);
+		population:					140;
+		mail_multiplier:			60;
+		accepted_cargos:			[[PASS, 8], [MAIL, 4], [GOOD, 4]];
+		local_authority_impact:		150;
+		probability:				1;
+		years_available:			[1850, 9999];
+		minimum_lifetime:			20;
+		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
+		removal_cost_multiplier:	180;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		graphics_north:				era_switch_grand_hotel_N;
+		graphics_east:				era_switch_grand_hotel_E;
+		anim_control:				era_anim_grand_hotel;
+		construction_check:			grand_hotel_town_type;
+	}
+}
+
+
+

@@ -1,0 +1,174 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x------------------------------------------- SHOPPING MALL -----------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era06 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_shopping_mall_era06_001_N_g, "gfx/shopping_mall_era06_001.png") { 		
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_shopping_mall_era06_001_N_b, "gfx/shopping_mall_era06_001.png") {
+	tmpl_small_houses_building (0, 0)
+}
+spriteset(spriteset_shopping_mall_era06_001_E_g, "gfx/shopping_mall_era06_001.png") {
+	tmpl_small_houses_ground (0, 100)
+}
+spriteset(spriteset_shopping_mall_era06_001_E_b, "gfx/shopping_mall_era06_001.png") {
+	tmpl_small_houses_building (0, 100)
+}
+spriteset(spriteset_shopping_mall_era06_001_S_g, "gfx/shopping_mall_era06_001.png") { 		
+	tmpl_small_houses_ground (0, 200)
+}
+spriteset(spriteset_shopping_mall_era06_001_S_b, "gfx/shopping_mall_era06_001.png") {
+	tmpl_small_houses_building (0, 200)
+}
+spriteset(spriteset_shopping_mall_era06_001_W_g, "gfx/shopping_mall_era06_001.png") {
+	tmpl_small_houses_ground (0, 300)
+}
+spriteset(spriteset_shopping_mall_era06_001_W_b, "gfx/shopping_mall_era06_001.png") {
+	tmpl_small_houses_building (0, 300)
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era06 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_shopping_mall_era06_001_N {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shopping_mall_era06_001_N_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shopping_mall_era06_001_N_b;  }
+}
+spritelayout spritelayout_shopping_mall_era06_001_E {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shopping_mall_era06_001_E_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shopping_mall_era06_001_E_b;  }
+}
+spritelayout spritelayout_shopping_mall_era06_001_S {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shopping_mall_era06_001_S_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shopping_mall_era06_001_S_b;  }
+}
+spritelayout spritelayout_shopping_mall_era06_001_W {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shopping_mall_era06_001_W_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shopping_mall_era06_001_W_b;  }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, shopping_mall_town_type, func_town_type()) {
+		1: 0; 2: 0; 3: 1;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_shopping_mall_era06_N) {
+		1: spritelayout_shopping_mall_era06_001_N;
+}
+random_switch (FEAT_HOUSES, SELF, random_shopping_mall_era06_E) {
+		1: spritelayout_shopping_mall_era06_001_E;
+}
+random_switch (FEAT_HOUSES, SELF, random_shopping_mall_era06_S) {
+		1: spritelayout_shopping_mall_era06_001_S;
+}
+random_switch (FEAT_HOUSES, SELF, random_shopping_mall_era06_W) {
+		1: spritelayout_shopping_mall_era06_001_W;
+}
+
+
+/* Switches for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// These switches are called by the 'default' callback and bind the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_shopping_mall_N, animation_frame) {
+		random_shopping_mall_era06_N;
+}
+switch (FEAT_HOUSES, SELF, era_switch_shopping_mall_E, animation_frame) {
+		random_shopping_mall_era06_E;
+}
+switch (FEAT_HOUSES, SELF, era_switch_shopping_mall_S, animation_frame) {
+		random_shopping_mall_era06_S;
+}
+switch (FEAT_HOUSES, SELF, era_switch_shopping_mall_W, animation_frame) {
+		random_shopping_mall_era06_W;
+}
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_shopping_mall, animation_frame) {
+	0:  func_anim_frame;
+	CB_RESULT_DO_NOTHING;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_shopping_mall, 208, HOUSE_SIZE_2X2) {
+	property {
+		substitute:					40;
+		name:						string(STR_SHOPPINGMALL);
+		population:					40;
+		mail_multiplier:			80;
+		accepted_cargos:			[[PASS, 8], [MAIL, 6], [GOOD, 6]];
+		local_authority_impact:		180;
+		probability:				1;
+		years_available:			[2010, 9999];
+		minimum_lifetime:			20;
+		availability_mask:			[ALL_TOWNZONES, ALL_CLIMATES];
+		removal_cost_multiplier:	200;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		graphics_north:				era_switch_shopping_mall_N;
+		graphics_east:				era_switch_shopping_mall_E;
+		graphics_south:				era_switch_shopping_mall_S;
+		graphics_west:				era_switch_shopping_mall_W;
+		anim_control:				era_anim_shopping_mall;
+		construction_check:			shopping_mall_town_type;
+	}
+}
+
+
+

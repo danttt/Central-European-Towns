@@ -16,6 +16,7 @@ STR_CINEMA                              :Cinema
 STR_FARM                                :Farm
 STR_FARMESTATE                          :Farm Estate
 STR_FARMHOUSE                           :Farm House
+STR_GRANDHOTEL                          :Grand Hotel
 STR_HIGHSCHOOL                          :High School
 STR_HOSPITAL                            :Hospital
 STR_HOUSE                               :House
@@ -24,6 +25,7 @@ STR_MERCHANTHOUSE                       :Merchant House
 STR_MULTIFAMILYHOME                     :Multi Family Home
 STR_SCHOOL                              :School
 STR_SHOP                                :Shop
+STR_SHOPPINGMALL                        :Shopping Mall
 STR_SHOPS                               :Shops
 STR_SHOPSOFFICES                        :Shops and Offices
 STR_SMALLFARM                           :Small Farm
