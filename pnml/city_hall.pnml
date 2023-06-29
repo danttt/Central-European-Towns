@@ -253,7 +253,7 @@ item (FEAT_HOUSES, item_city_hall, 67, HOUSE_SIZE_2X2) {
 		minimum_lifetime:			50;
 		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
 		removal_cost_multiplier:	220;
-		building_class:				1;
+		building_class:				3;
         building_flags:             bitmask(HOUSE_FLAG_PROTECTED);
 		animation_info:				[ANIMATION_NON_LOOPING, 1];
 	}
