@@ -1,3 +1,31 @@
+Central European Towns 0.5.0 (2023-06-29) (Build 5)
+----------------------------------------------------
+- FEATURE: Expanding city park with only roads as limitations
+- ADD: expanded house type old town house to cities
+- ADD: expanded house type shops to cities
+- ADD: expanded house type shops and offices 2 to cities
+- ADD: expanded house type apartment building to cities
+- ADD: expanded house type multi family home to cities
+- ADD: expanded house type high school to cities
+- ADD: expanded house type town church 1 to cities
+- ADD: house type shops and offices 3
+- ADD: house type cathedral
+- ADD: house type city hall
+- ADD: house type grand hotel the appearance of which is regulated by proximity functions (can only be built near larger station or special city buildings)
+- ADD: house type shopping mall
+- ADD: Function for proximity detection of larger stations (three or more tiles)
+- ADD: Function for proximity detection of special buildings (building class 3)
+- CHANGE: house types theatre and cinema appear now in cities
+- CHANGE: trading house is only available in cities and in era01
+- CHANGE: old town houses now appear in cities only in era01
+- CHANGE: shops and offices 1 (historistic block perimeter houses) only appear in era02
+- CHANGE: alley houses and merchant house appear in cities in era01, in era02 they only appear in towns
+- CHANGE: town church 1 and high school in towns limited via distance rather than via unique building switch
+- CHANGE: road awareness function now distinguishes between the cases of no road being around the building tile and road tiles in multiple directions
+- CHANGE: shops and offices 1 has now seperate sprite each for backyard (no road around) and non-block-perimeter (roads around in multiple directions)
+- FIX: Red farm fields were to flashy, colored them in a darker red
+
+
 Central European Towns 0.4.0 (2023-06-23) (Build 4)
 ----------------------------------------------------
 - ADD: house type alley houses for Towns
