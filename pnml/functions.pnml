@@ -223,5 +223,59 @@ switch (FEAT_HOUSES, SELF, func_prox_large_station,
 		return 1;
 }
 
+// Require a special building (building_class 2) to be present within a radius of 3 tiles
+switch (FEAT_HOUSES, SELF, func_prox_special_building,
+		nearby_tile_house_class(-1, -1) == 259 ||
+		nearby_tile_house_class(-1,  0) == 259 ||
+		nearby_tile_house_class(-1,  1) == 259 ||
+		nearby_tile_house_class( 0,  1) == 259 ||
+		nearby_tile_house_class( 1,  1) == 259 ||
+		nearby_tile_house_class( 1,  0) == 259 ||
+		nearby_tile_house_class( 1, -1) == 259 ||
+		nearby_tile_house_class( 0, -1) == 259 ||
+		nearby_tile_house_class(-2, -2) == 259 ||
+		nearby_tile_house_class(-2, -1) == 259 ||
+		nearby_tile_house_class(-2,  0) == 259 ||
+		nearby_tile_house_class(-2,  1) == 259 ||
+		nearby_tile_house_class(-2,  2) == 259 ||
+		nearby_tile_house_class(-1,  2) == 259 ||
+		nearby_tile_house_class( 0,  2) == 259 ||
+		nearby_tile_house_class( 1,  2) == 259 ||
+		nearby_tile_house_class( 2,  2) == 259 ||
+		nearby_tile_house_class( 2,  1) == 259 ||
+		nearby_tile_house_class( 2,  0) == 259 ||
+		nearby_tile_house_class( 2, -1) == 259 ||
+		nearby_tile_house_class( 2, -2) == 259 ||
+		nearby_tile_house_class( 1, -2) == 259 ||
+		nearby_tile_house_class( 0, -2) == 259 ||
+		nearby_tile_house_class(-1, -2) == 259 ||
+		nearby_tile_house_class(-3, -3) == 259 ||
+		nearby_tile_house_class(-3, -2) == 259 ||
+		nearby_tile_house_class(-3, -1) == 259 ||
+		nearby_tile_house_class(-3,  0) == 259 ||
+		nearby_tile_house_class(-3,  1) == 259 ||
+		nearby_tile_house_class(-3,  2) == 259 ||
+		nearby_tile_house_class(-3,  3) == 259 ||
+		nearby_tile_house_class(-2,  3) == 259 ||
+		nearby_tile_house_class(-1,  3) == 259 ||
+		nearby_tile_house_class( 0,  3) == 259 ||
+		nearby_tile_house_class( 1,  3) == 259 ||
+		nearby_tile_house_class( 2,  3) == 259 ||
+		nearby_tile_house_class( 3,  3) == 259 ||
+		nearby_tile_house_class( 3,  2) == 259 ||
+		nearby_tile_house_class( 3,  1) == 259 ||
+		nearby_tile_house_class( 3,  0) == 259 ||
+		nearby_tile_house_class( 3, -1) == 259 ||
+		nearby_tile_house_class( 3, -2) == 259 ||
+		nearby_tile_house_class( 3, -3) == 259 ||
+		nearby_tile_house_class( 2, -3) == 259 ||
+		nearby_tile_house_class( 1, -3) == 259 ||
+		nearby_tile_house_class( 0, -3) == 259 ||
+		nearby_tile_house_class(-1, -3) == 259 ||
+		nearby_tile_house_class(-2, -3) == 259 
+		) {
+		1: return 1;
+		return 0;
+}
 
 

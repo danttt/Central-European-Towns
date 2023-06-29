@@ -60,11 +60,23 @@ spritelayout spritelayout_grand_hotel_era02_001_E {
 /*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
+/* Switch for the proximity check */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, grand_hotel_prox,
+		func_prox_large_station()    == 1 ||
+		func_prox_special_building() == 1
+		) {
+		0: return 0;
+		return 1;
+}
+
+
 /* Switch defining what town types this house type can be built in */
 /* --------------------------------------------------------------------------------------------------- */
 
 switch (FEAT_HOUSES, SELF, grand_hotel_town_type, func_town_type()) {
-		1: 0; 2: 0; 3: func_prox_large_station;
+		1: 0; 2: 0; 3: grand_hotel_prox;
 }
 
 
