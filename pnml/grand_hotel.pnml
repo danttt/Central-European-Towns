@@ -64,7 +64,7 @@ spritelayout spritelayout_grand_hotel_era02_001_E {
 /* --------------------------------------------------------------------------------------------------- */
 
 switch (FEAT_HOUSES, SELF, grand_hotel_town_type, func_town_type()) {
-		1: 0; 2: 0; 3: 1;
+		1: 0; 2: 0; 3: func_prox_large_station;
 }
 
 
