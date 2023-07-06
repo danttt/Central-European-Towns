@@ -1,0 +1,337 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x----------------------------------------- APARTMENT BLOCK 1 ---------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era02 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_apartment_block_1_era02_A_001_g, "gfx/apartment_block_1_era02_A_001.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_apartment_block_1_era02_A_001_b, "gfx/apartment_block_1_era02_A_001.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_apartment_block_1_era02_B_001_g, "gfx/apartment_block_1_era02_B_001.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_apartment_block_1_era02_B_001_b, "gfx/apartment_block_1_era02_B_001.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_apartment_block_1_era02_N_001_g, "gfx/apartment_block_1_era02_N_001.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_apartment_block_1_era02_N_001_b, "gfx/apartment_block_1_era02_N_001.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_apartment_block_1_era02_NE_001_g, "gfx/apartment_block_1_era02_NE_001.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_apartment_block_1_era02_NE_001_b, "gfx/apartment_block_1_era02_NE_001.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_apartment_block_1_era02_E_001_g, "gfx/apartment_block_1_era02_E_001.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_apartment_block_1_era02_E_001_b, "gfx/apartment_block_1_era02_E_001.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_apartment_block_1_era02_SE_001_g, "gfx/apartment_block_1_era02_SE_001.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_apartment_block_1_era02_SE_001_b, "gfx/apartment_block_1_era02_SE_001.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_apartment_block_1_era02_S_001_g, "gfx/apartment_block_1_era02_S_001.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_apartment_block_1_era02_S_001_b, "gfx/apartment_block_1_era02_S_001.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_apartment_block_1_era02_SW_001_g, "gfx/apartment_block_1_era02_SW_001.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_apartment_block_1_era02_SW_001_b, "gfx/apartment_block_1_era02_SW_001.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_apartment_block_1_era02_W_001_g, "gfx/apartment_block_1_era02_W_001.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_apartment_block_1_era02_W_001_b, "gfx/apartment_block_1_era02_W_001.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_apartment_block_1_era02_NW_001_g, "gfx/apartment_block_1_era02_NW_001.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_apartment_block_1_era02_NW_001_b, "gfx/apartment_block_1_era02_NW_001.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era02 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_apartment_block_1_era02_A_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartment_block_1_era02_A_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartment_block_1_era02_A_001_b;  }
+}
+
+spritelayout spritelayout_apartment_block_1_era02_B_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartment_block_1_era02_B_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartment_block_1_era02_B_001_b;  }
+}
+
+spritelayout spritelayout_apartment_block_1_era02_N_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartment_block_1_era02_N_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartment_block_1_era02_N_001_b;  }
+}
+
+spritelayout spritelayout_apartment_block_1_era02_NE_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartment_block_1_era02_NE_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartment_block_1_era02_NE_001_b;  }
+}
+
+spritelayout spritelayout_apartment_block_1_era02_E_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartment_block_1_era02_E_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartment_block_1_era02_E_001_b;  }
+}
+
+spritelayout spritelayout_apartment_block_1_era02_SE_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartment_block_1_era02_SE_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartment_block_1_era02_SE_001_b;  }
+}
+
+spritelayout spritelayout_apartment_block_1_era02_S_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartment_block_1_era02_S_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartment_block_1_era02_S_001_b;  }
+}
+
+spritelayout spritelayout_apartment_block_1_era02_SW_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartment_block_1_era02_SW_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartment_block_1_era02_SW_001_b;  }
+}
+
+spritelayout spritelayout_apartment_block_1_era02_W_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartment_block_1_era02_W_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartment_block_1_era02_W_001_b;  }
+}
+
+spritelayout spritelayout_apartment_block_1_era02_NW_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartment_block_1_era02_NW_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartment_block_1_era02_NW_001_b;  }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, apartment_block_1_town_type, func_town_type()) {
+		1: 0; 2: 0; 3: 1;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_apartment_block_1_era02_A) {
+		1: spritelayout_apartment_block_1_era02_A_001;
+}
+random_switch (FEAT_HOUSES, SELF, random_apartment_block_1_era02_B) {
+		1: spritelayout_apartment_block_1_era02_B_001;
+}
+random_switch (FEAT_HOUSES, SELF, random_apartment_block_1_era02_N) {
+		1: spritelayout_apartment_block_1_era02_N_001;
+}
+random_switch (FEAT_HOUSES, SELF, random_apartment_block_1_era02_NE) {
+		1: spritelayout_apartment_block_1_era02_NE_001;
+}
+random_switch (FEAT_HOUSES, SELF, random_apartment_block_1_era02_E) {
+		1: spritelayout_apartment_block_1_era02_E_001;
+}
+random_switch (FEAT_HOUSES, SELF, random_apartment_block_1_era02_SE) {
+		1: spritelayout_apartment_block_1_era02_SE_001;
+}
+random_switch (FEAT_HOUSES, SELF, random_apartment_block_1_era02_S) {
+		1: spritelayout_apartment_block_1_era02_S_001;
+}
+random_switch (FEAT_HOUSES, SELF, random_apartment_block_1_era02_SW) {
+		1: spritelayout_apartment_block_1_era02_SW_001;
+}
+random_switch (FEAT_HOUSES, SELF, random_apartment_block_1_era02_W) {
+		1: spritelayout_apartment_block_1_era02_W_001;
+}
+random_switch (FEAT_HOUSES, SELF, random_apartment_block_1_era02_NW) {
+		1: spritelayout_apartment_block_1_era02_NW_001;
+}
+
+
+/* Switch for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_apartment_block_1, animation_frame) {
+		20: random_apartment_block_1_era02_B;
+		21: random_apartment_block_1_era02_N;
+		22: random_apartment_block_1_era02_NE;
+		23: random_apartment_block_1_era02_E;
+		24: random_apartment_block_1_era02_SE;
+		25: random_apartment_block_1_era02_S;
+		26: random_apartment_block_1_era02_SW;
+		27: random_apartment_block_1_era02_W;
+		28: random_apartment_block_1_era02_NW;
+		29: random_apartment_block_1_era02_A;
+		30: random_apartment_block_1_era02_B;
+		31: random_apartment_block_1_era02_N;
+		32: random_apartment_block_1_era02_NE;
+		33: random_apartment_block_1_era02_E;
+		34: random_apartment_block_1_era02_SE;
+		35: random_apartment_block_1_era02_S;
+		36: random_apartment_block_1_era02_SW;
+		37: random_apartment_block_1_era02_W;
+		38: random_apartment_block_1_era02_NW;
+		39: random_apartment_block_1_era02_A;
+		40: random_apartment_block_1_era02_B;
+		41: random_apartment_block_1_era02_N;
+		42: random_apartment_block_1_era02_NE;
+		43: random_apartment_block_1_era02_E;
+		44: random_apartment_block_1_era02_SE;
+		45: random_apartment_block_1_era02_S;
+		46: random_apartment_block_1_era02_SW;
+		47: random_apartment_block_1_era02_W;
+		48: random_apartment_block_1_era02_NW;
+		49: random_apartment_block_1_era02_A;
+		50: random_apartment_block_1_era02_B;
+		51: random_apartment_block_1_era02_N;
+		52: random_apartment_block_1_era02_NE;
+		53: random_apartment_block_1_era02_E;
+		54: random_apartment_block_1_era02_SE;
+		55: random_apartment_block_1_era02_S;
+		56: random_apartment_block_1_era02_SW;
+		57: random_apartment_block_1_era02_W;
+		58: random_apartment_block_1_era02_NW;
+		59: random_apartment_block_1_era02_A;
+		60: random_apartment_block_1_era02_B;
+		61: random_apartment_block_1_era02_N;
+		62: random_apartment_block_1_era02_NE;
+		63: random_apartment_block_1_era02_E;
+		64: random_apartment_block_1_era02_SE;
+		65: random_apartment_block_1_era02_S;
+		66: random_apartment_block_1_era02_SW;
+		67: random_apartment_block_1_era02_W;
+		68: random_apartment_block_1_era02_NW;
+		69: random_apartment_block_1_era02_A;
+}
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_apartment_block_1, animation_frame) {
+	0:  func_anim_road;
+	CB_RESULT_DO_NOTHING;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_apartment_block_1, 77, HOUSE_SIZE_1X1) {
+	property {
+		substitute:					14;
+		name:						string(STR_APARTBLOCK);
+		population:					100;
+		mail_multiplier:			40;
+		accepted_cargos:			[[PASS, 6], [MAIL, 2], [GOOD, 1]];
+		local_authority_impact:		110;
+		probability:				1;
+		years_available:			[1850, 1919];
+		minimum_lifetime:			10;
+		availability_mask:			[bitmask(TOWNZONE_INNER_SUBURB, TOWNZONE_CENTRE), ALL_CLIMATES];
+		removal_cost_multiplier:	120;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		default:					era_switch_apartment_block_1;
+		anim_control:				era_anim_apartment_block_1;
+		construction_check:			apartment_block_1_town_type;
+	}
+}
+
+
+
