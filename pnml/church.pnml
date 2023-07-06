@@ -200,7 +200,7 @@ item (FEAT_HOUSES, item_church_t_c, 44, HOUSE_SIZE_1X1) {
 		minimum_lifetime:			50;
 		availability_mask:			[ALL_TOWNZONES, ALL_CLIMATES];
 		removal_cost_multiplier:	90;
-		building_class:				1;
+		building_class:				4;
 		animation_info:				[ANIMATION_NON_LOOPING, 1];
 
 	}

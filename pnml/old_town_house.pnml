@@ -98,7 +98,7 @@ item (FEAT_HOUSES, item_old_town_house_t, 31, HOUSE_SIZE_1X1) {
 		minimum_lifetime:			10;
 		availability_mask:			[bitmask(TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB, TOWNZONE_CENTRE), ALL_CLIMATES];
 		removal_cost_multiplier:	80;
-		building_class:				1;
+		building_class:				4;
 		animation_info:				[ANIMATION_NON_LOOPING, 1];
 	}
 	graphics {
@@ -122,7 +122,7 @@ item (FEAT_HOUSES, item_old_town_house_c, 56, HOUSE_SIZE_1X1) {
 		minimum_lifetime:			10;
 		availability_mask:			[ALL_TOWNZONES & ~bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
 		removal_cost_multiplier:	80;
-		building_class:				1;
+		building_class:				4;
 		animation_info:				[ANIMATION_NON_LOOPING, 1];
 	}
 	graphics {
