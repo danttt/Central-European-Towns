@@ -330,6 +330,7 @@ item (FEAT_HOUSES, item_shops_offices_1, 3, HOUSE_SIZE_1X1) {
 		default:					era_switch_shops_offices_1;
 		anim_control:				era_anim_shops_offices_1;
 		construction_check:			shops_offices_1_town_type;
+		protection:					func_hist_ring;
 	}
 }
 

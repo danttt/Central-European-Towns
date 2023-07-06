@@ -330,6 +330,7 @@ item (FEAT_HOUSES, item_apartment_block_1, 77, HOUSE_SIZE_1X1) {
 		default:					era_switch_apartment_block_1;
 		anim_control:				era_anim_apartment_block_1;
 		construction_check:			apartment_block_1_town_type;
+		protection:					func_hist_ring;
 	}
 }
 
