@@ -1,3 +1,13 @@
+Central European Towns 0.6.0 (2023-07-08) (Build 6)
+----------------------------------------------------
+- FEATURE: cities create a ring of historistic (late 19th century) block perimeter houses
+- ADD: house type apartment block 1
+- ADD: house type town church 2
+- ADD: Full set of sprites for white block perimeter circle for shops and offices 3
+- CHANGE: church for towns and cities has now a life span of only 20 years since it protects the historistic buildings around it
+- CHANGE: Roof colors of most old town houses (alley houses ,trading house) are now red or close to that
+
+
 Central European Towns 0.5.0 (2023-06-29) (Build 5)
 ----------------------------------------------------
 - FEATURE: Expanding city park with only roads as limitations
