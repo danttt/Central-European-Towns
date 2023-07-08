@@ -180,7 +180,7 @@ item (FEAT_HOUSES, item_town_church_2, 78, HOUSE_SIZE_1X2) {
 	}
 	graphics {
 		graphics_north:				era_switch_town_church_2_N;
-		graphics_west:				era_switch_town_church_2_W;
+		graphics_east:				era_switch_town_church_2_E;
 		anim_control:				era_anim_town_church_2;
 		construction_check:			town_church_2_town_type;
 	}
