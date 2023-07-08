@@ -13,6 +13,7 @@
 /* Spritesets for era03 */
 /* --------------------------------------------------------------------------------------------------- */
 
+// Circle 001 (dark pink circle)
 spriteset(spriteset_shops_offices_3_era03_A_001_g, "gfx/shops_offices_3_era03_A_001.PNG") {
 	tmpl_small_houses_ground (0, 0)                                              
 }                                                                              
@@ -83,6 +84,70 @@ spriteset(spriteset_shops_offices_3_era03_NW_001_b, "gfx/shops_offices_3_era03_N
 	tmpl_small_houses_building (0, 0)                                            
 }
 
+// Circle 002 (white circle)
+spriteset(spriteset_shops_offices_3_era03_A_002_g, "gfx/shops_offices_3_era03_A_002.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_shops_offices_3_era03_A_002_b, "gfx/shops_offices_3_era03_A_002.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_shops_offices_3_era03_N_002_g, "gfx/shops_offices_3_era03_N_002.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_shops_offices_3_era03_N_002_b, "gfx/shops_offices_3_era03_N_002.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_shops_offices_3_era03_NE_002_g, "gfx/shops_offices_3_era03_NE_002.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_shops_offices_3_era03_NE_002_b, "gfx/shops_offices_3_era03_NE_002.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_shops_offices_3_era03_E_002_g, "gfx/shops_offices_3_era03_E_002.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_shops_offices_3_era03_E_002_b, "gfx/shops_offices_3_era03_E_002.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_shops_offices_3_era03_SE_002_g, "gfx/shops_offices_3_era03_SE_002.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_shops_offices_3_era03_SE_002_b, "gfx/shops_offices_3_era03_SE_002.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_shops_offices_3_era03_S_002_g, "gfx/shops_offices_3_era03_S_002.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_shops_offices_3_era03_S_002_b, "gfx/shops_offices_3_era03_S_002.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_shops_offices_3_era03_SW_002_g, "gfx/shops_offices_3_era03_SW_002.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_shops_offices_3_era03_SW_002_b, "gfx/shops_offices_3_era03_SW_002.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_shops_offices_3_era03_W_002_g, "gfx/shops_offices_3_era03_W_002.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_shops_offices_3_era03_W_002_b, "gfx/shops_offices_3_era03_W_002.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
+spriteset(spriteset_shops_offices_3_era03_NW_002_g, "gfx/shops_offices_3_era03_NW_002.PNG") {
+	tmpl_small_houses_ground (0, 0)                                              
+}                                                                              
+spriteset(spriteset_shops_offices_3_era03_NW_002_b, "gfx/shops_offices_3_era03_NW_002.PNG") {
+	tmpl_small_houses_building (0, 0)                                            
+}
+
 
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -92,6 +157,7 @@ spriteset(spriteset_shops_offices_3_era03_NW_001_b, "gfx/shops_offices_3_era03_N
 /* Spritelayouts for era03 */
 /* --------------------------------------------------------------------------------------------------- */
 
+// Circle 001 (dark pink circle)
 spritelayout spritelayout_shops_offices_3_era03_A_001 {
 	ground { 
 		sprite: spriteset_ground_sprite_concrete; }
@@ -192,6 +258,97 @@ spritelayout spritelayout_shops_offices_3_era03_NW_001 {
 		sprite: spriteset_shops_offices_3_era03_NW_001_b;  }
 }
 
+// Circle 002 (white circle)
+spritelayout spritelayout_shops_offices_3_era03_A_002 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shops_offices_3_era03_A_002_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shops_offices_3_era03_A_002_b;  }
+}
+
+spritelayout spritelayout_shops_offices_3_era03_N_002 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shops_offices_3_era03_N_002_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shops_offices_3_era03_N_002_b;  }
+}
+
+spritelayout spritelayout_shops_offices_3_era03_NE_002 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shops_offices_3_era03_NE_002_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shops_offices_3_era03_NE_002_b;  }
+}
+
+spritelayout spritelayout_shops_offices_3_era03_E_002 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shops_offices_3_era03_E_002_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shops_offices_3_era03_E_002_b;  }
+}
+
+spritelayout spritelayout_shops_offices_3_era03_SE_002 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shops_offices_3_era03_SE_002_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shops_offices_3_era03_SE_002_b;  }
+}
+
+spritelayout spritelayout_shops_offices_3_era03_S_002 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shops_offices_3_era03_S_002_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shops_offices_3_era03_S_002_b;  }
+}
+
+spritelayout spritelayout_shops_offices_3_era03_SW_002 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shops_offices_3_era03_SW_002_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shops_offices_3_era03_SW_002_b;  }
+}
+
+spritelayout spritelayout_shops_offices_3_era03_W_002 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shops_offices_3_era03_W_002_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shops_offices_3_era03_W_002_b;  }
+}
+
+spritelayout spritelayout_shops_offices_3_era03_NW_002 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_shops_offices_3_era03_NW_002_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_shops_offices_3_era03_NW_002_b;  }
+}
+
 
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -211,33 +368,42 @@ switch (FEAT_HOUSES, SELF, shops_offices_3_town_type, func_town_type()) {
 
 random_switch (FEAT_HOUSES, SELF, random_shops_offices_3_era03_A) {
 		1: spritelayout_shops_offices_3_era03_A_001;
+		1: spritelayout_shops_offices_3_era03_A_002;
 }
 random_switch (FEAT_HOUSES, SELF, random_shops_offices_3_era03_B) {
 		1: spritelayout_shops_offices_3_era03_B_001;
 }
 random_switch (FEAT_HOUSES, SELF, random_shops_offices_3_era03_N) {
 		1: spritelayout_shops_offices_3_era03_N_001;
+		1: spritelayout_shops_offices_3_era03_N_002;
 }
 random_switch (FEAT_HOUSES, SELF, random_shops_offices_3_era03_NE) {
 		1: spritelayout_shops_offices_3_era03_NE_001;
+		1: spritelayout_shops_offices_3_era03_NE_002;
 }
 random_switch (FEAT_HOUSES, SELF, random_shops_offices_3_era03_E) {
 		1: spritelayout_shops_offices_3_era03_E_001;
+		1: spritelayout_shops_offices_3_era03_E_002;
 }
 random_switch (FEAT_HOUSES, SELF, random_shops_offices_3_era03_SE) {
 		1: spritelayout_shops_offices_3_era03_SE_001;
+		1: spritelayout_shops_offices_3_era03_SE_002;
 }
 random_switch (FEAT_HOUSES, SELF, random_shops_offices_3_era03_S) {
 		1: spritelayout_shops_offices_3_era03_S_001;
+		1: spritelayout_shops_offices_3_era03_S_002;
 }
 random_switch (FEAT_HOUSES, SELF, random_shops_offices_3_era03_SW) {
 		1: spritelayout_shops_offices_3_era03_SW_001;
+		1: spritelayout_shops_offices_3_era03_SW_002;
 }
 random_switch (FEAT_HOUSES, SELF, random_shops_offices_3_era03_W) {
 		1: spritelayout_shops_offices_3_era03_W_001;
+		1: spritelayout_shops_offices_3_era03_W_002;
 }
 random_switch (FEAT_HOUSES, SELF, random_shops_offices_3_era03_NW) {
 		1: spritelayout_shops_offices_3_era03_NW_001;
+		1: spritelayout_shops_offices_3_era03_NW_002;
 }
 
 
