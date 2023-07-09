@@ -9,6 +9,7 @@ STR_GRF_DESC							:Full town replacement set with houses from Central Europe. G
 STR_ALLEYHOUSES                         :Alley Houses
 STR_APARTBLOCK                          :Apartment Block
 STR_APARTBUILDING                       :Apartment Building
+STR_APARTSHOPS                          :Apartments and Shops
 STR_CATHEDRAL                           :Cathedral
 STR_CITYHALL                            :City Hall
 STR_CITYPARK                            :City Park
