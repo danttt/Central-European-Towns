@@ -124,60 +124,132 @@ spriteset(spriteset_apartments_shops_era03_SENW_003, "gfx/apartments_shops_era03
 /* Spritelayouts for era03 */
 /* --------------------------------------------------------------------------------------------------- */
 
+// Spritelayouts for corners, non-road-aware spots and backyards
+spritelayout spritelayout_apartments_shops_era03_A_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartments_shops_era03_A_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartments_shops_era03_A_001_b;  }
+}
+
+spritelayout spritelayout_apartments_shops_era03_B_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartments_shops_era03_B_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartments_shops_era03_B_001_b;  }
+}
+
+spritelayout spritelayout_apartments_shops_era03_N_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartments_shops_era03_N_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartments_shops_era03_N_001_b;  }
+}
+
+spritelayout spritelayout_apartments_shops_era03_E_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartments_shops_era03_E_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartments_shops_era03_E_001_b;  }
+}
+
+spritelayout spritelayout_apartments_shops_era03_S_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartments_shops_era03_S_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartments_shops_era03_S_001_b;  }
+}
+
+spritelayout spritelayout_apartments_shops_era03_S_002 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartments_shops_era03_S_002_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartments_shops_era03_S_002_b;  }
+}
+
+spritelayout spritelayout_apartments_shops_era03_W_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_apartments_shops_era03_W_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_apartments_shops_era03_W_001_b;  }
+}
+
+
 // Spritelayouts for NE combinations of the NESW spritesets
 // Combinations with NESW 001
 spritelayout spritelayout_apartments_shops_era03_NE_001001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_001; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_001002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_001; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_001003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_001; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_001004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_001; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_001005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_001; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_001006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_001; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_001007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_001; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_001008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_001; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_001009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_001; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -198,55 +270,55 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_001) {
 spritelayout spritelayout_apartments_shops_era03_NE_002001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_002; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_002002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_002; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_002003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_002; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_002004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_002; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_002005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_002; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_002006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_002; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_002007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_002; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_002008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_002; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_002009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_002; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -267,55 +339,55 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_002) {
 spritelayout spritelayout_apartments_shops_era03_NE_003001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_003; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_003002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_003; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_003003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_003; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_003004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_003; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_003005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_003; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_003006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_003; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_003007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_003; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_003008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_003; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_003009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_003; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -336,55 +408,55 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_003) {
 spritelayout spritelayout_apartments_shops_era03_NE_004001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_004; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_004002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_004; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_004003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_004; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_004004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_004; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_004005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_004; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_004006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_004; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_004007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_004; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_004008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_004; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_004009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_004; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -405,55 +477,55 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_004) {
 spritelayout spritelayout_apartments_shops_era03_NE_005001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_005; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_005002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_005; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_005003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_005; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_005004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_005; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_005005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_005; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_005006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_005; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_005007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_005; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_005008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_005; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_005009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_005; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -474,55 +546,55 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_005) {
 spritelayout spritelayout_apartments_shops_era03_NE_006001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_006; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_006002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_006; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_006003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_006; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_006004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_006; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_006005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_006; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_006006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_006; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_006007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_006; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_006008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_006; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_006009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_006; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -543,55 +615,55 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_006) {
 spritelayout spritelayout_apartments_shops_era03_NE_007001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_007; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_007002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_007; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_007003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_007; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_007004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_007; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_007005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_007; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_007006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_007; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_007007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_007; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_007008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_007; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_007009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_007; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -612,55 +684,55 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_007) {
 spritelayout spritelayout_apartments_shops_era03_NE_008001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_008; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_008002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_008; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_008003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_008; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_008004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_008; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_008005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_008; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_008006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_008; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_008007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_008; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_008008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_008; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_008009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_008; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -681,55 +753,55 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_008) {
 spritelayout spritelayout_apartments_shops_era03_NE_009001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_009; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_009002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_009; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_009003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_009; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_009004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_009; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_009005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_009; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_009006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_009; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_009007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_009; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_009008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_009; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NE_009009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_009; }
-	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; yoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -750,20 +822,20 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_009) {
 // Combinations with SENW 001
 spritelayout spritelayout_apartments_shops_era03_SE_001001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SENW_001; yoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_001; xoffset: 8; yoffset: 4; }
+	building { sprite: spriteset_apartments_shops_era03_SENW_001; yoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_001; xoffset: 25; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SE_001002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SENW_001; yoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_002; xoffset: 8; yoffset: 4; }
+	building { sprite: spriteset_apartments_shops_era03_SENW_001; yoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_002; xoffset: 25; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SE_001003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SENW_001; yoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 8; yoffset: 4; }
+	building { sprite: spriteset_apartments_shops_era03_SENW_001; yoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 25; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -777,20 +849,20 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SE_001) {
 // Combinations with SENW 002
 spritelayout spritelayout_apartments_shops_era03_SE_002001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SENW_002; yoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_001; xoffset: 8; yoffset: 4; }
+	building { sprite: spriteset_apartments_shops_era03_SENW_002; yoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_001; xoffset: 25; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SE_002002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SENW_002; yoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_002; xoffset: 8; yoffset: 4; }
+	building { sprite: spriteset_apartments_shops_era03_SENW_002; yoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_002; xoffset: 25; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SE_002003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SENW_002; yoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 8; yoffset: 4; }
+	building { sprite: spriteset_apartments_shops_era03_SENW_002; yoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 25; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -804,20 +876,20 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SE_002) {
 // Combinations with SENW 003
 spritelayout spritelayout_apartments_shops_era03_SE_003001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SENW_003; yoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_001; xoffset: 8; yoffset: 4; }
+	building { sprite: spriteset_apartments_shops_era03_SENW_003; yoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_001; xoffset: 25; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SE_003002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SENW_003; yoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_002; xoffset: 8; yoffset: 4; }
+	building { sprite: spriteset_apartments_shops_era03_SENW_003; yoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_002; xoffset: 25; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SE_003003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SENW_003; yoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 8; yoffset: 4; }
+	building { sprite: spriteset_apartments_shops_era03_SENW_003; yoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 25; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -832,56 +904,56 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SE_003) {
 // Combinations with NESW 001
 spritelayout spritelayout_apartments_shops_era03_SW_001001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_001002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_001003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_001004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_001005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_001006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_001007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_001008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_001009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -898,59 +970,59 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_001) {
 }
 
 
-// Combinations with SWSW 002
+// Combinations with SW 002
 spritelayout spritelayout_apartments_shops_era03_SW_002001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_002002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_002003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_002004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_002005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_002006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_002007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_002008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_002009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -967,59 +1039,59 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_002) {
 }
 
 
-// Combinations with SWSW 003
+// Combinations with SW 003
 spritelayout spritelayout_apartments_shops_era03_SW_003001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_003002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_003003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_003004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_003005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_003006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_003007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_003008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_003009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -1036,59 +1108,59 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_003) {
 }
 
 
-// Combinations with SWSW 004
+// Combinations with SW 004
 spritelayout spritelayout_apartments_shops_era03_SW_004001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_004002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_004; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_004003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_004004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_004005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_004006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_004007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_004008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_004009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -1105,59 +1177,59 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_004) {
 }
 
 
-// Combinations with SWSW 005
+// Combinations with SW 005
 spritelayout spritelayout_apartments_shops_era03_SW_005001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_005002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_005003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_005004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_005005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_005006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_005007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_005008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_005009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -1174,59 +1246,59 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_005) {
 }
 
 
-// Combinations with SWSW 006
+// Combinations with SW 006
 spritelayout spritelayout_apartments_shops_era03_SW_006001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_006002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_006003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_006004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_006005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_006006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_006007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_006008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_006009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -1243,59 +1315,59 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_006) {
 }
 
 
-// Combinations with SWSW 007
+// Combinations with SW 007
 spritelayout spritelayout_apartments_shops_era03_SW_007001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_007002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_007003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_007004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_007005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_007006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_007007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_007008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_007009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -1312,59 +1384,59 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_007) {
 }
 
 
-// Combinations with SWSW 008
+// Combinations with SW 008
 spritelayout spritelayout_apartments_shops_era03_SW_008001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_008002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_008003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_008004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_008005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_008006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_008007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_008008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_008009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -1381,59 +1453,59 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_008) {
 }
 
 
-// Combinations with SWSW 009
+// Combinations with SW 009
 spritelayout spritelayout_apartments_shops_era03_SW_009001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_001; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_009002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_002; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_009003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_003; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_009004 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_004; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_009005 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_005; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_009006 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_006; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_009007 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_007; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_009008 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_008; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 57; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_SW_009009 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
-	building { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SWSW_009; xoffset: 4; yoffset: 8; }
+	building { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 5; }
+	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -1455,19 +1527,19 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_009) {
 spritelayout spritelayout_apartments_shops_era03_NW_001001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_001; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_001; xoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_001; xoffset: 25; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NW_001002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_001; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_002; xoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_002; xoffset: 25; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NW_001003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_001; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 25; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -1482,19 +1554,19 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NW_001) {
 spritelayout spritelayout_apartments_shops_era03_NW_002001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_002; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_001; xoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_001; xoffset: 25; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NW_002002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_002; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_002; xoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_002; xoffset: 25; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NW_002003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_002; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 25; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
@@ -1509,19 +1581,19 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NW_002) {
 spritelayout spritelayout_apartments_shops_era03_NW_003001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_003; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_001; xoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_001; xoffset: 25; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NW_003002 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_003; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_002; xoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_002; xoffset: 25; yoffset: 76; }
 }
 
 spritelayout spritelayout_apartments_shops_era03_NW_003003 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_003; }
-	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 8; }
+	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 25; yoffset: 76; }
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
