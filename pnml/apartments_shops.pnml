@@ -197,7 +197,7 @@ spritelayout spritelayout_apartments_shops_era03_W_001 {
 
 
 // Spritelayouts for NE combinations of the NESW spritesets
-// Combinations with NESW 001
+// Combinations with NESW 001 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_NE_001001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_001; }
@@ -252,21 +252,7 @@ spritelayout spritelayout_apartments_shops_era03_NE_001009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_001) {
-		1: spritelayout_apartments_shops_era03_NE_001001;
-		1: spritelayout_apartments_shops_era03_NE_001002;
-		1: spritelayout_apartments_shops_era03_NE_001003;
-		1: spritelayout_apartments_shops_era03_NE_001004;
-		1: spritelayout_apartments_shops_era03_NE_001005;
-		1: spritelayout_apartments_shops_era03_NE_001006;
-		1: spritelayout_apartments_shops_era03_NE_001007;
-		1: spritelayout_apartments_shops_era03_NE_001008;
-        1: spritelayout_apartments_shops_era03_NE_001009;
-}
-
-
-// Combinations with NESW 002
+// Combinations with NESW 002 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_NE_002001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_002; }
@@ -321,21 +307,7 @@ spritelayout spritelayout_apartments_shops_era03_NE_002009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_002) {
-		1: spritelayout_apartments_shops_era03_NE_002001;
-		1: spritelayout_apartments_shops_era03_NE_002002;
-		1: spritelayout_apartments_shops_era03_NE_002003;
-		1: spritelayout_apartments_shops_era03_NE_002004;
-		1: spritelayout_apartments_shops_era03_NE_002005;
-		1: spritelayout_apartments_shops_era03_NE_002006;
-		1: spritelayout_apartments_shops_era03_NE_002007;
-		1: spritelayout_apartments_shops_era03_NE_002008;
-        1: spritelayout_apartments_shops_era03_NE_002009;
-}
-
-
-// Combinations with NESW 003
+// Combinations with NESW 003 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_NE_003001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_003; }
@@ -390,21 +362,7 @@ spritelayout spritelayout_apartments_shops_era03_NE_003009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_003) {
-		1: spritelayout_apartments_shops_era03_NE_003001;
-		1: spritelayout_apartments_shops_era03_NE_003002;
-		1: spritelayout_apartments_shops_era03_NE_003003;
-		1: spritelayout_apartments_shops_era03_NE_003004;
-		1: spritelayout_apartments_shops_era03_NE_003005;
-		1: spritelayout_apartments_shops_era03_NE_003006;
-		1: spritelayout_apartments_shops_era03_NE_003007;
-		1: spritelayout_apartments_shops_era03_NE_003008;
-        1: spritelayout_apartments_shops_era03_NE_003009;
-}
-
-
-// Combinations with NESW 004
+// Combinations with NESW 004 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_NE_004001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_004; }
@@ -459,21 +417,7 @@ spritelayout spritelayout_apartments_shops_era03_NE_004009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_004) {
-		1: spritelayout_apartments_shops_era03_NE_004001;
-		1: spritelayout_apartments_shops_era03_NE_004002;
-		1: spritelayout_apartments_shops_era03_NE_004003;
-		1: spritelayout_apartments_shops_era03_NE_004004;
-		1: spritelayout_apartments_shops_era03_NE_004005;
-		1: spritelayout_apartments_shops_era03_NE_004006;
-		1: spritelayout_apartments_shops_era03_NE_004007;
-		1: spritelayout_apartments_shops_era03_NE_004008;
-        1: spritelayout_apartments_shops_era03_NE_004009;
-}
-
-
-// Combinations with NESW 005
+// Combinations with NESW 005 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_NE_005001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_005; }
@@ -528,21 +472,7 @@ spritelayout spritelayout_apartments_shops_era03_NE_005009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_005) {
-		1: spritelayout_apartments_shops_era03_NE_005001;
-		1: spritelayout_apartments_shops_era03_NE_005002;
-		1: spritelayout_apartments_shops_era03_NE_005003;
-		1: spritelayout_apartments_shops_era03_NE_005004;
-		1: spritelayout_apartments_shops_era03_NE_005005;
-		1: spritelayout_apartments_shops_era03_NE_005006;
-		1: spritelayout_apartments_shops_era03_NE_005007;
-		1: spritelayout_apartments_shops_era03_NE_005008;
-        1: spritelayout_apartments_shops_era03_NE_005009;
-}
-
-
-// Combinations with NESW 006
+// Combinations with NESW 006 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_NE_006001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_006; }
@@ -597,21 +527,7 @@ spritelayout spritelayout_apartments_shops_era03_NE_006009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_006) {
-		1: spritelayout_apartments_shops_era03_NE_006001;
-		1: spritelayout_apartments_shops_era03_NE_006002;
-		1: spritelayout_apartments_shops_era03_NE_006003;
-		1: spritelayout_apartments_shops_era03_NE_006004;
-		1: spritelayout_apartments_shops_era03_NE_006005;
-		1: spritelayout_apartments_shops_era03_NE_006006;
-		1: spritelayout_apartments_shops_era03_NE_006007;
-		1: spritelayout_apartments_shops_era03_NE_006008;
-        1: spritelayout_apartments_shops_era03_NE_006009;
-}
-
-
-// Combinations with NESW 007
+// Combinations with NESW 007 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_NE_007001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_007; }
@@ -666,21 +582,7 @@ spritelayout spritelayout_apartments_shops_era03_NE_007009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_007) {
-		1: spritelayout_apartments_shops_era03_NE_007001;
-		1: spritelayout_apartments_shops_era03_NE_007002;
-		1: spritelayout_apartments_shops_era03_NE_007003;
-		1: spritelayout_apartments_shops_era03_NE_007004;
-		1: spritelayout_apartments_shops_era03_NE_007005;
-		1: spritelayout_apartments_shops_era03_NE_007006;
-		1: spritelayout_apartments_shops_era03_NE_007007;
-		1: spritelayout_apartments_shops_era03_NE_007008;
-        1: spritelayout_apartments_shops_era03_NE_007009;
-}
-
-
-// Combinations with NESW 008
+// Combinations with NESW 008 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_NE_008001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_008; }
@@ -735,21 +637,7 @@ spritelayout spritelayout_apartments_shops_era03_NE_008009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_008) {
-		1: spritelayout_apartments_shops_era03_NE_008001;
-		1: spritelayout_apartments_shops_era03_NE_008002;
-		1: spritelayout_apartments_shops_era03_NE_008003;
-		1: spritelayout_apartments_shops_era03_NE_008004;
-		1: spritelayout_apartments_shops_era03_NE_008005;
-		1: spritelayout_apartments_shops_era03_NE_008006;
-		1: spritelayout_apartments_shops_era03_NE_008007;
-		1: spritelayout_apartments_shops_era03_NE_008008;
-        1: spritelayout_apartments_shops_era03_NE_008009;
-}
-
-
-// Combinations with NESW 009
+// Combinations with NESW 009 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_NE_009001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_009; }
@@ -805,7 +693,79 @@ spritelayout spritelayout_apartments_shops_era03_NE_009009 {
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_009) {
+random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE) {
+		1: spritelayout_apartments_shops_era03_NE_001001;
+		1: spritelayout_apartments_shops_era03_NE_001002;
+		1: spritelayout_apartments_shops_era03_NE_001003;
+		1: spritelayout_apartments_shops_era03_NE_001004;
+		1: spritelayout_apartments_shops_era03_NE_001005;
+		1: spritelayout_apartments_shops_era03_NE_001006;
+		1: spritelayout_apartments_shops_era03_NE_001007;
+		1: spritelayout_apartments_shops_era03_NE_001008;
+        1: spritelayout_apartments_shops_era03_NE_001009;
+		1: spritelayout_apartments_shops_era03_NE_002001;
+		1: spritelayout_apartments_shops_era03_NE_002002;
+		1: spritelayout_apartments_shops_era03_NE_002003;
+		1: spritelayout_apartments_shops_era03_NE_002004;
+		1: spritelayout_apartments_shops_era03_NE_002005;
+		1: spritelayout_apartments_shops_era03_NE_002006;
+		1: spritelayout_apartments_shops_era03_NE_002007;
+		1: spritelayout_apartments_shops_era03_NE_002008;
+        1: spritelayout_apartments_shops_era03_NE_002009;
+		1: spritelayout_apartments_shops_era03_NE_003001;
+		1: spritelayout_apartments_shops_era03_NE_003002;
+		1: spritelayout_apartments_shops_era03_NE_003003;
+		1: spritelayout_apartments_shops_era03_NE_003004;
+		1: spritelayout_apartments_shops_era03_NE_003005;
+		1: spritelayout_apartments_shops_era03_NE_003006;
+		1: spritelayout_apartments_shops_era03_NE_003007;
+		1: spritelayout_apartments_shops_era03_NE_003008;
+        1: spritelayout_apartments_shops_era03_NE_003009;
+		1: spritelayout_apartments_shops_era03_NE_004001;
+		1: spritelayout_apartments_shops_era03_NE_004002;
+		1: spritelayout_apartments_shops_era03_NE_004003;
+		1: spritelayout_apartments_shops_era03_NE_004004;
+		1: spritelayout_apartments_shops_era03_NE_004005;
+		1: spritelayout_apartments_shops_era03_NE_004006;
+		1: spritelayout_apartments_shops_era03_NE_004007;
+		1: spritelayout_apartments_shops_era03_NE_004008;
+        1: spritelayout_apartments_shops_era03_NE_004009;
+		1: spritelayout_apartments_shops_era03_NE_005001;
+		1: spritelayout_apartments_shops_era03_NE_005002;
+		1: spritelayout_apartments_shops_era03_NE_005003;
+		1: spritelayout_apartments_shops_era03_NE_005004;
+		1: spritelayout_apartments_shops_era03_NE_005005;
+		1: spritelayout_apartments_shops_era03_NE_005006;
+		1: spritelayout_apartments_shops_era03_NE_005007;
+		1: spritelayout_apartments_shops_era03_NE_005008;
+        1: spritelayout_apartments_shops_era03_NE_005009;
+		1: spritelayout_apartments_shops_era03_NE_006001;
+		1: spritelayout_apartments_shops_era03_NE_006002;
+		1: spritelayout_apartments_shops_era03_NE_006003;
+		1: spritelayout_apartments_shops_era03_NE_006004;
+		1: spritelayout_apartments_shops_era03_NE_006005;
+		1: spritelayout_apartments_shops_era03_NE_006006;
+		1: spritelayout_apartments_shops_era03_NE_006007;
+		1: spritelayout_apartments_shops_era03_NE_006008;
+        1: spritelayout_apartments_shops_era03_NE_006009;
+		1: spritelayout_apartments_shops_era03_NE_007001;
+		1: spritelayout_apartments_shops_era03_NE_007002;
+		1: spritelayout_apartments_shops_era03_NE_007003;
+		1: spritelayout_apartments_shops_era03_NE_007004;
+		1: spritelayout_apartments_shops_era03_NE_007005;
+		1: spritelayout_apartments_shops_era03_NE_007006;
+		1: spritelayout_apartments_shops_era03_NE_007007;
+		1: spritelayout_apartments_shops_era03_NE_007008;
+        1: spritelayout_apartments_shops_era03_NE_007009;
+		1: spritelayout_apartments_shops_era03_NE_008001;
+		1: spritelayout_apartments_shops_era03_NE_008002;
+		1: spritelayout_apartments_shops_era03_NE_008003;
+		1: spritelayout_apartments_shops_era03_NE_008004;
+		1: spritelayout_apartments_shops_era03_NE_008005;
+		1: spritelayout_apartments_shops_era03_NE_008006;
+		1: spritelayout_apartments_shops_era03_NE_008007;
+		1: spritelayout_apartments_shops_era03_NE_008008;
+        1: spritelayout_apartments_shops_era03_NE_008009;
 		1: spritelayout_apartments_shops_era03_NE_009001;
 		1: spritelayout_apartments_shops_era03_NE_009002;
 		1: spritelayout_apartments_shops_era03_NE_009003;
@@ -819,7 +779,7 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE_009) {
 
 
 // Spritelayouts for SE combinations of the SENW spritesets
-// Combinations with SENW 001
+// Combinations with SENW 001 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_SE_001001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_001; yoffset: 5; }
@@ -838,15 +798,7 @@ spritelayout spritelayout_apartments_shops_era03_SE_001003 {
 	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 25; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SE_001) {
-		1: spritelayout_apartments_shops_era03_SE_001001;
-		1: spritelayout_apartments_shops_era03_SE_001002;
-		1: spritelayout_apartments_shops_era03_SE_001003;
-}
-
-
-// Combinations with SENW 002
+// Combinations with SENW 002 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_SE_002001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_002; yoffset: 5; }
@@ -865,15 +817,7 @@ spritelayout spritelayout_apartments_shops_era03_SE_002003 {
 	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 25; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SE_002) {
-		1: spritelayout_apartments_shops_era03_SE_002001;
-		1: spritelayout_apartments_shops_era03_SE_002002;
-		1: spritelayout_apartments_shops_era03_SE_002003;
-}
-
-
-// Combinations with SENW 003
+// Combinations with SENW 003 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_SE_003001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_003; yoffset: 5; }
@@ -893,7 +837,13 @@ spritelayout spritelayout_apartments_shops_era03_SE_003003 {
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SE_003) {
+random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SE) {
+		1: spritelayout_apartments_shops_era03_SE_001001;
+		1: spritelayout_apartments_shops_era03_SE_001002;
+		1: spritelayout_apartments_shops_era03_SE_001003;
+		1: spritelayout_apartments_shops_era03_SE_002001;
+		1: spritelayout_apartments_shops_era03_SE_002002;
+		1: spritelayout_apartments_shops_era03_SE_002003;
 		1: spritelayout_apartments_shops_era03_SE_003001;
 		1: spritelayout_apartments_shops_era03_SE_003002;
 		1: spritelayout_apartments_shops_era03_SE_003003;
@@ -901,7 +851,7 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SE_003) {
 
 
 // Spritelayouts for NE combinations of the NESW spritesets
-// Combinations with NESW 001
+// Combinations with NESW 001 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_SW_001001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_001; xoffset: 5; }
@@ -956,21 +906,7 @@ spritelayout spritelayout_apartments_shops_era03_SW_001009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_001) {
-		1: spritelayout_apartments_shops_era03_SW_001001;
-		1: spritelayout_apartments_shops_era03_SW_001002;
-		1: spritelayout_apartments_shops_era03_SW_001003;
-		1: spritelayout_apartments_shops_era03_SW_001004;
-		1: spritelayout_apartments_shops_era03_SW_001005;
-		1: spritelayout_apartments_shops_era03_SW_001006;
-		1: spritelayout_apartments_shops_era03_SW_001007;
-		1: spritelayout_apartments_shops_era03_SW_001008;
-        1: spritelayout_apartments_shops_era03_SW_001009;
-}
-
-
-// Combinations with SW 002
+// Combinations with SW 002 -----------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_SW_002001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_002; xoffset: 5; }
@@ -1025,21 +961,7 @@ spritelayout spritelayout_apartments_shops_era03_SW_002009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_002) {
-		1: spritelayout_apartments_shops_era03_SW_002001;
-		1: spritelayout_apartments_shops_era03_SW_002002;
-		1: spritelayout_apartments_shops_era03_SW_002003;
-		1: spritelayout_apartments_shops_era03_SW_002004;
-		1: spritelayout_apartments_shops_era03_SW_002005;
-		1: spritelayout_apartments_shops_era03_SW_002006;
-		1: spritelayout_apartments_shops_era03_SW_002007;
-		1: spritelayout_apartments_shops_era03_SW_002008;
-        1: spritelayout_apartments_shops_era03_SW_002009;
-}
-
-
-// Combinations with SW 003
+// Combinations with SW 003 -----------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_SW_003001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_003; xoffset: 5; }
@@ -1094,21 +1016,7 @@ spritelayout spritelayout_apartments_shops_era03_SW_003009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_003) {
-		1: spritelayout_apartments_shops_era03_SW_003001;
-		1: spritelayout_apartments_shops_era03_SW_003002;
-		1: spritelayout_apartments_shops_era03_SW_003003;
-		1: spritelayout_apartments_shops_era03_SW_003004;
-		1: spritelayout_apartments_shops_era03_SW_003005;
-		1: spritelayout_apartments_shops_era03_SW_003006;
-		1: spritelayout_apartments_shops_era03_SW_003007;
-		1: spritelayout_apartments_shops_era03_SW_003008;
-        1: spritelayout_apartments_shops_era03_SW_003009;
-}
-
-
-// Combinations with SW 004
+// Combinations with SW 004 -----------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_SW_004001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_004; xoffset: 5; }
@@ -1163,21 +1071,7 @@ spritelayout spritelayout_apartments_shops_era03_SW_004009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_004) {
-		1: spritelayout_apartments_shops_era03_SW_004001;
-		1: spritelayout_apartments_shops_era03_SW_004002;
-		1: spritelayout_apartments_shops_era03_SW_004003;
-		1: spritelayout_apartments_shops_era03_SW_004004;
-		1: spritelayout_apartments_shops_era03_SW_004005;
-		1: spritelayout_apartments_shops_era03_SW_004006;
-		1: spritelayout_apartments_shops_era03_SW_004007;
-		1: spritelayout_apartments_shops_era03_SW_004008;
-        1: spritelayout_apartments_shops_era03_SW_004009;
-}
-
-
-// Combinations with SW 005
+// Combinations with SW 005 -----------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_SW_005001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_005; xoffset: 5; }
@@ -1232,21 +1126,7 @@ spritelayout spritelayout_apartments_shops_era03_SW_005009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_005) {
-		1: spritelayout_apartments_shops_era03_SW_005001;
-		1: spritelayout_apartments_shops_era03_SW_005002;
-		1: spritelayout_apartments_shops_era03_SW_005003;
-		1: spritelayout_apartments_shops_era03_SW_005004;
-		1: spritelayout_apartments_shops_era03_SW_005005;
-		1: spritelayout_apartments_shops_era03_SW_005006;
-		1: spritelayout_apartments_shops_era03_SW_005007;
-		1: spritelayout_apartments_shops_era03_SW_005008;
-        1: spritelayout_apartments_shops_era03_SW_005009;
-}
-
-
-// Combinations with SW 006
+// Combinations with SW 006 -----------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_SW_006001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_006; xoffset: 5; }
@@ -1301,21 +1181,7 @@ spritelayout spritelayout_apartments_shops_era03_SW_006009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_006) {
-		1: spritelayout_apartments_shops_era03_SW_006001;
-		1: spritelayout_apartments_shops_era03_SW_006002;
-		1: spritelayout_apartments_shops_era03_SW_006003;
-		1: spritelayout_apartments_shops_era03_SW_006004;
-		1: spritelayout_apartments_shops_era03_SW_006005;
-		1: spritelayout_apartments_shops_era03_SW_006006;
-		1: spritelayout_apartments_shops_era03_SW_006007;
-		1: spritelayout_apartments_shops_era03_SW_006008;
-        1: spritelayout_apartments_shops_era03_SW_006009;
-}
-
-
-// Combinations with SW 007
+// Combinations with SW 007 -----------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_SW_007001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_007; xoffset: 5; }
@@ -1370,21 +1236,7 @@ spritelayout spritelayout_apartments_shops_era03_SW_007009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_007) {
-		1: spritelayout_apartments_shops_era03_SW_007001;
-		1: spritelayout_apartments_shops_era03_SW_007002;
-		1: spritelayout_apartments_shops_era03_SW_007003;
-		1: spritelayout_apartments_shops_era03_SW_007004;
-		1: spritelayout_apartments_shops_era03_SW_007005;
-		1: spritelayout_apartments_shops_era03_SW_007006;
-		1: spritelayout_apartments_shops_era03_SW_007007;
-		1: spritelayout_apartments_shops_era03_SW_007008;
-        1: spritelayout_apartments_shops_era03_SW_007009;
-}
-
-
-// Combinations with SW 008
+// Combinations with SW 008 -----------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_SW_008001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_008; xoffset: 5; }
@@ -1439,21 +1291,7 @@ spritelayout spritelayout_apartments_shops_era03_SW_008009 {
 	childsprite { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 57; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_008) {
-		1: spritelayout_apartments_shops_era03_SW_008001;
-		1: spritelayout_apartments_shops_era03_SW_008002;
-		1: spritelayout_apartments_shops_era03_SW_008003;
-		1: spritelayout_apartments_shops_era03_SW_008004;
-		1: spritelayout_apartments_shops_era03_SW_008005;
-		1: spritelayout_apartments_shops_era03_SW_008006;
-		1: spritelayout_apartments_shops_era03_SW_008007;
-		1: spritelayout_apartments_shops_era03_SW_008008;
-        1: spritelayout_apartments_shops_era03_SW_008009;
-}
-
-
-// Combinations with SW 009
+// Combinations with SW 009 -----------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_SW_009001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_NESW_009; xoffset: 5; }
@@ -1509,7 +1347,79 @@ spritelayout spritelayout_apartments_shops_era03_SW_009009 {
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_009) {
+random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW) {
+		1: spritelayout_apartments_shops_era03_SW_001001;
+		1: spritelayout_apartments_shops_era03_SW_001002;
+		1: spritelayout_apartments_shops_era03_SW_001003;
+		1: spritelayout_apartments_shops_era03_SW_001004;
+		1: spritelayout_apartments_shops_era03_SW_001005;
+		1: spritelayout_apartments_shops_era03_SW_001006;
+		1: spritelayout_apartments_shops_era03_SW_001007;
+		1: spritelayout_apartments_shops_era03_SW_001008;
+        1: spritelayout_apartments_shops_era03_SW_001009;
+		1: spritelayout_apartments_shops_era03_SW_002001;
+		1: spritelayout_apartments_shops_era03_SW_002002;
+		1: spritelayout_apartments_shops_era03_SW_002003;
+		1: spritelayout_apartments_shops_era03_SW_002004;
+		1: spritelayout_apartments_shops_era03_SW_002005;
+		1: spritelayout_apartments_shops_era03_SW_002006;
+		1: spritelayout_apartments_shops_era03_SW_002007;
+		1: spritelayout_apartments_shops_era03_SW_002008;
+        1: spritelayout_apartments_shops_era03_SW_002009;
+		1: spritelayout_apartments_shops_era03_SW_003001;
+		1: spritelayout_apartments_shops_era03_SW_003002;
+		1: spritelayout_apartments_shops_era03_SW_003003;
+		1: spritelayout_apartments_shops_era03_SW_003004;
+		1: spritelayout_apartments_shops_era03_SW_003005;
+		1: spritelayout_apartments_shops_era03_SW_003006;
+		1: spritelayout_apartments_shops_era03_SW_003007;
+		1: spritelayout_apartments_shops_era03_SW_003008;
+        1: spritelayout_apartments_shops_era03_SW_003009;
+		1: spritelayout_apartments_shops_era03_SW_004001;
+		1: spritelayout_apartments_shops_era03_SW_004002;
+		1: spritelayout_apartments_shops_era03_SW_004003;
+		1: spritelayout_apartments_shops_era03_SW_004004;
+		1: spritelayout_apartments_shops_era03_SW_004005;
+		1: spritelayout_apartments_shops_era03_SW_004006;
+		1: spritelayout_apartments_shops_era03_SW_004007;
+		1: spritelayout_apartments_shops_era03_SW_004008;
+        1: spritelayout_apartments_shops_era03_SW_004009;
+		1: spritelayout_apartments_shops_era03_SW_005001;
+		1: spritelayout_apartments_shops_era03_SW_005002;
+		1: spritelayout_apartments_shops_era03_SW_005003;
+		1: spritelayout_apartments_shops_era03_SW_005004;
+		1: spritelayout_apartments_shops_era03_SW_005005;
+		1: spritelayout_apartments_shops_era03_SW_005006;
+		1: spritelayout_apartments_shops_era03_SW_005007;
+		1: spritelayout_apartments_shops_era03_SW_005008;
+        1: spritelayout_apartments_shops_era03_SW_005009;
+		1: spritelayout_apartments_shops_era03_SW_006001;
+		1: spritelayout_apartments_shops_era03_SW_006002;
+		1: spritelayout_apartments_shops_era03_SW_006003;
+		1: spritelayout_apartments_shops_era03_SW_006004;
+		1: spritelayout_apartments_shops_era03_SW_006005;
+		1: spritelayout_apartments_shops_era03_SW_006006;
+		1: spritelayout_apartments_shops_era03_SW_006007;
+		1: spritelayout_apartments_shops_era03_SW_006008;
+        1: spritelayout_apartments_shops_era03_SW_006009;
+		1: spritelayout_apartments_shops_era03_SW_007001;
+		1: spritelayout_apartments_shops_era03_SW_007002;
+		1: spritelayout_apartments_shops_era03_SW_007003;
+		1: spritelayout_apartments_shops_era03_SW_007004;
+		1: spritelayout_apartments_shops_era03_SW_007005;
+		1: spritelayout_apartments_shops_era03_SW_007006;
+		1: spritelayout_apartments_shops_era03_SW_007007;
+		1: spritelayout_apartments_shops_era03_SW_007008;
+        1: spritelayout_apartments_shops_era03_SW_007009;
+		1: spritelayout_apartments_shops_era03_SW_008001;
+		1: spritelayout_apartments_shops_era03_SW_008002;
+		1: spritelayout_apartments_shops_era03_SW_008003;
+		1: spritelayout_apartments_shops_era03_SW_008004;
+		1: spritelayout_apartments_shops_era03_SW_008005;
+		1: spritelayout_apartments_shops_era03_SW_008006;
+		1: spritelayout_apartments_shops_era03_SW_008007;
+		1: spritelayout_apartments_shops_era03_SW_008008;
+        1: spritelayout_apartments_shops_era03_SW_008009;
 		1: spritelayout_apartments_shops_era03_SW_009001;
 		1: spritelayout_apartments_shops_era03_SW_009002;
 		1: spritelayout_apartments_shops_era03_SW_009003;
@@ -1523,7 +1433,7 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW_009) {
 
 
 // Spritelayouts for SE combinations of the SENW spritesets
-// Combinations with SENW 001
+// Combinations with SENW 001 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_NW_001001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_001; }
@@ -1542,15 +1452,7 @@ spritelayout spritelayout_apartments_shops_era03_NW_001003 {
 	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 25; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NW_001) {
-		1: spritelayout_apartments_shops_era03_NW_001001;
-		1: spritelayout_apartments_shops_era03_NW_001002;
-		1: spritelayout_apartments_shops_era03_NW_001003;
-}
-
-
-// Combinations with SENW 002
+// Combinations with SENW 002 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_NW_002001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_002; }
@@ -1569,15 +1471,7 @@ spritelayout spritelayout_apartments_shops_era03_NW_002003 {
 	childsprite { sprite: spriteset_apartments_shops_era03_SENW_003; xoffset: 25; yoffset: 76; }
 }
 
-// random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NW_002) {
-		1: spritelayout_apartments_shops_era03_NW_002001;
-		1: spritelayout_apartments_shops_era03_NW_002002;
-		1: spritelayout_apartments_shops_era03_NW_002003;
-}
-
-
-// Combinations with SENW 003
+// Combinations with SENW 003 ---------------------------------------------------------------------------
 spritelayout spritelayout_apartments_shops_era03_NW_003001 {
 	ground { sprite: spriteset_ground_sprite_concrete; }
 	building { sprite: spriteset_apartments_shops_era03_SENW_003; }
@@ -1597,7 +1491,13 @@ spritelayout spritelayout_apartments_shops_era03_NW_003003 {
 }
 
 // random switch for these spritelayouts needs to be put here in order to avoid problems with auto-IDs while compiling with nmlc
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NW_003) {
+random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NW) {
+		1: spritelayout_apartments_shops_era03_NW_001001;
+		1: spritelayout_apartments_shops_era03_NW_001002;
+		1: spritelayout_apartments_shops_era03_NW_001003;
+		1: spritelayout_apartments_shops_era03_NW_002001;
+		1: spritelayout_apartments_shops_era03_NW_002002;
+		1: spritelayout_apartments_shops_era03_NW_002003;
 		1: spritelayout_apartments_shops_era03_NW_003001;
 		1: spritelayout_apartments_shops_era03_NW_003002;
 		1: spritelayout_apartments_shops_era03_NW_003003;
@@ -1629,47 +1529,15 @@ random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_B) {
 random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_N) {
 		1: spritelayout_apartments_shops_era03_N_001;
 }
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NE) {
-		1: random_apartments_shops_era03_NE_001;
-        1: random_apartments_shops_era03_NE_002;
-        1: random_apartments_shops_era03_NE_003;
-        1: random_apartments_shops_era03_NE_004;
-        1: random_apartments_shops_era03_NE_005;
-        1: random_apartments_shops_era03_NE_006;
-        1: random_apartments_shops_era03_NE_007;
-        1: random_apartments_shops_era03_NE_008;
-        1: random_apartments_shops_era03_NE_009;
-}
 random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_E) {
 		1: spritelayout_apartments_shops_era03_E_001;
-}
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SE) {
-		1: random_apartments_shops_era03_SE_001;
-        1: random_apartments_shops_era03_SE_002;
-        1: random_apartments_shops_era03_SE_003;
 }
 random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_S) {
 		1: spritelayout_apartments_shops_era03_S_001;
         1: spritelayout_apartments_shops_era03_S_002;
 }
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_SW) {
-		1: random_apartments_shops_era03_SW_001;
-        1: random_apartments_shops_era03_SW_002;
-        1: random_apartments_shops_era03_SW_003;
-        1: random_apartments_shops_era03_SW_004;
-        1: random_apartments_shops_era03_SW_005;
-        1: random_apartments_shops_era03_SW_006;
-        1: random_apartments_shops_era03_SW_007;
-        1: random_apartments_shops_era03_SW_008;
-        1: random_apartments_shops_era03_SW_009;
-}
 random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_W) {
 		1: spritelayout_apartments_shops_era03_W_001;
-}
-random_switch (FEAT_HOUSES, SELF, random_apartments_shops_era03_NW) {
-		1: random_apartments_shops_era03_NW_001;
-        1: random_apartments_shops_era03_NW_002;
-        1: random_apartments_shops_era03_NW_003;
 }
 
 
