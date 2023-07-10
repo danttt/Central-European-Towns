@@ -162,7 +162,7 @@ item (FEAT_HOUSES, item_farm_estate, 6, HOUSE_SIZE_2X2) {
 		mail_multiplier:			10;
 		accepted_cargos:			[[PASS, 4], [MAIL, 1], [GOOD, 1]];
 		local_authority_impact:		100;
-		probability:				5;
+		probability:				1;
 		years_available:			[1700, 1919];
 		minimum_lifetime:			20;
 		availability_mask:			[ALL_TOWNZONES, ALL_CLIMATES];
