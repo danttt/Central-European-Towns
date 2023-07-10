@@ -97,7 +97,7 @@ item (FEAT_HOUSES, item_multi_family_home_v, 38, HOUSE_SIZE_1X1) {
 		mail_multiplier:			12;
 		accepted_cargos:			[[PASS, 4], [MAIL, 2], [GOOD, 0]];
 		local_authority_impact:		90;
-		probability:				1;
+		probability:				7;
 		years_available:			[1950, 9999];
 		minimum_lifetime:			10;
 		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
@@ -120,7 +120,7 @@ item (FEAT_HOUSES, item_multi_family_home_t, 39, HOUSE_SIZE_1X1) {
 		mail_multiplier:			12;
 		accepted_cargos:			[[PASS, 4], [MAIL, 2], [GOOD, 0]];
 		local_authority_impact:		90;
-		probability:				1;
+		probability:				7;
 		years_available:			[1950, 9999];
 		minimum_lifetime:			10;
 		availability_mask:			[bitmask(TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB, TOWNZONE_INNER_SUBURB), ALL_CLIMATES];
@@ -143,7 +143,7 @@ item (FEAT_HOUSES, item_multi_family_home_c, 60, HOUSE_SIZE_1X1) {
 		mail_multiplier:			12;
 		accepted_cargos:			[[PASS, 4], [MAIL, 2], [GOOD, 0]];
 		local_authority_impact:		90;
-		probability:				1;
+		probability:				7;
 		years_available:			[1950, 9999];
 		minimum_lifetime:			10;
 		availability_mask:			[bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB), ALL_CLIMATES];

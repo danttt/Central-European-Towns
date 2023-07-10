@@ -248,7 +248,7 @@ item (FEAT_HOUSES, item_city_hall, 67, HOUSE_SIZE_2X2) {
 		mail_multiplier:			80;
 		accepted_cargos:			[[PASS, 8], [MAIL, 6], [GOOD, 4]];
 		local_authority_impact:		255;
-		probability:				1;
+		probability:				7;
 		years_available:			[1700, 9999];
 		minimum_lifetime:			50;
 		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];

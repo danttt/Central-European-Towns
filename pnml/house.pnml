@@ -100,7 +100,7 @@ item (FEAT_HOUSES, item_house_v, 21, HOUSE_SIZE_1X1) {
 		mail_multiplier:			7;
 		accepted_cargos:			[[PASS, 3], [MAIL, 1], [GOOD, 0]];
 		local_authority_impact:		80;
-		probability:				1;
+		probability:				7;
 		years_available:			[1950, 9999];
 		minimum_lifetime:			5;
 		availability_mask:			[ALL_TOWNZONES & ~bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
@@ -123,7 +123,7 @@ item (FEAT_HOUSES, item_house_t_c, 28, HOUSE_SIZE_1X1) {
 		mail_multiplier:			7;
 		accepted_cargos:			[[PASS, 3], [MAIL, 1], [GOOD, 0]];
 		local_authority_impact:		80;
-		probability:				1;
+		probability:				7;
 		years_available:			[1850, 9999];
 		minimum_lifetime:			5;
 		availability_mask:			[bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB), ALL_CLIMATES];

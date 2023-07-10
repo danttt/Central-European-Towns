@@ -93,7 +93,7 @@ item (FEAT_HOUSES, item_shops_offices_2_t, 35, HOUSE_SIZE_1X1) {
 		mail_multiplier:			60;
 		accepted_cargos:			[[PASS, 8], [MAIL, 3], [GOOD, 4]];
 		local_authority_impact:		130;
-		probability:				1;
+		probability:				7;
 		years_available:			[1920, 9999];
 		minimum_lifetime:			10;
 		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
@@ -120,7 +120,7 @@ item (FEAT_HOUSES, item_shops_offices_2_c, 58, HOUSE_SIZE_1X1) {
 		mail_multiplier:			60;
 		accepted_cargos:			[[PASS, 8], [MAIL, 3], [GOOD, 4]];
 		local_authority_impact:		130;
-		probability:				1;
+		probability:				7;
 		years_available:			[1920, 9999];
 		minimum_lifetime:			10;
 		availability_mask:			[bitmask(TOWNZONE_INNER_SUBURB), ALL_CLIMATES];
