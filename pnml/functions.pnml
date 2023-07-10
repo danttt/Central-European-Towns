@@ -93,9 +93,10 @@ switch (FEAT_HOUSES, SELF, func_anim_road, (func_anim_frame()*10) + func_road_de
 
 
 /*-----------------------------------------------------------------------------------------------------*/
-/*------------------------------- FUNCTIONS FOR OLD TOWN GENERATION -----------------------------------*/
+/*------------------------------- FUNCTIONS FOR OLD TOWN PROTECTION -----------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
+// This switch chain is used for the protection callback
 // Switch chain for generating an old town core typical for Central European towns
 
 // Require a historic unique building (building_class 2) to be present within a radius of 3 tiles
@@ -162,10 +163,11 @@ switch (FEAT_HOUSES, SELF, func_old_town, (current_year > 1850)) {
 
 
 /*-----------------------------------------------------------------------------------------------------*/
-/*------------------------ FUNCTIONS FOR HISTORISTIC CITY RING GENERATION -----------------------------*/
+/*--------------------------- FUNCTIONS FOR HISTORISTIC CITY RING PROTECTION  -------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-// Switch chain for generating a ring of historistic city buildings typical for Central European towns
+// This switch chain is used for the protection callback
+// Switch chain for generating a ring of historistic (late 19th century) city buildings typical for Central European towns
 
 // Require an old town building (building_class 4) to be present within a radius of 3 tiles
 switch (FEAT_HOUSES, SELF, func_hist_ring_2,
@@ -234,9 +236,10 @@ switch (FEAT_HOUSES, SELF, func_hist_ring, (current_year > 1919)) {
 /*------------------------------ FUNCTIONS FOR PROXIMITY CONDITIONS -----------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-// Switches for the construction check of buildings that require certain conditions to be fulfilled around their building location
+// Switches for the construction check callback used to define preconditions for the respective house types' appearance
+// Multiple conditions can be set for any house type; the combination switch is found in each house type's switches section 
 
-// Require a larger station of at least three tiles to be present within a radius of 3 tiles of a building tile
+// Check for the presence of a large station (3 tiles or larger) within a radius of three tiles
 switch (FEAT_HOUSES, SELF, func_prox_large_station,
 	    (
 		(nearby_tile_class(-1, -1) == TILE_CLASS_STATION) +
@@ -292,7 +295,7 @@ switch (FEAT_HOUSES, SELF, func_prox_large_station,
 		return 1;
 }
 
-// Require a special building (building_class 2) to be present within a radius of 3 tiles
+// Check for the presence of a special building (building_class 3) within a radius of three tiles
 switch (FEAT_HOUSES, SELF, func_prox_special_building,
 		nearby_tile_house_class(-1, -1) == 259 ||
 		nearby_tile_house_class(-1,  0) == 259 ||
