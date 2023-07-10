@@ -1,0 +1,228 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*x----------------------------------------- DEPARTMENT STORE ----------------------------------------x*/
+/*x---------------------------------------------------------------------------------------------------x*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- SPRITESETS ---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritesets for era03 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_department_store_era03_001_N_g, "gfx/department_store_era03_001.png") { 		
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_department_store_era03_001_N_b, "gfx/department_store_era03_001.png") {
+	tmpl_small_houses_building (0, 0)
+}
+spriteset(spriteset_department_store_era03_001_E_g, "gfx/department_store_era03_001.png") {
+	tmpl_small_houses_ground (0, 100)
+}
+spriteset(spriteset_department_store_era03_001_E_b, "gfx/department_store_era03_001.png") {
+	tmpl_small_houses_building (0, 100)
+}
+
+
+/* Spritesets for era04 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_department_store_era04_001_N_g, "gfx/department_store_era04_001.png") { 		
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_department_store_era04_001_N_b, "gfx/department_store_era04_001.png") {
+	tmpl_small_houses_building (0, 0)
+}
+spriteset(spriteset_department_store_era04_001_E_g, "gfx/department_store_era04_001.png") {
+	tmpl_small_houses_ground (0, 100)
+}
+spriteset(spriteset_department_store_era04_001_E_b, "gfx/department_store_era04_001.png") {
+	tmpl_small_houses_building (0, 100)
+}
+
+
+/* Spritesets for era05 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_department_store_era05_001_N_g, "gfx/department_store_era05_001.png") { 		
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_department_store_era05_001_N_b, "gfx/department_store_era05_001.png") {
+	tmpl_small_houses_building (0, 0)
+}
+spriteset(spriteset_department_store_era05_001_E_g, "gfx/department_store_era05_001.png") {
+	tmpl_small_houses_ground (0, 100)
+}
+spriteset(spriteset_department_store_era05_001_E_b, "gfx/department_store_era05_001.png") {
+	tmpl_small_houses_building (0, 100)
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Spritelayouts for era03 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_department_store_era03_001_N {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_department_store_era03_001_N_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_department_store_era03_001_N_b;  }
+}
+spritelayout spritelayout_department_store_era03_001_E {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_department_store_era03_001_E_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_department_store_era03_001_E_b;  }
+}
+
+
+/* Spritelayouts for era04 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_department_store_era04_001_N {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_department_store_era04_001_N_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_department_store_era04_001_N_b;  }
+}
+spritelayout spritelayout_department_store_era04_001_E {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_department_store_era04_001_E_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_department_store_era04_001_E_b;  }
+}
+
+
+/* Spritelayouts for era05 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_department_store_era05_001_N {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_department_store_era05_001_N_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_department_store_era05_001_N_b;  }
+}
+spritelayout spritelayout_department_store_era05_001_E {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_department_store_era05_001_E_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_department_store_era05_001_E_b;  }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Switch defining what town types this house type can be built in */
+/* --------------------------------------------------------------------------------------------------- */
+
+switch (FEAT_HOUSES, SELF, department_store_town_type, func_town_type()) {
+		1: 0; 2: 0; 3: 1;
+}
+
+
+/* Random switches for the sets of spritelayouts for each era */
+/* --------------------------------------------------------------------------------------------------- */
+
+random_switch (FEAT_HOUSES, SELF, random_department_store_era03_N) {
+		1: spritelayout_department_store_era03_001_N;
+}
+random_switch (FEAT_HOUSES, SELF, random_department_store_era03_E) {
+		1: spritelayout_department_store_era03_001_E;
+}
+
+random_switch (FEAT_HOUSES, SELF, random_department_store_era04_N) {
+		1: spritelayout_department_store_era04_001_N;
+}
+random_switch (FEAT_HOUSES, SELF, random_department_store_era04_E) {
+		1: spritelayout_department_store_era04_001_E;
+}
+
+random_switch (FEAT_HOUSES, SELF, random_department_store_era05_N) {
+		1: spritelayout_department_store_era05_001_N;
+}
+random_switch (FEAT_HOUSES, SELF, random_department_store_era05_E) {
+		1: spritelayout_department_store_era05_001_E;
+}
+
+
+/* Switches for binding the sets of spritelayouts to the historical eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// These switches are called by the 'default' callback and bind the sets of spritelayouts to an animation frame
+switch (FEAT_HOUSES, SELF, era_switch_department_store_N, animation_frame) {
+		3: random_department_store_era03_N;
+        4: random_department_store_era04_N;
+        random_department_store_era05_N;
+}
+switch (FEAT_HOUSES, SELF, era_switch_department_store_E, animation_frame) {
+		3: random_department_store_era03_E;
+        4: random_department_store_era04_E;
+        random_department_store_era05_E;
+}
+
+// This switch is called by the 'anim_control' callback and used for deciding which frame to use
+switch (FEAT_HOUSES, SELF, era_anim_department_store, animation_frame) {
+	0:  func_anim_frame;
+	CB_RESULT_DO_NOTHING;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+item (FEAT_HOUSES, item_department_store, 81, HOUSE_SIZE_1X2) {
+	property {
+		substitute:					07;
+		name:						string(STR_DEPARTSTORE);
+		population:					140;
+		mail_multiplier:			60;
+		accepted_cargos:			[[PASS, 8], [MAIL, 4], [GOOD, 5]];
+		local_authority_impact:		180;
+		probability:				1;
+		years_available:			[1920, 9999];
+		minimum_lifetime:			20;
+		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
+		removal_cost_multiplier:	180;
+		building_class:				1;
+		animation_info:				[ANIMATION_NON_LOOPING, 1];
+	}
+	graphics {
+		graphics_north:				era_switch_department_store_N;
+		graphics_east:				era_switch_department_store_E;
+		anim_control:				era_anim_department_store;
+		construction_check:			department_store_town_type;
+	}
+}
+
+
+
