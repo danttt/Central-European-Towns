@@ -310,6 +310,41 @@ sections.append(department_store.read())
 department_store.close()
 
 
+# Open the file containing the nml-code for this house type and append it to the "sections" list
+print ("Appending house type 'guest house'...")
+guest_house = codecs.open("pnml/guest_house.pnml", 'r', 'utf8')
+sections.append(guest_house.read())
+guest_house.close()
+
+
+# Open the file containing the nml-code for this house type and append it to the "sections" list
+print ("Appending house type 'hotel'...")
+hotel = codecs.open("pnml/hotel.pnml", 'r', 'utf8')
+sections.append(hotel.read())
+hotel.close()
+
+
+# Open the file containing the nml-code for this house type and append it to the "sections" list
+print ("Appending house type 'office building'...")
+office_building = codecs.open("pnml/office_building.pnml", 'r', 'utf8')
+sections.append(office_building.read())
+office_building.close()
+
+
+# Open the file containing the nml-code for this house type and append it to the "sections" list
+print ("Appending house type 'large office building'...")
+large_office_building = codecs.open("pnml/large_office_building.pnml", 'r', 'utf8')
+sections.append(large_office_building.read())
+large_office_building.close()
+
+
+# Open the file containing the nml-code for this house type and append it to the "sections" list
+print ("Appending house type 'tall office building'...")
+tall_office_building = codecs.open("pnml/tall_office_building.pnml", 'r', 'utf8')
+sections.append(tall_office_building.read())
+tall_office_building.close()
+
+
 # Create the final .nml-file and make it writable
 # Then write the "sections" list into 'cet.nml' using new lines for each part
 print ("Creating NML file...")

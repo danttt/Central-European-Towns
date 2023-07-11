@@ -20,12 +20,16 @@ STR_FARM                                :Farm
 STR_FARMESTATE                          :Farm Estate
 STR_FARMHOUSE                           :Farm House
 STR_GRANDHOTEL                          :Grand Hotel
+STR_GUESTHOUSE                          :Guest House
 STR_HIGHSCHOOL                          :High School
 STR_HOSPITAL                            :Hospital
+STR_HOTEL                               :Hotel
 STR_HOUSE                               :House
+STR_LARGEOFFICE                         :Large Office Building
 STR_MANSION                             :Mansion
 STR_MERCHANTHOUSE                       :Merchant House
 STR_MULTIFAMILYHOME                     :Multi Family Home
+STR_OFFICEBUILDING                      :Office Building
 STR_SCHOOL                              :School
 STR_SHOP                                :Shop
 STR_SHOPPINGMALL                        :Shopping Mall
@@ -33,6 +37,7 @@ STR_SHOPS                               :Shops
 STR_SHOPSOFFICES                        :Shops and Offices
 STR_SMALLFARM                           :Small Farm
 STR_STADIUM                             :Stadium
+STR_TALLOFFICE                          :Tall Office Building
 STR_THEATRE                             :Theatre
 STR_TOWNCHURCH                          :Town Church
 STR_TOWNHALL                            :Town Hall

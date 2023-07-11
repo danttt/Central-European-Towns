@@ -1,6 +1,6 @@
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*x---------------------------------------------------------------------------------------------------x*/
-/*x---------------------------------------- SHOPS AND OFFICES 2 --------------------------------------x*/
+/*x------------------------------------------- GUEST HOUSE -------------------------------------------x*/
 /*x---------------------------------------------------------------------------------------------------x*/
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
@@ -10,13 +10,23 @@
 /*-------------------------------------------- SPRITESETS ---------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
+/* Spritesets for era01 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spriteset(spriteset_guest_house_era01_001_g, "gfx/guest_house_era01_001.PNG") {
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_guest_house_era01_001_b, "gfx/guest_house_era01_001.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
 /* Spritesets for era03 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spriteset(spriteset_shops_offices_2_era03_001_g, "gfx/shops_offices_2_era03_001.PNG") {
+spriteset(spriteset_guest_house_era03_001_g, "gfx/guest_house_era03_001.PNG") {
 	tmpl_small_houses_ground (0, 0)
 }
-spriteset(spriteset_shops_offices_2_era03_001_b, "gfx/shops_offices_2_era03_001.PNG") {
+spriteset(spriteset_guest_house_era03_001_b, "gfx/guest_house_era03_001.PNG") {
 	tmpl_small_houses_building (0, 0)
 }
 
@@ -26,17 +36,30 @@ spriteset(spriteset_shops_offices_2_era03_001_b, "gfx/shops_offices_2_era03_001.
 /*------------------------------------------ SPRITELAYOUTS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Spritelayouts for era03 */
+/* Spritelayouts for era01 */
 /* --------------------------------------------------------------------------------------------------- */
 
-spritelayout spritelayout_shops_offices_2_era03_001 {
+spritelayout spritelayout_guest_house_era01_001 {
 	ground { 
 		sprite: spriteset_ground_sprite_concrete; }
 	childsprite {
-		sprite: spriteset_shops_offices_2_era03_001_g; 
+		sprite: spriteset_guest_house_era01_001_g; 
 		always_draw: 1; }
 	building {
-		sprite: spriteset_shops_offices_2_era03_001_b;  }
+		sprite: spriteset_guest_house_era01_001_b;  }
+}
+
+/* Spritelayouts for era03 */
+/* --------------------------------------------------------------------------------------------------- */
+
+spritelayout spritelayout_guest_house_era03_001 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_guest_house_era03_001_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_guest_house_era03_001_b;  }
 }
 
 
@@ -45,23 +68,27 @@ spritelayout spritelayout_shops_offices_2_era03_001 {
 /*------------------------------- FUNCTIONS/RANDOM SWITCHES/SWITCHES ----------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-/* Switch defining what town types this house type can be built in */
+/* Switches defining what town types this house type can be built in */
 /* --------------------------------------------------------------------------------------------------- */
 
-switch (FEAT_HOUSES, SELF, shops_offices_2_t_town_type, func_town_type()) {
-		1: 0; 2: 1; 3: 0;
+switch (FEAT_HOUSES, SELF, guest_house_v_town_type, func_town_type()) {
+		1: 1; 2: 0; 3: 0;
 }
 
-switch (FEAT_HOUSES, SELF, shops_offices_2_c_town_type, func_town_type()) {
-		1: 0; 2: 0; 3: 1;
+switch (FEAT_HOUSES, SELF, guest_house_t_c_town_type, func_town_type()) {
+		1: 0; 2: 1; 3: 1;
 }
 
 
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
 
-random_switch (FEAT_HOUSES, SELF, random_shops_offices_2_era03) {
-		1: spritelayout_shops_offices_2_era03_001;
+random_switch (FEAT_HOUSES, SELF, random_guest_house_era01) {
+		1: spritelayout_guest_house_era01_001;
+}
+
+random_switch (FEAT_HOUSES, SELF, random_guest_house_era03) {
+		1: spritelayout_guest_house_era03_001;
 }
 
 
@@ -69,12 +96,14 @@ random_switch (FEAT_HOUSES, SELF, random_shops_offices_2_era03) {
 /* --------------------------------------------------------------------------------------------------- */
 
 // This switch is called by the 'default' callback and binds the sets of spritelayouts to an animation frame
-switch (FEAT_HOUSES, SELF, era_switch_shops_offices_2, animation_frame) {
-		random_shops_offices_2_era03;
+switch (FEAT_HOUSES, SELF, era_switch_guest_house, animation_frame) {
+		1: random_guest_house_era01;
+        2: random_guest_house_era01;
+        random_guest_house_era03;
 }
 
 // This switch is called by the 'anim_control' callback and used for deciding which frame to use
-switch (FEAT_HOUSES, SELF, era_anim_shops_offices_2, animation_frame) {
+switch (FEAT_HOUSES, SELF, era_anim_guest_house, animation_frame) {
 	0:  func_anim_frame;
 	CB_RESULT_DO_NOTHING;
 }
@@ -85,49 +114,49 @@ switch (FEAT_HOUSES, SELF, era_anim_shops_offices_2, animation_frame) {
 /*--------------------------------------- ITEM DEFINITIONS --------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-item (FEAT_HOUSES, item_shops_offices_2_t, 35, HOUSE_SIZE_1X1) {
+item (FEAT_HOUSES, item_guest_house_v, 83, HOUSE_SIZE_1X1) {
 	property {
-		substitute:					29;
-		name:						string(STR_SHOPSOFFICES);
-		population:					100;
-		mail_multiplier:			60;
-		accepted_cargos:			[[PASS, 8], [MAIL, 3], [GOOD, 4]];
-		local_authority_impact:		130;
-		probability:				7;
-		years_available:			[1920, 9999];
-		minimum_lifetime:			10;
+		substitute:					02;
+		name:						string(STR_GUESTHOUSE);
+		population:					45;
+		mail_multiplier:			15;
+		accepted_cargos:			[[PASS, 5], [MAIL, 2], [GOOD, 1]];
+		local_authority_impact:		90;
+		probability:				1;
+		years_available:			[1700, 9999];
+		minimum_lifetime:			20;
 		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
-		removal_cost_multiplier:	140;
+		removal_cost_multiplier:	90;
 		building_class:				1;
 		animation_info:				[ANIMATION_NON_LOOPING, 1];
 	}
 	graphics {
-		default:					era_switch_shops_offices_2;
-		anim_control:				era_anim_shops_offices_2;
-		construction_check:			shops_offices_2_t_town_type;
+		default:					era_switch_guest_house;
+		anim_control:				era_anim_guest_house;
+		construction_check:			guest_house_v_town_type;
 	}
 }
 
-item (FEAT_HOUSES, item_shops_offices_2_c, 58, HOUSE_SIZE_1X1) {
+item (FEAT_HOUSES, item_guest_house_t_c, 84, HOUSE_SIZE_1X1) {
 	property {
-		substitute:					29;
-		name:						string(STR_SHOPSOFFICES);
-		population:					100;
-		mail_multiplier:			60;
-		accepted_cargos:			[[PASS, 8], [MAIL, 3], [GOOD, 4]];
-		local_authority_impact:		130;
+		substitute:					02;
+		name:						string(STR_GUESTHOUSE);
+		population:					45;
+		mail_multiplier:			15;
+		accepted_cargos:			[[PASS, 5], [MAIL, 2], [GOOD, 1]];
+		local_authority_impact:		90;
 		probability:				7;
-		years_available:			[1920, 9999];
-		minimum_lifetime:			10;
-		availability_mask:			[bitmask(TOWNZONE_INNER_SUBURB), ALL_CLIMATES];
-		removal_cost_multiplier:	140;
+		years_available:			[1700, 9999];
+		minimum_lifetime:			20;
+		availability_mask:			[ALL_TOWNZONES & ~bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
+		removal_cost_multiplier:	90;
 		building_class:				1;
 		animation_info:				[ANIMATION_NON_LOOPING, 1];
 	}
 	graphics {
-		default:					era_switch_shops_offices_2;
-		anim_control:				era_anim_shops_offices_2;
-		construction_check:			shops_offices_2_c_town_type;
+		default:					era_switch_guest_house;
+		anim_control:				era_anim_guest_house;
+		construction_check:			guest_house_t_c_town_type;
 	}
 }
 
