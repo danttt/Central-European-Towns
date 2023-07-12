@@ -1,5 +1,18 @@
 Central European Towns 0.6.0 (2023-07-08) (Build 6)
 ----------------------------------------------------
+- ADD: house type apartments and shops
+- ADD: house type department store
+- ADD: house type guest house
+- ADD: house type hotel
+- ADD: house type office building
+- ADD: house type large office building
+- ADD: house type tall office building
+- CHANGE: Set standard probability of all houses to 7 in order to define some lower or higher probabilities later
+- CHANGE: Set probability for farm estate to 1, was appearing to often in villages
+
+
+Central European Towns 0.6.0 (2023-07-08) (Build 6)
+----------------------------------------------------
 - FEATURE: cities create a ring of historistic (late 19th century) block perimeter houses
 - ADD: house type apartment block 1
 - ADD: house type town church 2
