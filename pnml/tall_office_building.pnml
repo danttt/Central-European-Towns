@@ -14,10 +14,10 @@
 /* --------------------------------------------------------------------------------------------------- */
 
 spriteset(spriteset_tall_office_building_era05_001_g, "gfx/tall_office_building_era05_001.PNG") {
-	tmpl_small_houses_ground (0, 0)
+	tmpl_large_houses_ground (0, 0)
 }
 spriteset(spriteset_tall_office_building_era05_001_b, "gfx/tall_office_building_era05_001.PNG") {
-	tmpl_small_houses_building (0, 0)
+	tmpl_large_houses_building (0, 0)
 }
 
 
@@ -99,7 +99,7 @@ item (FEAT_HOUSES, item_tall_office_building, 89, HOUSE_SIZE_1X1) {
 		mail_multiplier:			60;
 		accepted_cargos:			[[PASS, 8], [MAIL, 5], [GOOD, 5]];
 		local_authority_impact:		140;
-		probability:				7;
+		probability:				3;
 		years_available:			[1980, 9999];
 		minimum_lifetime:			20;
 		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];

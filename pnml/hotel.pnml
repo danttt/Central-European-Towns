@@ -131,7 +131,7 @@ item (FEAT_HOUSES, item_hotel, 85, HOUSE_SIZE_1X1) {
 		mail_multiplier:			30;
 		accepted_cargos:			[[PASS, 6], [MAIL, 3], [GOOD, 2]];
 		local_authority_impact:		110;
-		probability:				7;
+		probability:				3;
 		years_available:			[1920, 9999];
 		minimum_lifetime:			20;
 		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];

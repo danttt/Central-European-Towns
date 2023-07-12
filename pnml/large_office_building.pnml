@@ -14,16 +14,16 @@
 /* --------------------------------------------------------------------------------------------------- */
 
 spriteset(spriteset_large_office_building_era05_001_N_g, "gfx/large_office_building_era05_001.png") { 		
-	tmpl_small_houses_ground (0, 0)
+	tmpl_large_houses_ground (0, 0)
 }
 spriteset(spriteset_large_office_building_era05_001_N_b, "gfx/large_office_building_era05_001.png") {
-	tmpl_small_houses_building (0, 0)
+	tmpl_large_houses_building (0, 0)
 }
 spriteset(spriteset_large_office_building_era05_001_W_g, "gfx/large_office_building_era05_001.png") {
-	tmpl_small_houses_ground (0, 100)
+	tmpl_large_houses_ground (0, 200)
 }
 spriteset(spriteset_large_office_building_era05_001_W_b, "gfx/large_office_building_era05_001.png") {
-	tmpl_small_houses_building (0, 100)
+	tmpl_large_houses_building (0, 200)
 }
 
 
@@ -114,7 +114,7 @@ switch (FEAT_HOUSES, SELF, era_anim_large_office_building, animation_frame) {
 
 item (FEAT_HOUSES, item_large_office_building, 87, HOUSE_SIZE_2X1) {
 	property {
-		substitute:					21;
+		substitute:					74;
 		name:						string(STR_LARGEOFFICE);
 		population:					150;
 		mail_multiplier:			70;
@@ -130,7 +130,7 @@ item (FEAT_HOUSES, item_large_office_building, 87, HOUSE_SIZE_2X1) {
 	}
 	graphics {
 		graphics_north:				era_switch_large_office_building_N;
-		graphics_east:				era_switch_large_office_building_W;
+		graphics_west:				era_switch_large_office_building_W;
 		anim_control:				era_anim_large_office_building;
 		construction_check:			large_office_building_town_type;
 	}
