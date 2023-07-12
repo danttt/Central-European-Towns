@@ -21,11 +21,11 @@ Every in-game town passes through these three stages. In most cases, this will r
 ## Features of The Town Types
 The three town types regulate what house types can be built in a town and where (in which town zones).
 
-**_Villages_** are small rural settlements. They are dominated by farms. In their centre, churches, schools and guest houses can appear.
+* **Villages** are small rural settlements. They are dominated by farms. In their centre, churches, schools and guest houses can appear.
 
-**_Towns_** bit by bit abandon the farm fields, mainly for residential housing in their outer town zones and shops and offices in their centre. They built a town hall, and, among other special buildings, one or more larger town churches can appear.
+* **Towns** bit by bit abandon the farm fields, mainly for residential housing in their outer town zones and shops and offices in their centre. They built a town hall, and, among other special buildings, one or more larger town churches can appear.
 
-**_Cities_** are characterised by block perimeter development throughout the innermost town zone. They built a city hall and cathedrals, as well as larger city parks. They can also grow business districts made up of large office buildings.
+* **Cities** are characterised by block perimeter development throughout the innermost town zone. They built a city hall and cathedrals, as well as larger city parks. They can also grow business districts made up of large office buildings.
 
 
 ## Historical Eras
