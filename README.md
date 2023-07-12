@@ -4,9 +4,7 @@ A full house replacement set that adds new houses in Central European (Austrian,
 In addition, CET introduces a population-based progression from village to town to city for every in-game town. Each of the three town types have there specific structural features. They also govern the appearance of the various house types the set offers.
 
 
-## Main Features
-
-### Town Types
+## Town Types
 CET aims to simulate the architectural and structural features of real Central European settlements. 
 
 To achieve this, the set introduces three town types based on their population: 
@@ -20,7 +18,7 @@ To achieve this, the set introduces three town types based on their population:
 Every in-game town passes through these three stages. In most cases, this will result in all towns in a new, randomly generated game will appear as villages. The in-game designation of a town as a city has no effect on this progression either, apart from possibly elevating a town into the 'town' type right at the start of a new game.
 
 
-### Features of The Town Types
+## Features of The Town Types
 The three town types regulate what house types can be built in a town and where (in which town zones).
 
 **_Villages_** are small rural settlements. They are dominated by farms. In their centre, churches, schools and guest houses can appear.
@@ -30,7 +28,7 @@ The three town types regulate what house types can be built in a town and where 
 **_Cities_** are characterised by block perimeter development throughout the innermost town zone. They built a city hall and cathedrals, as well as larger city parks. They can also grow business districts made up of large office buildings.
 
 
-### Historical Eras
+## Historical Eras
 The set introduces six historical eras which help changing the look of towns based on real architectural history. Villages, for example, in the late game slowly change from agriculture-dominated settlements into the residential suburbs we know today.
 
 These eras are defined as follows:
@@ -44,7 +42,7 @@ These eras are defined as follows:
 Most house types are not available throughout every era.
 
 
-### Old Town Districts and Historistic Rings
+## Old Town Districts and Historistic Rings
 When starting before 1920, towns will form an old town district and a ring of historistic (late 19th century) houses.
 
 * All town and city houses built before 1850 are protected if they are within a radius of three tile of a town hall, church or town church.
@@ -53,7 +51,7 @@ When starting before 1920, towns will form an old town district and a ring of hi
 * If a village becomes a town only after 1919, no old town district appears. Likewiese, any game with a start year later than 1919 will see no old town districts.
 
 
-### City Parks
+## City Parks
 In the town type city larger park areas can be build in multiple locations.
 
 * The first couple of tiles of a city park appear randomly. 
@@ -62,7 +60,7 @@ In the town type city larger park areas can be build in multiple locations.
 * The spread of these areas is only limited by the road network. Thus, if players want to 'grow' a city park, they can adjust the roads to make for bigger spaces in between them.
 
 
-### Conditions for Certain House Types
+## Conditions for Certain House Types
 Some house types have special (proximity) conditions for them to be built.
 
 * Hotels and grand hotels (multi-tile hotels) are built only when there are at least three station tiles around them (radius of three tiles); additionally, they are built around special buildings (city hall, cathedral) and city parks.
