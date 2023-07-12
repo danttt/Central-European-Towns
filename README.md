@@ -22,9 +22,7 @@ Every in-game town passes through these three stages. In most cases, this will r
 The three town types regulate what house types can be built in a town and where (in which town zones).
 
 * **Villages** are small rural settlements. They are dominated by farms. In their centre, churches, schools and guest houses can appear.
-
 * **Towns** bit by bit abandon the farm fields, mainly for residential housing in their outer town zones and shops and offices in their centre. They built a town hall, and, among other special buildings, one or more larger town churches can appear.
-
 * **Cities** are characterised by block perimeter development throughout the innermost town zone. They built a city hall and cathedrals, as well as larger city parks. They can also grow business districts made up of large office buildings.
 
 
@@ -37,7 +35,7 @@ These eras are defined as follows:
 * 1920 – 1949: Era 03
 * 1950 – 1979: Era 04
 * 1980 – 2009: Era 05
-* 2010 - 9999: Era 06
+* 2010 – 9999: Era 06
 
 Most house types are not available throughout every era.
 
