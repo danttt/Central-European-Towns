@@ -1,4 +1,4 @@
-Central European Towns 0.7.0 (2023-07-08) (Build 6)
+Central European Towns 0.7.0 (2023-07-08) (Build 7)
 ----------------------------------------------------
 - ADD: house type apartments and shops
 - ADD: house type department store
