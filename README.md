@@ -1,6 +1,6 @@
 # Central European Towns (CET)
 
-![Photo credit: dant](docs/cet_collage_721x400.png)
+![Photo credit: dant](doc/cet_collage_721x400.png)
 
 An OpenTTD full houses replacement set that adds house types and sprites in Central European (Austrian, German, Swiss) style to the game.
 
