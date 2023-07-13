@@ -1,4 +1,7 @@
 # Central European Towns (CET)
+
+![Photo credit: dant](docs/cet_collage_721x400.png)
+
 An OpenTTD full houses replacement set that adds house types and sprites in Central European (Austrian, German, Swiss) style to the game.
 
 In addition, CET introduces three town types: Village, Town, and City. Each in-game town will progress through these stages, thereby changing its look and structure.
