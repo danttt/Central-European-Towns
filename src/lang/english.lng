@@ -4,7 +4,7 @@
 # GRF name and description definitions
 STR_GRF_NAME							:{TITLE} {VERSION}
 STR_GRF_DESC							:{ORANGE}Full house replacement set in Central European style.{}{BLACK}Introduces the town types Village, Town, and City as well as historical eras to better simulate town structures and architectural history.{}{}{}{SILVER}Graphics by Chataigne, Fraenklie and super_dan (dant).{}{}Code by super_dan (dant). 2023.
-STR_WEBSITE                             https://github.com/danttt/Central-European-Towns#readme
+STR_WEBSITE                             https://github.com/danttt/Central-European-Towns
 
 # Names of house types of the set
 STR_ALLEYHOUSES                         :Alley Houses
