@@ -53,9 +53,10 @@ The historical eras are defined as follows:
 ### Old Town Districts and Historicist Rings
 When starting before 1920, towns will form an old town district and a ring of historicist (late 19th century historism-inspired) houses around it.
 
-* All Town and City houses built before 1850 (Era 01) are protected if they are within a radius of three tiles of a town hall, church or town church. They form an old town district.
-* From 1850 onwards, Cities build wall-to-wall block perimeter houses in the innermost town zone. The ones built up to 1919 (in Era 02) become protected after that year within a radius of three tiles around the old town district.
-* If the houses that enable protection (town hall, churches, town churches) are demolished by the player, the old town district and the historicist ring disappear unless these house types are rebuilt close-by.
+* Town and City houses built before 1920 (Era 02) can become protected and form a town's old town district.
+* Town and City houses built up to 1850 become protected after that year when located in a three-tile raidius around a town hall, church or town church.
+* From 1850 onwards, Cities build wall-to-wall block perimeter houses in the innermost town zone. The ones built up to 1920 become protected after that year when located within a radius of three tiles around the old town district.
+* If the house types enabling protection (town hall, church, town church) are demolished by the player, the old town district and, in consequence, its surrounding historicist ring disappear, unless these house types are rebuilt close-by.
 * If a Village becomes a Town only after 1919, no old town district or historicist ring appears. 
 * A game with a start year later than 1919 will see no old town districts either.
 
