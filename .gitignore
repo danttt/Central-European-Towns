@@ -1,4 +1,10 @@
-# ignore the following files and folders
+# Ignore the following files and folders:
 
-# ignore main nml file since changes are tracked in the pnml files already
+# Ignore main nml file since changes are tracked in the pnml files already.
 cet.nml
+
+# Ignore any Visual Studio Code configs.
+.vscode
+
+# Ignore the folder containing the grf compiler
+compile
