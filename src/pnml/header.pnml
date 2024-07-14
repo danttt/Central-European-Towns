@@ -12,6 +12,26 @@ grf {
     desc: 					string(STR_GRF_DESC);		
     version: 				7;						
     min_compatible_version: 1;
+    param 1 {
+		town_min_pops {
+			type: int;
+			name: string(STR_PARAM_TOWN_MIN_POPS);
+			desc: string(STR_PARAM_TOWN_MIN_POPS);
+			min_value: 0;
+			max_value: 100000;
+			def_value: 1000;
+			}
+	}
+	param 2 {
+		city_min_pops {
+			type: int;
+			name: string(STR_PARAM_CITY_MIN_POPS);
+			desc: string(STR_PARAM_CITY_MIN_POPS);
+			min_value: 0;
+			max_value: 50000000;
+			def_value: 10000;
+			}
+	}
 }
 
 

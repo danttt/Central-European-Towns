@@ -6,6 +6,12 @@ STR_GRF_NAME							:{TITLE} {VERSION}
 STR_GRF_DESC							:{ORANGE}Full house replacement set in Central European style.{}{BLACK}Introduces the town types Village, Town, and City as well as historical eras to better simulate town structures and architectural history.{}{}{}{SILVER}Graphics by Chataigne, Fraenklie and super_dan (dant).{}{}Code by super_dan (dant). 2023.
 STR_WEBSITE                             :https://github.com/danttt/Central-European-Towns
 
+# GRF parameter names and descriptions
+STR_PARAM_TOWN_MIN_POPS					:Town minimum population
+STR_PARAM_TOWN_MIN_POPS					:Determines the population at which a village becomes a town.
+STR_PARAM_CITY_MIN_POPS					:City minimum population
+STR_PARAM_CITY_MIN_POPS					:Determines the population at which a town becomes a city.
+
 # Names of house types of the set
 STR_ALLEYHOUSES                         :Alley Houses
 STR_APARTBLOCK                          :Apartment Block
