@@ -6,5 +6,6 @@ cet.nml
 # Ignore any Visual Studio Code configs.
 .vscode
 
-# Ignore the folder containing the grf compiler
+# Ignore the folder (Win and Linux versions) containing the grf compiler
 compile
+.compile
