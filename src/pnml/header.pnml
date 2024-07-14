@@ -15,8 +15,8 @@ grf {
     param 1 {
 		town_min_pops {
 			type: int;
-			name: string(STR_PARAM_TOWN_MIN_POPS);
-			desc: string(STR_PARAM_TOWN_MIN_POPS);
+			name: string(STR_PARAM_TOWN_MIN_POPS_NAME);
+			desc: string(STR_PARAM_TOWN_MIN_POPS_DESC);
 			min_value: 0;
 			max_value: 100000;
 			def_value: 1000;
@@ -25,8 +25,8 @@ grf {
 	param 2 {
 		city_min_pops {
 			type: int;
-			name: string(STR_PARAM_CITY_MIN_POPS);
-			desc: string(STR_PARAM_CITY_MIN_POPS);
+			name: string(STR_PARAM_CITY_MIN_POPS_NAME);
+			desc: string(STR_PARAM_CITY_MIN_POPS_DESC);
 			min_value: 0;
 			max_value: 50000000;
 			def_value: 10000;

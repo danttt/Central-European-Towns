@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cp ~/dev/cet/Central-European-Towns/cet.nml 			~/dev/cet/Central-European-Towns/.compile
+cp ~/dev/cet/Central-European-Towns/src/lang/* 			~/dev/cet/Central-European-Towns/.compile/lang
+cp ~/dev/cet/Central-European-Towns/src/gfx/* 			~/dev/cet/Central-European-Towns/.compile/gfx
+cp ~/dev/cet/Central-European-Towns/src/custom_tags.txt ~/dev/cet/Central-European-Towns/.compile
+
+nmlc --grf ~/dev/cet/Central-European-Towns/.compile/cet.grf -l ~/dev/cet/Central-European-Towns/src/lang/ -t ~/dev/cet/Central-European-Towns/.compile/custom_tags.txt ~/dev/cet/Central-European-Towns/.compile/cet.nml

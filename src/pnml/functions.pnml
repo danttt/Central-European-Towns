@@ -12,8 +12,8 @@
 
 // Check for the town type
 switch (FEAT_HOUSES, PARENT, func_town_type, population) {
-		0 .. 999: return 1;
-		1000 .. 9999: return 2;
+		0 .. (param[1] - 1): return 1;
+		param[1] .. (param[2] - 1): return 2;
 		return 3;
 }
 
