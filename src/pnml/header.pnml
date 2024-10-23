@@ -32,10 +32,23 @@ grf {
 			def_value: 10000;
 			}
 	}
+    param 3 {
+		house_replace {
+			type: bool;
+			name: string(STR_PARAM_HOUSE_REPLACE_NAME);
+			desc: string(STR_PARAM_HOUSE_REPLACE_DESC);
+			def_value: 1;
+			}
+	}
 }
 
 
+
+/* Disable default houses if parameter 3 is set */
+if (param[3] == 1) {
 disable_item(FEAT_HOUSES, 00, 90);
+}
+
 
 
 cargotable {
