@@ -53,6 +53,16 @@ switch (FEAT_HOUSES, SELF, trading_house_town_type, func_town_type()) {
 }
 
 
+/* Switch for varying availability in different eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// Trading houses are city-exclusive unlike other era01 old town buildings built in towns during era02
+switch (FEAT_HOUSES, SELF, trading_house_availability_switch, func_anim_frame()) {
+		1: trading_house_town_type;
+		return 0;
+}
+
+
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
 
@@ -90,7 +100,7 @@ item (FEAT_HOUSES, item_trading_house, 19, HOUSE_SIZE_1X1) {
 		accepted_cargos:			[[PASS, 8], [MAIL, 4], [GOOD, 3]];
 		local_authority_impact:		140;
 		probability:				7;
-		years_available:			[1700, 1850];
+		years_available:			[1700, 1919];
 		minimum_lifetime:			10;
 		availability_mask:			[bitmask(TOWNZONE_CENTRE), ALL_CLIMATES];
 		removal_cost_multiplier:	120;
@@ -100,7 +110,7 @@ item (FEAT_HOUSES, item_trading_house, 19, HOUSE_SIZE_1X1) {
 	graphics {
 		default:					era_switch_trading_house;
         anim_control:               era_anim_trading_house;
-		construction_check:			trading_house_town_type;
+		construction_check:			trading_house_availability_switch;
 		protection:					func_old_town;
 	}
 }

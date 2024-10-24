@@ -13,6 +13,8 @@ STR_PARAM_CITY_MIN_POPS_NAME			:City minimum population
 STR_PARAM_CITY_MIN_POPS_DESC			:Determines the population at which a town becomes a city.
 STR_PARAM_HOUSE_REPLACE_NAME            :Disable default OpenTTD houses
 STR_PARAM_HOUSE_REPLACE_DESC            :Disable or enable the default OpenTTD houses.
+STR_PARAM_ERA02_START_NAME              :Second historical era start year
+STR_PARAM_ERA02_START_DESC              :The second of the set's historical eras defines the beginning of block perimeter development in cities. The default date is 1850, roughly based on real architectural history. To better suit games with a later start year, however, this can be set up to 1890.
 
 # Names of house types of the set
 STR_ALLEYHOUSES                         :Alley Houses

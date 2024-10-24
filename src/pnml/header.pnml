@@ -40,6 +40,16 @@ grf {
 			def_value: 1;
 			}
 	}
+	param 4 {
+		city_era02_start {
+			type: int;
+			name: string(STR_PARAM_ERA02_START_NAME);
+			desc: string(STR_PARAM_ERA02_START_DESC);
+			min_value: 1850;
+			max_value: 1890;
+			def_value: 1850;
+			}
+	}
 }
 
 

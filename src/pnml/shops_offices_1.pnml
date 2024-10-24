@@ -206,6 +206,17 @@ switch (FEAT_HOUSES, SELF, shops_offices_1_town_type, func_town_type()) {
 }
 
 
+/* Switch for varying availability in different eras */
+/* --------------------------------------------------------------------------------------------------- */
+
+// Block perimeter development does only start in era02
+// As the start date of era02 is variable, this prevents the house type being built too early
+switch (FEAT_HOUSES, SELF, shops_offices_1_availability_switch, func_anim_frame()) {
+		1: return 0;
+		shops_offices_1_town_type;
+}
+
+
 /* Random switches for the sets of spritelayouts for each era */
 /* --------------------------------------------------------------------------------------------------- */
 
@@ -329,7 +340,7 @@ item (FEAT_HOUSES, item_shops_offices_1, 3, HOUSE_SIZE_1X1) {
 	graphics {
 		default:					era_switch_shops_offices_1;
 		anim_control:				era_anim_shops_offices_1;
-		construction_check:			shops_offices_1_town_type;
+		construction_check:			shops_offices_1_availability_switch;
 		protection:					func_hist_ring;
 	}
 }

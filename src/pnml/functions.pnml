@@ -25,11 +25,11 @@ switch (FEAT_HOUSES, PARENT, func_town_type, population) {
 
 // Return a number for each historical era
 switch (FEAT_HOUSES, SELF, availability_years, current_year) {
-		0    .. 1849: return 1;
-        1850 .. 1919: return 2;
-		1920 .. 1949: return 3;
-		1950 .. 1979: return 4;
-		1980 .. 2009: return 5;
+		0    	 .. (param[4] - 1): return 1;
+        param[4] ..           1919: return 2;
+		1920 	 ..           1949: return 3;
+		1950 	 ..           1979: return 4;
+		1980 	 ..           2009: return 5;
 		return 6;
 }
 
