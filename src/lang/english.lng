@@ -15,6 +15,8 @@ STR_PARAM_HOUSE_REPLACE_NAME            :Disable default OpenTTD houses
 STR_PARAM_HOUSE_REPLACE_DESC            :Disable or enable the default OpenTTD houses.
 STR_PARAM_ERA02_START_NAME              :Second historical era start year
 STR_PARAM_ERA02_START_DESC              :The second of the set's historical eras defines the beginning of block perimeter development in cities. The default date is 1850, roughly based on real architectural history. To better suit games with a later start year, however, this can be set up to 1890.
+STR_PARAM_HISTORISTIC_RING_NAME         :Historistic Rings
+STR_PARAM_HISTORISTIC_RING_DESC         :The first block perimeter houses become protected after the second historical era within a distance of three tiles around the old town center. This roughly resembles the real-life Central European "Historistic Rings" of the late 19th century. If turned off, these buildings will eventually be replaced by newer ones. 
 
 # Names of house types of the set
 STR_ALLEYHOUSES                         :Alley Houses

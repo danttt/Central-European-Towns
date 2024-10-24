@@ -50,6 +50,14 @@ grf {
 			def_value: 1850;
 			}
 	}
+	param 5 {
+		historistic_ring {
+			type: bool;
+			name: string(STR_PARAM_HISTORISTIC_RING_NAME);
+			desc: string(STR_PARAM_HISTORISTIC_RING_DESC);
+			def_value: 1;
+			}
+	}
 }
 
 

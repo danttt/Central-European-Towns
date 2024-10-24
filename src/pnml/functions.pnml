@@ -170,7 +170,7 @@ switch (FEAT_HOUSES, SELF, func_old_town, func_anim_frame() != 1) {
 // Switch chain for generating a ring of historistic (late 19th century) city buildings typical for Central European towns
 
 // Require an old town building (building_class 4) to be present within a radius of 3 tiles
-switch (FEAT_HOUSES, SELF, func_hist_ring_2,
+switch (FEAT_HOUSES, SELF, func_hist_ring_3,
 		nearby_tile_house_class(-1, -1) == 260 ||
 		nearby_tile_house_class(-1,  0) == 260 ||
 		nearby_tile_house_class(-1,  1) == 260 ||
@@ -225,7 +225,14 @@ switch (FEAT_HOUSES, SELF, func_hist_ring_2,
 }
 
 // Define protection to be limited to the time after era02
-switch (FEAT_HOUSES, SELF, func_hist_ring, func_anim_frame() != 2) {
+switch (FEAT_HOUSES, SELF, func_hist_ring_2, func_anim_frame() != 2) {
+		0: return 0;
+		func_hist_ring_3;
+}
+
+
+// Turn historistic rings around old towns on or off via parameter 5
+switch (FEAT_HOUSES, SELF, func_hist_ring, param[5] == 1) {
 		0: return 0;
 		func_hist_ring_2;
 }
