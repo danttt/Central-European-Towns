@@ -154,8 +154,8 @@ switch (FEAT_HOUSES, SELF, func_old_town_2,
 		return 0;
 }
 
-// Define protection to be limited to the time after 1850 (era01)
-switch (FEAT_HOUSES, SELF, func_old_town, (current_year > 1850)) {
+// Define protection to be limited to the time after era01
+switch (FEAT_HOUSES, SELF, func_old_town, func_anim_frame() != 1) {
 		0: return 0;
 		func_old_town_2;
 }
@@ -224,8 +224,8 @@ switch (FEAT_HOUSES, SELF, func_hist_ring_2,
 		return 0;
 }
 
-// Define protection to be limited to the time after 1919 (era02)
-switch (FEAT_HOUSES, SELF, func_hist_ring, (current_year > 1919)) {
+// Define protection to be limited to the time after era02
+switch (FEAT_HOUSES, SELF, func_hist_ring, func_anim_frame() != 2) {
 		0: return 0;
 		func_hist_ring_2;
 }
