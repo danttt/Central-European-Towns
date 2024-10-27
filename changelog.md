@@ -1,4 +1,15 @@
-Central European Towns 0.7.0 (2023-07-08) (Build 7)
+Central European Towns 0.8.0 (2024-10-27)
+----------------------------------------------------
+- FEATURE: Add parameters to adjust maximum population for town type transitions from village to town and from town to city
+- FEATURE: Add parameter to disable or enable default OpenTTD houses
+- FEATURE: Add parameter to adjust the start date of the second historical era, which governs old town district generation in cities
+- FEATURE: Add parameter to disable or enable the creation of historistic rings (era 02 block perimeter house protection in cities)
+- CHANGE: House type trading house now checks for the current era while only being built during era01
+- CHANGE: Functions for old town and historistic ring protection now call the historical era determining function rather than builtin variable current_year
+- FIX: Delete two unused sprites from the gfx folder
+
+
+Central European Towns 0.7.0 (2023-07-08)
 ----------------------------------------------------
 - ADD: house type apartments and shops
 - ADD: house type department store
@@ -11,7 +22,7 @@ Central European Towns 0.7.0 (2023-07-08) (Build 7)
 - CHANGE: Set probability for farm estate to 1, was appearing to often in villages
 
 
-Central European Towns 0.6.0 (2023-07-08) (Build 6)
+Central European Towns 0.6.0 (2023-07-08)
 ----------------------------------------------------
 - FEATURE: cities create a ring of historistic (late 19th century) block perimeter houses
 - ADD: house type apartment block 1
@@ -21,7 +32,7 @@ Central European Towns 0.6.0 (2023-07-08) (Build 6)
 - CHANGE: Roof colors of most old town houses (alley houses ,trading house) are now red or close to that
 
 
-Central European Towns 0.5.0 (2023-06-29) (Build 5)
+Central European Towns 0.5.0 (2023-06-29)
 ----------------------------------------------------
 - FEATURE: Expanding city park with only roads as limitations
 - ADD: expanded house type old town house to cities
@@ -49,7 +60,7 @@ Central European Towns 0.5.0 (2023-06-29) (Build 5)
 - FIX: Red farm fields were to flashy, colored them in a darker red
 
 
-Central European Towns 0.4.0 (2023-06-23) (Build 4)
+Central European Towns 0.4.0 (2023-06-23)
 ----------------------------------------------------
 - ADD: house type alley houses for Towns
 - ADD: house type house for towns and cities
@@ -76,7 +87,7 @@ Central European Towns 0.4.0 (2023-06-23) (Build 4)
 - FIX: Unified sprite denotation for the parts of multi-tile houses (..._00x_N instead of ..._N_00x)
 
 
-Central European Towns 0.3.0 (2023-06-18) (Build 3)
+Central European Towns 0.3.0 (2023-06-18)
 ----------------------------------------------------
 - ADD: farm fields for the use with various house types
 - ADD: house type small farm
@@ -91,7 +102,7 @@ Central European Towns 0.3.0 (2023-06-18) (Build 3)
 - FIX: reset numbering of era from 1-6 instead of 0-5 since era definition "0" for the first historical era caused sprites to change after 1850
 
 
-Central European Towns 0.2.0 (2023-06-13) (Build 2)
+Central European Towns 0.2.0 (2023-06-13)
 ----------------------------------------------------
 - FEATURE: road-awareness for block perimeter houses built in cities
 - FEATURE: old town creation for houses built prior to 1850 (era00)
@@ -102,7 +113,7 @@ Central European Towns 0.2.0 (2023-06-13) (Build 2)
 - FIX: include stations into road-awareness function so that bus stops do not lead to wrong alignment
 
 
-Central European Towns 0.1.0 (2023-06-11) (Build 1)
+Central European Towns 0.1.0 (2023-06-11)
 ----------------------------------------------------
 - First build within the new project management frame containing the elements listed below
 - English language file
