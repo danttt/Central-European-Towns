@@ -1,3 +1,8 @@
+Central European Towns 0.8.1 (2024-10-28)
+----------------------------------------------------
+- FIX: NewGrf version in header and title does not match the current version.
+
+
 Central European Towns 0.8.0 (2024-10-27)
 ----------------------------------------------------
 - FEATURE: Add parameters to adjust maximum population for town type transitions from village to town and from town to city
