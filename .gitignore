@@ -9,3 +9,6 @@ cet.nml
 # Ignore the folder (Win and Linux versions) containing the grf compiler
 compile
 .compile
+
+# Ignore the virtual environment
+env
