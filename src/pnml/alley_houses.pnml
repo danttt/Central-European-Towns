@@ -20,6 +20,13 @@ spriteset(spriteset_alley_houses_era01_001_b, "gfx/alley_houses_era01_001.PNG") 
 	tmpl_small_houses_building (0, 0)
 }
 
+spriteset(spriteset_alley_houses_era01_002_g, "gfx/alley_houses_era01_002.PNG") { 	
+	tmpl_small_houses_ground (0, 0)
+}
+spriteset(spriteset_alley_houses_era01_002_b, "gfx/alley_houses_era01_002.PNG") {
+	tmpl_small_houses_building (0, 0)
+}
+
 
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -37,6 +44,16 @@ spritelayout spritelayout_alley_houses_era01_001 {
 		always_draw: 1; }
 	building {
 		sprite: spriteset_alley_houses_era01_001_b;  }
+}
+
+spritelayout spritelayout_alley_houses_era01_002 {
+	ground { 
+		sprite: spriteset_ground_sprite_concrete; }
+	childsprite {
+		sprite: spriteset_alley_houses_era01_002_g; 
+		always_draw: 1; }
+	building {
+		sprite: spriteset_alley_houses_era01_002_b;  }
 }
 
 
@@ -81,6 +98,7 @@ switch (FEAT_HOUSES, SELF, alley_houses_t_c_switch, func_anim_frame()) {
 
 random_switch (FEAT_HOUSES, SELF, random_alley_houses_era01) {
 		1: spritelayout_alley_houses_era01_001;
+		1: spritelayout_alley_houses_era01_002;
 }
 
 
