@@ -1,14 +1,14 @@
-# Ignore the following files and folders:
-
 # Ignore main nml file since changes are tracked in the pnml files already.
 cet.nml
 
 # Ignore any Visual Studio Code configs.
 .vscode
 
-# Ignore the folder (Win and Linux versions) containing the grf compiler
-compile
+# Ignore the compiler folder
 .compile
 
 # Ignore the virtual environment
 env
+
+# Ignore the pycache folder
+__pycache__

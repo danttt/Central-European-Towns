@@ -1,0 +1,58 @@
+import scripts.nmlmaketools as mk
+
+
+# Initialize the list we will be using to temporarily store the pnml files.
+sections = []
+
+
+# Use it to store the content of all pnml files in the list
+mk.append_pnml(sections, "src/pnml/header.pnml")
+mk.append_pnml(sections, "src/pnml/functions.pnml")
+mk.append_pnml(sections, "src/pnml/ground_sprites.pnml")
+mk.append_pnml(sections, "src/pnml/farm_fields.pnml")
+mk.append_pnml(sections, "src/pnml/farm_house.pnml")
+mk.append_pnml(sections, "src/pnml/old_town_houses.pnml")
+mk.append_pnml(sections, "src/pnml/shops_offices_1.pnml")
+mk.append_pnml(sections, "src/pnml/church.pnml")
+mk.append_pnml(sections, "src/pnml/town_hall.pnml")
+mk.append_pnml(sections, "src/pnml/farm_estate.pnml")
+mk.append_pnml(sections, "src/pnml/small_farm.pnml")
+mk.append_pnml(sections, "src/pnml/school.pnml")
+mk.append_pnml(sections, "src/pnml/old_house.pnml")
+mk.append_pnml(sections, "src/pnml/workshop.pnml")
+mk.append_pnml(sections, "src/pnml/house.pnml")
+mk.append_pnml(sections, "src/pnml/shop.pnml")
+mk.append_pnml(sections, "src/pnml/farm.pnml")
+mk.append_pnml(sections, "src/pnml/alley_houses.pnml")
+mk.append_pnml(sections, "src/pnml/town_church_1.pnml")
+mk.append_pnml(sections, "src/pnml/old_town_house.pnml")
+mk.append_pnml(sections, "src/pnml/trading_house.pnml")
+mk.append_pnml(sections, "src/pnml/merchant_house.pnml")
+mk.append_pnml(sections, "src/pnml/shops.pnml")
+mk.append_pnml(sections, "src/pnml/shops_offices_2.pnml")
+mk.append_pnml(sections, "src/pnml/mansion.pnml")
+mk.append_pnml(sections, "src/pnml/apartment_building.pnml")
+mk.append_pnml(sections, "src/pnml/multi_family_home.pnml")
+mk.append_pnml(sections, "src/pnml/high_school.pnml")
+mk.append_pnml(sections, "src/pnml/theatre.pnml")
+mk.append_pnml(sections, "src/pnml/cinema.pnml")
+mk.append_pnml(sections, "src/pnml/stadium.pnml")
+mk.append_pnml(sections, "src/pnml/hospital.pnml")
+mk.append_pnml(sections, "src/pnml/shops_offices_3.pnml")
+mk.append_pnml(sections, "src/pnml/city_park.pnml")
+mk.append_pnml(sections, "src/pnml/cathedral.pnml")
+mk.append_pnml(sections, "src/pnml/city_hall.pnml")
+mk.append_pnml(sections, "src/pnml/grand_hotel.pnml")
+mk.append_pnml(sections, "src/pnml/shopping_mall.pnml")
+mk.append_pnml(sections, "src/pnml/apartment_block_1.pnml")
+mk.append_pnml(sections, "src/pnml/town_church_2.pnml")
+mk.append_pnml(sections, "src/pnml/apartments_shops.pnml")
+mk.append_pnml(sections, "src/pnml/department_store.pnml")
+mk.append_pnml(sections, "src/pnml/guest_house.pnml")
+mk.append_pnml(sections, "src/pnml/hotel.pnml")
+mk.append_pnml(sections, "src/pnml/office_building.pnml")
+mk.append_pnml(sections, "src/pnml/large_office_building.pnml")
+mk.append_pnml(sections, "src/pnml/tall_office_building.pnml")
+
+# Use 'write_nml' to create the nml file.
+mk.write_nml("cet.nml", sections)
