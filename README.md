@@ -91,4 +91,6 @@ The set introduces the following parameter settings:
 
 ### Code Reference
 
-All code is thoroughly commented. For better handling, the main nml file has been split into pnml files for each house type, the header, and the set's functions. The main nml file is compiled by the help of the 'makenml' python script. All data is provided in /src/ (https://github.com/danttt/Central-European-Towns).
+For better handling, the main nml file has been split into pnml files for each house type, the header, and the set's functions. The main nml file is compiled using the 'makenml' python script. It needs the 'nmlmaketools' script in the scripts subfolder to work.
+
+All data is provided in /src/ (https://github.com/danttt/Central-European-Towns).
