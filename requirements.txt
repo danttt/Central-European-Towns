@@ -1,5 +1,5 @@
-nml==0.7.5
-pillow==11.1.0
+nml==0.7.6
+pillow==11.2.1
 ply==3.11
-setuptools==75.6.0
+setuptools==80.3.0
 wheel==0.45.1
